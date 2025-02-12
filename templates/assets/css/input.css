@@ -1,0 +1,59 @@
+@import "tailwindcss" source(none);
+
+@source "../../**/*.html";
+
+@theme {
+  --color-base: #24273a;
+  --color-text: #cad3f5;
+  --color-primary: #8aadf4;
+}
+
+@layer base {
+  body {
+    @apply bg-base text-text;
+  }
+
+  h1 {
+    @apply text-4xl font-bold my-4;
+  }
+
+  h2 {
+    @apply text-3xl font-bold my-4;
+  }
+
+  h3 {
+    @apply text-2xl font-bold my-4;
+  }
+
+  h4 {
+    @apply text-xl font-bold my-4;
+  }
+
+  h5 {
+    @apply text-lg font-bold my-4;
+  }
+
+  h6 {
+    @apply text-lg my-4;
+  }
+
+  p {
+    @apply mb-4;
+  }
+
+  a {
+    @apply text-primary underline cursor-pointer;
+  }
+
+  table {
+    @apply mb-4 table-auto w-full;
+  }
+
+  th {
+    @apply border p-2;
+  }
+
+  td {
+    @apply border p-2;
+  }
+ }
