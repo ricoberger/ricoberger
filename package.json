@@ -5,7 +5,7 @@
     "build": "npx @tailwindcss/cli -i ./dist/assets/css/input.css -o ./dist/assets/css/output.css -m"
   },
   "dependencies": {
-    "@tailwindcss/cli": "^4.0.5",
+    "@tailwindcss/cli": "^4.0.6",
     "tailwindcss": "^4.0.5"
   }
 }
