@@ -11,34 +11,34 @@ pages:
     sections:
       - title: Spaces
         items:
-          - "`Command` + `Left` - next space"
-          - "`Command` + `Right` - previous space"
-          - "`Command` + `Up` - mission control"
-          - "`Command` + `Down` - application windows"
-          - "`Command` + `Tab` - switch applications"
+          - "`Command` + `Left` - Next space"
+          - "`Command` + `Right` - Previous space"
+          - "`Command` + `Up` - Mission control"
+          - "`Command` + `Down` - Application windows"
+          - "`Command` + `Tab` - Switch applications"
       - title: Windows
         items:
-          - "`Command` + `Option` + `Space` - switch windows"
-          - "`Command` + `Option` + `h` - resize window (left)"
-          - "`Command` + `Option` + `j` - resize window (bottom)"
-          - "`Command` + `Option` + `k` - resize window (top)"
-          - "`Command` + `Option` + `l` - resize window (right)"
-          - "`Command` + `Option` + `z` - resize window (center)"
-          - "`Command` + `Option` + `m` - resize window (maximise)"
-          - "`Command` + `Option` + `n` - move window to next space"
-          - "`Command` + `Option` + `p` - move window to previous space"
+          - "`Command` + `Option` + `Space` - Switch windows"
+          - "`Command` + `Option` + `h` - Resize window (left)"
+          - "`Command` + `Option` + `j` - Resize window (bottom)"
+          - "`Command` + `Option` + `k` - Resize window (top)"
+          - "`Command` + `Option` + `l` - Resize window (right)"
+          - "`Command` + `Option` + `z` - Resize window (center)"
+          - "`Command` + `Option` + `m` - Resize window (maximise)"
+          - "`Command` + `Option` + `n` - Move window to next space"
+          - "`Command` + `Option` + `p` - Move window to previous space"
       - title: Screenshots
         items:
-          - "`Command` + `Shift` + `3` - capture entire screen (file)"
-          - "`Command` + `Ctrl` + `Shift` + `3` - capture entire screen (copy)"
-          - "`Command` + `Shift` + `4` - capture portion of screen (file)"
-          - "`Command` + `Ctrl` + `Shift` + `4` - capture portion of screen (copy)"
-          - "`Command` + `Shift` + `4` + `Space` - capture window or menu"
-          - "`Command` + `Ctrl` + `5` - capture options"
+          - "`Command` + `Shift` + `3` - Capture entire screen (file)"
+          - "`Command` + `Ctrl` + `Shift` + `3` - Capture entire screen (copy)"
+          - "`Command` + `Shift` + `4` - Capture portion of screen (file)"
+          - "`Command` + `Ctrl` + `Shift` + `4` - Capture portion of screen (copy)"
+          - "`Command` + `Shift` + `4` + `Space` - Capture window or menu"
+          - "`Command` + `Ctrl` + `5` - Capture options"
       - title: Misc
         items:
           - "`Command` + `Space` - Raycast"
-          - "`Command` + `Option` + `c` - clipboard history"
+          - "`Command` + `Option` + `c` - Clipboard history"
       - title: Links
         items:
           - |
