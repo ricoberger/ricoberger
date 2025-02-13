@@ -1,0 +1,77 @@
+---
+title: Ghostty
+description: A fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration
+author: Rico Berger
+keywords:
+  - ghostty
+  - terminal
+pages:
+  - title: Ghostty
+    columns: 5
+    sections:
+      - title: General
+        items:
+          - |
+            Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
+
+            ![Ghostty](./assets/ghostty.png)
+
+            - [Website](https://ghostty.org)
+            - [GitHub](https://github.com/ghostty-org/ghostty)
+            - [Download Cheat Sheet](./assets/ghostty.pdf)
+      - title: Windows
+        items:
+          - "`Command` + `n` - New window"
+          - "`Command` + `q` - Quit window"
+          - "`Command` + `w` - Close surface"
+          - "`Command` + `Alt` + `Shift` + `w` - Close all windows"
+          - "`Command` + `Ctrl` + `f` - Toggle fullscreen"
+      - title: Tabs
+        items:
+          - "`Command` + `t` - New tab"
+          - "`Ctrl` + `Tab` - Next tab"
+          - "`Ctrl` + `Shift` + `Tab` - Previous tab"
+          - "`Command` + `NUM` - Go to tab"
+      - title: Split
+        items:
+          - "`Command` + `d` - Split right"
+          - "`Command` + `Shift` + `d` - Split bottom"
+          - "`Command` + `Shift` + `Enter` - Toogle zoom"
+          - "`Command` + `Alt` + `Left` - Go to left split"
+          - "`Command` + `Alt` + `Right` - Go to right split"
+          - "`Command` + `Alt` + `Up` - Go to top split"
+          - "`Command` + `Alt` + `Down` - Go to bottom split"
+          - "`Command` + `Ctrl` + `Left` - Resize split left"
+          - "`Command` + `Ctrl` + `Right` - Resize split right"
+          - "`Command` + `Ctrl` + `Up` - Resize split up"
+          - "`Command` + `Ctrl` + `Down` - Resize split down"
+      - title: Scroll
+        items:
+          - "`Command` + `Home` - Scroll to top"
+          - "`Command` + `End` - Scroll to bottom"
+          - "`Command` + `Page Up` - Scroll page up"
+          - "`Command` + `Page Down` - Scroll page down"
+      - title: Font Size
+        items:
+          - "`Command` + `+` - Increase font size"
+          - "`Command` + `-` - Decrease font size"
+          - "`Command` + `0` - Reset font size"
+      - title: Actions
+        items:
+          - "`Command` + `v` - Paste"
+          - "`Command` + `c` - Copy"
+          - "`Command` + `a` - Select all"
+          - "`Command` + `k` - Clear screen"
+      - title: Selection
+        items:
+          - "`Command` + `Shift` + `Left` - Adjust selection left"
+          - "`Command` + `Shift` + `Right` - Adjust selection right"
+          - "`Command` + `Shift` + `Up` - Adjust selection up"
+          - "`Command` + `Shift` + `Down` - Adjust selection down"
+          - "`Command` + `Shift` + `Home` - Adjust selection to home"
+          - "`Command` + `Shift` + `End` - Adjust selection to end"
+          - "`Command` + `Shift` + `Page Up` - Adjust selection to page up"
+          - "`Command` + `Shift` + `Page Down` - Adjust selection to page down"
+      - title: Quick Terminal
+        items:
+          - "`Command` + `#` - Toogle quick terminal"
