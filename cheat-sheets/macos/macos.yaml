@@ -1,0 +1,46 @@
+---
+title: macOS
+description: macOS and Raycast Cheat Sheet
+author: Rico Berger
+keywords:
+  - macOS
+  - Raycast
+pages:
+  - title: macOS
+    columns: 4
+    sections:
+      - title: Spaces
+        items:
+          - "`Command` + `Left` - next space"
+          - "`Command` + `Right` - previous space"
+          - "`Command` + `Up` - mission control"
+          - "`Command` + `Down` - application windows"
+          - "`Command` + `Tab` - switch applications"
+      - title: Windows
+        items:
+          - "`Command` + `Option` + `Space` - switch windows"
+          - "`Command` + `Option` + `h` - resize window (left)"
+          - "`Command` + `Option` + `j` - resize window (bottom)"
+          - "`Command` + `Option` + `k` - resize window (top)"
+          - "`Command` + `Option` + `l` - resize window (right)"
+          - "`Command` + `Option` + `z` - resize window (center)"
+          - "`Command` + `Option` + `m` - resize window (maximise)"
+          - "`Command` + `Option` + `n` - move window to next space"
+          - "`Command` + `Option` + `p` - move window to previous space"
+      - title: Screenshots
+        items:
+          - "`Command` + `Shift` + `3` - capture entire screen (file)"
+          - "`Command` + `Ctrl` + `Shift` + `3` - capture entire screen (copy)"
+          - "`Command` + `Shift` + `4` - capture portion of screen (file)"
+          - "`Command` + `Ctrl` + `Shift` + `4` - capture portion of screen (copy)"
+          - "`Command` + `Shift` + `4` + `Space` - capture window or menu"
+          - "`Command` + `Ctrl` + `5` - capture options"
+      - title: Misc
+        items:
+          - "`Command` + `Space` - Raycast"
+          - "`Command` + `Option` + `c` - clipboard history"
+      - title: Links
+        items:
+          - |
+            - [Raycast](https://www.raycast.com)
+            - [Download Cheat Sheet](./assets/macos.pdf)
