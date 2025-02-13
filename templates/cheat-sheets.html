@@ -1,0 +1,10 @@
+{{ define "content" }}
+<div class="max-w-3xl mx-auto px-10 py-[64px]">
+  <h1>Cheat Sheets</h1>
+  <ul>
+  {{ range $cheatsheet := .Content }}
+  <li><a href="/cheat-sheets/{{ $cheatsheet.ID }}">{{ $cheatsheet.Title }}</a></li>
+  {{ end }}
+  </ul>
+</div>
+{{ end }}

@@ -4,8 +4,15 @@
 
 @theme {
   --color-base: #24273a;
+  --color-mantle: #1e2030;
+  --color-crust: #181926;
+  --color-surface: #5b6078;
   --color-text: #cad3f5;
   --color-primary: #8aadf4;
+  --color-red: #ed8796;
+  --color-yellow: #eed49f;
+  --color-green: #a6da95;
+  --color-blue: #8aadf4;
 }
 
 @layer base {
@@ -42,7 +49,11 @@
   }
 
   a {
-    @apply text-primary underline cursor-pointer;
+    @apply text-primary cursor-pointer;
+  }
+
+  ul {
+    @apply mb-4 list-disc list-inside
   }
 
   table {
@@ -56,4 +67,26 @@
   td {
     @apply border p-2;
   }
- }
+
+  code {
+    @apply bg-crust px-[4px] text-xs font-mono;
+  }
+}
+
+.cheat-sheet p {
+  margin: 0;
+  font-size: var(--text-xs);
+  line-height: var(--text-xs--line-height);
+}
+
+.cheat-sheet ul {
+  margin: 0;
+  font-size: var(--text-xs);
+  line-height: var(--text-xs--line-height);
+}
+
+.cheat-sheet table {
+  margin: 0;
+  font-size: var(--text-xs);
+  line-height: var(--text-xs--line-height);
+}
