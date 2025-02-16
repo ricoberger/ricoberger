@@ -6,6 +6,7 @@ keywords:
   - gh
   - gh-cli
   - gh-dash
+  - github
 pages:
   - title: gh-dash
     columns: 3
@@ -59,6 +60,7 @@ pages:
           - "`u` - Update pr from base branch"
           - "`Ctrl` + `l` - Add label to PR"
           - "`Ctrl` + `k` - Remove label from PR"
+          - "`Ctrl` + `w` - Show logs for a workflow run"
       - title: Misc
         items:
           - "`?` - Help"
