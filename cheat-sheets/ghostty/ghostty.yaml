@@ -18,7 +18,7 @@ pages:
 
             - [Website](https://ghostty.org)
             - [GitHub](https://github.com/ghostty-org/ghostty)
-            - [Download Cheat Sheet](./assets/ghostty.pdf)
+            - [Download Cheat Sheet](./assets/ghostty-cheat-sheet.png)
       - title: Windows
         items:
           - "`Command` + `n` - New window"

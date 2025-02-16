@@ -34,3 +34,4 @@ pages:
           - |
             - [Documentation](https://cli.github.com/manual/)
             - [Useful Functions](https://github.com/ricoberger/dotfiles/tree/main/.bin)
+            - [Download Cheat Sheet](./assets/gh-cheat-sheet.png)
