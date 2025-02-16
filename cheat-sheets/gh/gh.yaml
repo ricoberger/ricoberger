@@ -1,0 +1,36 @@
+---
+title: gh
+description: GitHub CLI, or gh, is a command-line interface to GitHub for use in your terminal or your scripts.
+author: Rico Berger
+keywords:
+  - gh
+  - gh-cli
+  - github
+pages:
+  - title: gh
+    columns: 3
+    sections:
+      - title: Pull Requests
+        items:
+          - "`gh pr create` - Create a pull request on GitHub"
+          - "`gh pr checkout [<number> | <url> | <branch>] --force` - Check out a pull request and reset the existing local branch to the latest state of the pull request"
+          - "`gh pr merge [<number> | <url> | <branch>] --squash --delete-branch --admin` - Merge a pull request, squash the commits into one commit, delete the local and remote branch after merge, use administrator privileges"
+          - "`gh pr edit [<number> | <url> | <branch>] --add-label \"$(gh label list --json name --jq \".[].name\" | fzf)\"` - Add label via fzf (list all labels from repository)"
+          - "`gh pr edit [<number> | <url> | <branch>] --remove-label \"$(gh pr view [<number> | <url> | <branch>] --json labels --jq \".labels.[].name\" | fzf)\"` - Remove label via fzf (list all labels from pull request)"
+      - title: GitHub Actions
+        items:
+          - "`gh run list --branch [<branch>]` - List recent workflow runs for branch"
+          - "`gh run view [<run-id>]` - View a summary of a workflow run"
+          - "`gh run view [<run-id>] --log` - View full log for a run"
+          - "`gh cache list` - List GitHub Actions caches"
+          - "`gh cache delete [<cache-id>| <cache-key>]` or `gh cache delete --all` - Delete a specific / all GitHub Actions caches"
+      - title: Extensions
+        items:
+          - "`gh extension list` - List installed extensions"
+          - "`gh extension install <repository> --force` - Install an extension and force upgrade, or ignore if latest already installed"
+          - "`gh extension upgrade --all` - Upgrade all installed extensions"
+      - title: Links
+        items:
+          - |
+            - [Documentation](https://cli.github.com/manual/)
+            - [Useful Functions](https://github.com/ricoberger/dotfiles/tree/main/.bin)
