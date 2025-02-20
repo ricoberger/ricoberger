@@ -14,7 +14,7 @@
         </div>
         {{ if $section.Tip.Description }}
           <div class="pt-2">
-            <div class="bg-mantle p-2 text-xs cheat-sheet">
+            <div class="bg-mantle p-2 text-xs cheat-sheet flex flex-col gap-2">
               {{ $section.Tip.Description | formatMarkdown }}
               <div class="flex flex-col">
                 {{ range $item := $section.Tip.Items }}
