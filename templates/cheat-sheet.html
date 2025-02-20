@@ -9,7 +9,7 @@
         <h5 style="margin: 0px;">{{ $section.Title }}</h5>
         <div class="flex flex-col text-sm">
           {{ range $item := $section.Items }}
-            <div class="py-[6px] border-b-1 border-text border-dashed cheat-sheet">{{ $item | formatMarkdown }}</div>
+            <div class="py-[6px] border-b-1 border-text border-dashed cheat-sheet flex flex-col gap-2">{{ $item | formatMarkdown }}</div>
           {{ end }}
         </div>
         {{ if $section.Tip.Description }}

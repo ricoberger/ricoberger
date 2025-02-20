@@ -13,6 +13,8 @@ import (
 
 	"github.com/goccy/go-yaml"
 	"github.com/yuin/goldmark"
+	"github.com/yuin/goldmark/extension"
+	"github.com/yuin/goldmark/renderer/html"
 )
 
 type Data struct {
@@ -115,8 +117,18 @@ func buildTemplate(tmpl string, distPath string, data Data) error {
 
 	templates, err := template.New("base.html").Funcs(template.FuncMap{
 		"formatMarkdown": func(s string) template.HTML {
+			md := goldmark.New(
+				goldmark.WithExtensions(
+					extension.Table,
+					extension.Strikethrough,
+				),
+				goldmark.WithRendererOptions(
+					html.WithUnsafe(),
+				),
+			)
+
 			var buf bytes.Buffer
-			if err := goldmark.Convert([]byte(s), &buf); err != nil {
+			if err := md.Convert([]byte(s), &buf); err != nil {
 				slog.Error("Failed to convert markdown", slog.Any("error", err))
 			}
 			return template.HTML(buf.String())
