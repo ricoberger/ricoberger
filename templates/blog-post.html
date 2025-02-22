@@ -1,0 +1,35 @@
+{{ define "content" }}
+<div class="max-w-3xl mx-auto px-10 py-[64px]">
+  <div
+    class="mt-4 mb-8 flex items-center justify-between flex-row flex-wrap gap-2"
+  >
+    <h1 class="my-0">{{ .Content.Title }}</h1>
+    <div>{{ .Content.PublishedAt.Format "2006-01-02" }}</div>
+  </div>
+
+  <div class="mt-4 mb-8 flex items-center justify-start flex-row gap-4">
+    <div class="rounded-full border-2 border-mantle shadow-md">
+      <img
+        src="{{ .Content.AuthorImage }}"
+        class="w-10 h-10 rounded-full"
+        alt="author"
+      />
+    </div>
+
+    <div class="flex items-start justify-center flex-col">
+      <div>{{ .Content.AuthorName }}</div>
+      <div class="text-xs">{{ .Content.AuthorTitle }}</div>
+    </div>
+  </div>
+
+  {{ .Content.Content }}
+
+  <div
+    class="mt-8 mb-4 flex items-center justify-start flex-row flex-wrap gap-4"
+  >
+    {{ range $tag := .Content.Tags }}
+    <div><a href="/blog/tags/{{ $tag }}"># {{ $tag }}</a></div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

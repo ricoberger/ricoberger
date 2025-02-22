@@ -20,6 +20,12 @@ I'm a passionate Site Reliability Engineer / Platform Enginner with a deep commi
 | [Vault Secrets Operator](https://github.com/ricoberger/vault-secrets-operator) | ![Stars](https://img.shields.io/github/stars/ricoberger/vault-secrets-operator?style=flat-square&labelColor=343b41) | ![Forks](https://img.shields.io/github/forks/ricoberger/vault-secrets-operator?style=flat-square&labelColor=343b41) | ![Issues](https://img.shields.io/github/issues/ricoberger/vault-secrets-operator?style=flat-square&labelColor=343b41) | ![Pull Requests](https://img.shields.io/github/issues-pr/ricoberger/vault-secrets-operator?style=flat-square&labelColor=343b41) |
 | [script_exporter](https://github.com/ricoberger/script_exporter) | ![Stars](https://img.shields.io/github/stars/ricoberger/script_exporter?style=flat-square&labelColor=343b41) | ![Forks](https://img.shields.io/github/forks/ricoberger/script_exporter?style=flat-square&labelColor=343b41) | ![Issues](https://img.shields.io/github/issues/ricoberger/script_exporter?style=flat-square&labelColor=343b41) | ![Pull Requests](https://img.shields.io/github/issues-pr/ricoberger/script_exporter?style=flat-square&labelColor=343b41) |
 
+### Latest Blog Posts
+
+- [Welcome to My New Website](https://ricoberger.de/blog/posts/welcome-to-my-wew-website/)
+
+[More blog posts](https://ricoberger.de/blog/)
+
 ### Languages and Tools
 
 ![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=Go&logoColor=white)

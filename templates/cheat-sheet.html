@@ -3,26 +3,32 @@
   <div class="flex flex-col gap-4">
     {{ range $page := .Content.Pages }}
     <h3>{{ $page.Title }}</h3>
-    <div class="xs:columns-1 sm:columns-2 md:columns-3 lg:columns-{{ $page.Columns }} gap-4">
+    <div
+      class="xs:columns-1 sm:columns-2 md:columns-3 lg:columns-{{ $page.Columns }} gap-4"
+    >
       {{ range $section := $page.Sections }}
       <div class="py-3 break-inside-avoid-column">
-        <h5 style="margin: 0px;">{{ $section.Title }}</h5>
+        <h5 style="margin: 0px">{{ $section.Title }}</h5>
         <div class="flex flex-col text-sm">
           {{ range $item := $section.Items }}
-            <div class="py-[6px] border-b-1 border-text border-dashed cheat-sheet">{{ $item | formatMarkdown }}</div>
+          <div
+            class="py-[6px] border-b-1 border-text border-dashed cheat-sheet"
+          >
+            {{ $item | formatMarkdown }}
+          </div>
           {{ end }}
         </div>
         {{ if $section.Tip.Description }}
-          <div class="pt-2">
-            <div class="bg-mantle p-2 text-xs cheat-sheet">
-              {{ $section.Tip.Description | formatMarkdown }}
-              <div class="flex flex-col">
-                {{ range $item := $section.Tip.Items }}
-                  <div class="py-[2px]">{{ $item | formatMarkdown }}</div>
-                {{ end }}
-              </div>
+        <div class="pt-2">
+          <div class="bg-crust p-2 text-xs cheat-sheet">
+            {{ $section.Tip.Description | formatMarkdown }}
+            <div class="flex flex-col">
+              {{ range $item := $section.Tip.Items }}
+              <div class="py-[2px]">{{ $item | formatMarkdown }}</div>
+              {{ end }}
             </div>
           </div>
+        </div>
         {{ end }}
       </div>
       {{ end }}
