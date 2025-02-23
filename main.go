@@ -6,7 +6,6 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"html"
 	"html/template"
 	"io/fs"
 	"log/slog"
@@ -98,8 +97,8 @@ type RssFeedXml struct {
 	Channel          *RssFeed
 }
 
-type RssContent struct {
-	XMLName xml.Name `xml:"content:encoded"`
+type RssDescription struct {
+	XMLName xml.Name `xml:"description"`
 	Content string   `xml:",cdata"`
 }
 
@@ -129,8 +128,7 @@ type RssItem struct {
 	XMLName     xml.Name `xml:"item"`
 	Title       string   `xml:"title"`
 	Link        string   `xml:"link"`
-	Description string   `xml:"description"`
-	Content     *RssContent
+	Description *RssDescription
 	Author      string `xml:"author,omitempty"`
 	Enclosure   *RssEnclosure
 	Guid        *RssGuid
@@ -611,10 +609,9 @@ func buildRssFeed(distPath string, metadata Metadata, posts []BlogPost) error {
 		}
 
 		rssItems = append(rssItems, &RssItem{
-			Title:       post.Title,
-			Link:        fmt.Sprintf("%s/blog/posts/%s/", defaultBaseUrl, post.ID),
-			Description: html.EscapeString(content),
-			Content: &RssContent{
+			Title: post.Title,
+			Link:  fmt.Sprintf("%s/blog/posts/%s/", defaultBaseUrl, post.ID),
+			Description: &RssDescription{
 				Content: content,
 			},
 			Author: post.AuthorName,
