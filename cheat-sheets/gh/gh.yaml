@@ -5,6 +5,7 @@ author: Rico Berger
 keywords:
   - gh
   - gh-cli
+  - gh-dash
   - github
 pages:
   - title: gh
@@ -35,3 +36,59 @@ pages:
             - [Documentation](https://cli.github.com/manual/)
             - [Useful Functions](https://github.com/ricoberger/dotfiles/tree/main/.bin)
             - [Download Cheat Sheet](./assets/gh-cheat-sheet.png)
+  - title: gh-dash
+    columns: 3
+    sections:
+      - title: General
+        items:
+          - |
+            A GitHub (gh) CLI extension to display a dashboard with pull requests and issues by filters you care about.
+
+            ![gh-dash](./assets/gh-dash.png)
+
+            - [Website](https://dlvhdr.github.io/gh-dash/)
+            - [GitHub](https://github.com/dlvhdr/gh-dash)
+      - title: Movement
+        items:
+          - "`k` - Move up"
+          - "`j` - Move down"
+          - "`h` - Previous section"
+          - "`l` - Next section"
+          - "`g` - First item"
+          - "`G` - Last item"
+          - "`Ctrl` + `d` - Preview page down"
+          - "`Ctrl` + `u` - Preview page up"
+      - title: Refresh, Open, Copy
+        items:
+          - "`r` - Refresh"
+          - "`R` - Refresh all"
+          - "`s` - Switch view"
+          - "`p` - Open in Preview"
+          - "`o` - Open in GitHub"
+          - "`O` - Open in Neovim"
+          - "`y` - Copy number"
+          - "`Y` - Copy url"
+          - "`/` - Search"
+      - title: Actions
+        items:
+          - "`y` - Approve"
+          - "`a` - Assign"
+          - "`A` - Unassign"
+          - "`c` - Comment"
+          - "`d` - Diff"
+          - "`D` - Open diff in Neovim"
+          - "`C` - Checkout"
+          - "`x` - Close"
+          - "`W` - Ready for review"
+          - "`w` - Watch checks"
+          - "`X` - Reopen"
+          - "`m` - Merge"
+          - "`M` - Merge (admin)"
+          - "`u` - Update pr from base branch"
+          - "`Ctrl` + `l` - Add label to PR"
+          - "`Ctrl` + `k` - Remove label from PR"
+          - "`Ctrl` + `w` - Show logs for a workflow run"
+      - title: Misc
+        items:
+          - "`?` - Help"
+          - "`q` - Quit"
