@@ -1,6 +1,10 @@
 ![Header](./templates/assets/img/header.jpg)
 
-I'm a passionate Site Reliability Engineer / Platform Enginner with a deep commitment to ensuring the reliability, scalability, and performance of systems and services. With a strong background in both development and operations, I thrive on collaborating with cross-functional teams to design and maintain infrastructure that supports rapid deployment and continuous integration.
+I'm a passionate Site Reliability Engineer / Platform Enginner with a deep
+commitment to ensuring the reliability, scalability, and performance of systems
+and services. With a strong background in both development and operations, I
+thrive on collaborating with cross-functional teams to design and maintain
+infrastructure that supports rapid deployment and continuous integration.
 
 [![Github](https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/ricoberger)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/ricoberger/)
@@ -12,19 +16,19 @@ I'm a passionate Site Reliability Engineer / Platform Enginner with a deep commi
 
 ### Projects
 
-| Projects | Stars | Forks | Issues | Pull Requests |
-| -------- | ----- | ----- | ------ | ------------- |
-| [kubenav](https://github.com/kubenav/kubenav) | ![Stars](https://img.shields.io/github/stars/kubenav/kubenav?style=flat-square&labelColor=343b41) | ![Forks](https://img.shields.io/github/forks/kubenav/kubenav?style=flat-square&labelColor=343b41) | ![Issues](https://img.shields.io/github/issues/kubenav/kubenav?style=flat-square&labelColor=343b41) | ![Pull Requests](https://img.shields.io/github/issues-pr/kubenav/kubenav?style=flat-square&labelColor=343b41) |
-| [FeedDeck](https://github.com/feeddeck/feeddeck) | ![Stars](https://img.shields.io/github/stars/feeddeck/feeddeck?style=flat-square&labelColor=343b41) | ![Forks](https://img.shields.io/github/forks/feeddeck/feeddeck?style=flat-square&labelColor=343b41) | ![Issues](https://img.shields.io/github/issues/feeddeck/feeddeck?style=flat-square&labelColor=343b41) | ![Pull Requests](https://img.shields.io/github/issues-pr/feeddeck/feeddeck?style=flat-square&labelColor=343b41) |
-| [kobs](https://github.com/kobsio/kobs) | ![Stars](https://img.shields.io/github/stars/kobsio/kobs?style=flat-square&labelColor=343b41) | ![Forks](https://img.shields.io/github/forks/kobsio/kobs?style=flat-square&labelColor=343b41) | ![Issues](https://img.shields.io/github/issues/kobsio/kobs?style=flat-square&labelColor=343b41) | ![Pull Requests](https://img.shields.io/github/issues-pr/kobsio/kobs?style=flat-square&labelColor=343b41) |
+| Projects                                                                       | Stars                                                                                                               | Forks                                                                                                               | Issues                                                                                                                | Pull Requests                                                                                                                   |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| [kubenav](https://github.com/kubenav/kubenav)                                  | ![Stars](https://img.shields.io/github/stars/kubenav/kubenav?style=flat-square&labelColor=343b41)                   | ![Forks](https://img.shields.io/github/forks/kubenav/kubenav?style=flat-square&labelColor=343b41)                   | ![Issues](https://img.shields.io/github/issues/kubenav/kubenav?style=flat-square&labelColor=343b41)                   | ![Pull Requests](https://img.shields.io/github/issues-pr/kubenav/kubenav?style=flat-square&labelColor=343b41)                   |
+| [FeedDeck](https://github.com/feeddeck/feeddeck)                               | ![Stars](https://img.shields.io/github/stars/feeddeck/feeddeck?style=flat-square&labelColor=343b41)                 | ![Forks](https://img.shields.io/github/forks/feeddeck/feeddeck?style=flat-square&labelColor=343b41)                 | ![Issues](https://img.shields.io/github/issues/feeddeck/feeddeck?style=flat-square&labelColor=343b41)                 | ![Pull Requests](https://img.shields.io/github/issues-pr/feeddeck/feeddeck?style=flat-square&labelColor=343b41)                 |
+| [kobs](https://github.com/kobsio/kobs)                                         | ![Stars](https://img.shields.io/github/stars/kobsio/kobs?style=flat-square&labelColor=343b41)                       | ![Forks](https://img.shields.io/github/forks/kobsio/kobs?style=flat-square&labelColor=343b41)                       | ![Issues](https://img.shields.io/github/issues/kobsio/kobs?style=flat-square&labelColor=343b41)                       | ![Pull Requests](https://img.shields.io/github/issues-pr/kobsio/kobs?style=flat-square&labelColor=343b41)                       |
 | [Vault Secrets Operator](https://github.com/ricoberger/vault-secrets-operator) | ![Stars](https://img.shields.io/github/stars/ricoberger/vault-secrets-operator?style=flat-square&labelColor=343b41) | ![Forks](https://img.shields.io/github/forks/ricoberger/vault-secrets-operator?style=flat-square&labelColor=343b41) | ![Issues](https://img.shields.io/github/issues/ricoberger/vault-secrets-operator?style=flat-square&labelColor=343b41) | ![Pull Requests](https://img.shields.io/github/issues-pr/ricoberger/vault-secrets-operator?style=flat-square&labelColor=343b41) |
-| [script_exporter](https://github.com/ricoberger/script_exporter) | ![Stars](https://img.shields.io/github/stars/ricoberger/script_exporter?style=flat-square&labelColor=343b41) | ![Forks](https://img.shields.io/github/forks/ricoberger/script_exporter?style=flat-square&labelColor=343b41) | ![Issues](https://img.shields.io/github/issues/ricoberger/script_exporter?style=flat-square&labelColor=343b41) | ![Pull Requests](https://img.shields.io/github/issues-pr/ricoberger/script_exporter?style=flat-square&labelColor=343b41) |
+| [script_exporter](https://github.com/ricoberger/script_exporter)               | ![Stars](https://img.shields.io/github/stars/ricoberger/script_exporter?style=flat-square&labelColor=343b41)        | ![Forks](https://img.shields.io/github/forks/ricoberger/script_exporter?style=flat-square&labelColor=343b41)        | ![Issues](https://img.shields.io/github/issues/ricoberger/script_exporter?style=flat-square&labelColor=343b41)        | ![Pull Requests](https://img.shields.io/github/issues-pr/ricoberger/script_exporter?style=flat-square&labelColor=343b41)        |
 
 ### Latest Blog Posts
 
 - [Welcome to My New Website](https://ricoberger.de/blog/posts/welcome-to-my-wew-website/)
 
-[More blog posts](https://ricoberger.de/blog/)
+[More Blog Posts](https://ricoberger.de/blog/)
 
 ### Languages and Tools
 
