@@ -17,6 +17,9 @@ pages:
           - "`l` - Move cursor right"
           - "`gj` - Move cursor down (multi-line text)"
           - "`gk` - Move cursor up (multi-line text)"
+          - "`H` - Move to top of screen"
+          - "`M` - Move to middle of screen"
+          - "`L` - Move to bottom of screen"
           - "`w` - Jump forwards to the start of a word"
           - "`W` - Jump forwards to the start of a word (words can contain punctuation)"
           - "`e` - Jump forwards to the end of a word"
@@ -148,9 +151,9 @@ pages:
       - title: Marks and Positions
         items:
           - "`:marks` - List of marks"
-          - "`ma` - Set current position for mark A"
-          - "`` `a`` - Jump to position of mark A"
-          - "``y`a`` - Yank text to position of mark A"
+          - "`ma` - Set current position for mark `a`"
+          - "`` `a`` - Jump to position of mark `a`"
+          - "``y`a`` - Yank text to position of mark `a`"
           - "`` `0`` - Go to the position where Vim was previously exited"
           - "`` `\"`` - Go to the position when last editing this file"
           - "`` `.`` - Go to the position of the last change in this file"
@@ -163,7 +166,10 @@ pages:
           - "`g;` - Go to older position in change list"
           - "`Ctrl` + `]` - Jump to the tag under cursor"
         tip:
-          description: "**Tip:** To jump to a mark you can either use a backtick (`` ` ``) or an apostrophe (`'`). Using an apostrophe jumps to the beginning (first non-blank) of the line holding the mark."
+          description: |
+            **Tip:** To jump to a mark you can either use a backtick (`` ` ``) or an apostrophe (`'`). Using an apostrophe jumps to the beginning (first non-blank) of the line holding the mark.
+
+            A local mark is specific to a particular file and is indicated by a lowercase letter, while global marks are universal across all of your files and use uppercase letters. That is, many files can have an `` `a `` mark, while `` `A `` points to a particular location in one particular file.
       - title: Macros
         items:
           - "`qa` - Record macro a"
@@ -213,10 +219,8 @@ pages:
             - "`:10,$d` - From the 10th line to the beginning of the file"
       - title: Indent Text
         items:
-          - "`>` - Indent in visual mode"
-          - "`<` - De-indent in visual mode"
-          - "`>>` - Indent (move right) line one shiftwidth"
-          - "`<<` - De-indent (move left) line one shiftwidth"
+          - "`>>` or `>` - Indent (move right) line one shiftwidth"
+          - "`<<` or `<` - De-indent (move left) line one shiftwidth"
           - "`>%` - Indent a block with () or {} (cursor on brace)"
           - "`<%` - De-indent a block with () or {} (cursor on brace)"
           - "`>ib` - Indent inner block with ()"
@@ -243,7 +247,7 @@ pages:
         items:
           - "`/pattern` - Search for pattern"
           - "`?pattern` - Search backward for pattern"
-          - "`\vpattern` - Non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)"
+          - "`\\vpattern` - Non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)"
           - "`n` - Repeat search in same direction"
           - "`N` - Repeat search in opposite direction"
           - "`:%s/old/new/g` - Replace all old with new throughout file"
@@ -251,18 +255,18 @@ pages:
           - "`:%s/old/new/gci` - Replace all old with new throughout file with confirmations (case insensitive)"
           - "`:%s/old/new/gcI` - Replace all old with new throughout file with confirmations (case sensitive)"
           - "`:noh or ESC` - Remove highlighting of search matches"
-          - "`Space + rr` - Search and replace"
-          - "`Space + rw` - Search and replace word under cursor"
-          - "`Space + rR` - Search and replace for all files in quickfix list"
-          - "`Space + rW` - Search and replace word under cursor for all files in quickfix list"
+          - "`Space + rr` - Replace in buffer"
+          - "`Space + rw` - Replace in buffer (word)"
+          - "`Space + rR` - Replace in quickfix list"
+          - "`Space + rW` - Replace in quickfix list (word)"
         tip:
           description: "**Tip:** To replace a pattern for all files in the quickfix list the following command can be used: `:cfdo %s/old/new/gcI | update`. Items can be added to the quickfix list with `Ctrl` + `q` from the picker. To remove items from the quickfix list `dd` can be used."
       - title: Working with Multiple Files
         items:
           - "`:e[dit] file` - Edit a file in a new buffer"
           - "`:%!xxd` - Switch to binary format for existing file"
-          - "`:bn[ext]` - Go to the next buffer"
-          - "`:bp[revious]` - Go to the previous buffer"
+          - "`:bn[ext]` or `Tab` - Go to the next buffer"
+          - "`:bp[revious]` or `Shift` + `Tab` - Go to the previous buffer"
           - "`:ls or :buffers` - List all open buffers"
           - "`:bd[elete]` - Delete a buffer (close a file)"
           - "`:b[uffer]#` - Go to a buffer by index #"
@@ -284,15 +288,8 @@ pages:
           - "`Ctrl` + `wL` - Make current window full height at far right (rightmost vertical window)"
           - "`Ctrl` + `wJ` - Make current window full width at the very bottom (bottommost horizontal window)"
           - "`Ctrl` + `wK` - Make current window full width at the very top (topmost horizontal window)"
-          - "`Tab` - Next buffer"
-          - "`Shift` + `Tab` - Previous buffer"
-      - title: Tabs
-        items:
-          - "`Ctrl` + `tn` - Create a new tab"
-          - "`Ctrl` + `tN` - Create a new tab for current window"
-          - "`Ctrl` + `tc` - Close tab"
-          - "`gt` - Next tab"
-          - "`gT` - Previous tab"
+          - "`gt` - Go to the next tab"
+          - "`gT` - Go to the previous tab"
       - title: Diff
         items:
           - "`zf` - Manually define a fold up to motion"
@@ -320,23 +317,21 @@ pages:
         items:
           - "`]c` - Jump to next hunk"
           - "`[c` - Jump to previous hunk"
-          - "`Space` + `gshs` - Stage hunk"
-          - "`Space` + `gshr` - Reset hunk"
-          - "`Space` + `gshS` - Stage all hunks in current buffer"
-          - "`Space` + `gshu` - Undo last hunk"
-          - "`Space` + `gshR` - Reset all hunk in current buffer"
-          - "`Space` + `gshp` - Preview hunk"
-          - "`Space` + `gsd` - Diff"
-          - "`Space` + `gsD` - Diff (head)"
+          - "`Space` + `gss` - Stage hunk"
+          - "`Space` + `gsr` - Reset hunk"
+          - "`Space` + `gsS` - Stage all hunks in current buffer"
+          - "`Space` + `gsR` - Reset all hunk in current buffer"
+          - "`Space` + `gsu` - Undo last hunk"
+          - "`Space` + `gsp` - Preview hunk"
           - "`Space` + `gsb` - Git blame (short)"
           - "`Space` + `gsB` - Git blame (full)"
-          - "`Space` + `gst` - Toggle deleted"
+          - "`Space` + `gsd` - Toggle deleted"
           - "`Space` + `gsq` - Show hunks via quickfix list"
           - "`Space` + `gsl` - Show hunks via location list"
       - title: Diffview
         items:
           - "`Space` + `gdo` - Open"
-          - "`Space` + `gdO` - Open (head)"
+          - "`Space` + `gdO` - Open (HEAD)"
           - "`Space` + `gdC` - Close"
           - "`Space` + `gdt` - Toggle files"
           - "`Space` + `gdf` - Focus files"
@@ -354,6 +349,8 @@ pages:
           - "`Space` + `gdcx` - Delete the conflict region"
       - title: Snacks - Picker
         items:
+          - "`Space` + `p` - Command palette"
+          - "`Space` + `e` - Explorer"
           - "`Space` + `ff` - Files"
           - "`Space` + `fs` - Search"
           - "`Space` + `fb` - Buffers"
@@ -363,6 +360,7 @@ pages:
           - "`Space` + `fu` - Undo"
           - "`Space` + `fk` - Keymaps"
           - "`Space` + `fm` - Marks"
+          - "`Space` + `ft` - Todo comments"
           - "`Space` + `fq` - Quickfix list"
           - "`Space` + `fl` - Location list"
           - "`Space` + `fd` - Buffer diagnostics"
@@ -423,13 +421,10 @@ pages:
         items:
           - "`]t` - Next todo comment"
           - "`[t` - Previous todo comment"
-          - "`Space` + `tf` - Show todos via picker"
-          - "`Space` + `tq` - Show todos via quickfix list"
-          - "`Space` + `tl` - Show todos via location list"
       - title: LSP
         items:
           - "`Space` + `lr` - Rename"
-          - "`Space` + `la` - Actions"
+          - "`Space` + `lca` - Code actions"
           - "`Space` + `lf` - Format"
           - "`Space` + `ll` - Lint"
           - "`Space` + `lq` - Quickfix list"
@@ -441,7 +436,6 @@ pages:
           - "`gD` - Go to declaration"
           - "`K` - Hover documentation"
           - "`J` - Hover diagnostics"
-          - "`Ctrl` + `k` - Signature documentation"
       - title: Treesitter
         items:
           - "`aa` - Select around parameter"
@@ -494,14 +488,23 @@ pages:
           - "`Space` + `ma` - Align cursors"
           - "`Space` + `mS` - Split cursors"
           - "`Space` + `mM` - Match cursors"
+      - title: Copilot Chat
+        items:
+          - "`Space` + `ca` - Actions"
+          - "`Space` + `co` - Open"
+          - "`Space` + `cc` - Close"
+          - "`Space` + `ct` - Toggle"
+          - "`Space` + `cr` - Reset"
       - title: Links
         items:
           - "The Vim Cheat Sheet is inspired by the [Vim Cheat Sheet](https://vim.rtorr.com/) from [rtorr](https://github.com/rtorr)."
           - |
             The configuration for the plugins with the mentioned keymaps can be found in my personal [dotfiles](https://github.com/ricoberger/dotfiles).
+
             ![Neovim](./assets/neovim.png)
           - |
             More Neovim related links:
+
             - [Website](https://neovim.io)
             - [GitHub Repository]()
             - [Collections of Awesome Neovim Plugins](https://github.com/rockerBOO/awesome-neovim)
