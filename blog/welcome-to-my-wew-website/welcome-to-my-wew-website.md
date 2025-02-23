@@ -418,6 +418,13 @@ jobs:
         uses: actions/deploy-pages@v4
 ```
 
+Since we are using GitHub Pages for hosting our site, we can also create a
+[custom 404 page](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site),
+by placing a file named `404.html` (generated via the
+[`404.html`](https://github.com/ricoberger/ricoberger/blob/main/templates/404.html)
+template) in the root directory of our website. This site will display a custom
+404 error page when people try to access nonexistent pages on our site.
+
 ## Final Words
 
 As we conclude this blog post, I hope you gained a better understanding of the
