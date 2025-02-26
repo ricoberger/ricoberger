@@ -10,7 +10,7 @@ Description: |
   website and the features it offers.
 AuthorName: Rico Berger
 AuthorTitle: Site Reliability Engineer
-AuthorImage: /assets/img/authors/ricoberger.png
+AuthorImage: /assets/img/authors/ricoberger.webp
 PublishedAt: 2025-02-23 15:00:00
 Tags:
   - alpinejs
@@ -276,7 +276,7 @@ Description: |
   website and the features it offers.
 AuthorName: Rico Berger
 AuthorTitle: Site Reliability Engineer
-AuthorImage: /assets/img/authors/ricoberger.png
+AuthorImage: /assets/img/authors/ricoberger.webp
 PublishedAt: 2025-02-23 15:00:00
 Tags:
   - alpinejs
