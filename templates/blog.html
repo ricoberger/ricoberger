@@ -1,6 +1,35 @@
 {{ define "content" }}
 <div class="max-w-3xl mx-auto px-10 py-[64px]">
   <h1>Blog</h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    {{ range $index, $post := .Content }}
+    <div class="bg-mantle border border-surface rounded-lg">
+      <a href="/blog/posts/{{ $post.ID }}/">
+        <img class="rounded-t-lg" src="{{ $post.Image }}" alt="" />
+      </a>
+      <div class="p-5">
+        <a href="/blog/posts/{{ $post.ID }}/">
+          <h3
+            class="mb-2 mt-0 tracking-tight text-text overflow-hidden text-nowrap text-ellipsis"
+          >
+            {{ $post.Title }}
+          </h3>
+        </a>
+        <p class="mb-3 mt-0 text-surface line-clamp-5">
+          {{ $post.Description }}
+        </p>
+        <a
+          href="/blog/posts/{{ $post.ID }}/"
+          class="inline-flex items-center justify-center w-[100%] px-3 py-2 text-sm font-medium text-center text-base bg-primary rounded-lg"
+        >
+          Read more
+        </a>
+      </div>
+    </div>
+    {{ if eq $index 1 }} {{ break }} {{end }} {{ end }}
+  </div>
+
   <ul>
     {{ range $post := .Content }}
     <li>
@@ -9,6 +38,7 @@
     </li>
     {{ end }}
   </ul>
+
   <div class="mt-8">
     <a
       class="flex items-center justify-start flex-row"
