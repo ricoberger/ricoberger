@@ -4,7 +4,7 @@
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     {{ range $index, $post := .Content }}
-    <div class="bg-mantle border border-surface rounded-lg">
+    <div class="bg-mantle border border-mantle rounded-lg">
       <a href="/blog/posts/{{ $post.ID }}/">
         <img class="rounded-t-lg" src="{{ $post.Image }}" alt="" />
       </a>

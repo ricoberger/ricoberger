@@ -103,6 +103,14 @@
   }
 }
 
+.blog-post img {
+  @apply border-2 border-mantle shadow-md rounded-lg;
+}
+
+.cheat-sheet img {
+  @apply border-2 border-mantle shadow-md rounded-lg;
+}
+
 .cheat-sheet p {
   margin: 0;
   font-size: var(--text-xs);
