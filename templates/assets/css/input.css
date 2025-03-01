@@ -53,7 +53,8 @@
   }
 
   ul {
-    @apply my-4 list-disc list-inside;
+    @apply my-4 list-disc list-outside;
+    padding-inline-start: 20px;
   }
 
   li > p {
@@ -61,11 +62,12 @@
   }
 
   li > ul {
-    @apply my-0 ml-8 list-disc list-inside;
+    @apply my-0 ml-[20px] list-disc list-outside;
   }
 
   ol {
-    @apply my-4 list-decimal list-inside;
+    @apply my-4 list-decimal list-outside;
+    padding-inline-start: 20px;
   }
 
   table {
@@ -113,6 +115,10 @@
   line-height: var(--text-xs--line-height);
 }
 
+.footnotes li {
+  font-size: var(--text-xs);
+}
+
 .cheat-sheet table {
   margin: 0;
   font-size: var(--text-xs);
@@ -125,11 +131,6 @@
 
 .footnotes p {
   margin: 0;
-}
-
-.footnotes li {
-  margin: 0;
-  font-size: var(--text-xs);
 }
 
 /* Catppuccin theme for Prism: https://github.com/catppuccin/prismjs */
