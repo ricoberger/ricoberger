@@ -6,11 +6,13 @@
     {{ range $index, $post := .Content }}
     <div class="bg-mantle border border-mantle rounded-lg">
       <div class="h-[192px]">
-        <img
-          class="h-[100%] w-[100%] object-cover rounded-t-lg"
-          src="{{ $post.Image }}"
-          alt="header image"
-        />
+        <a href="/blog/posts/{{ $post.ID }}/">
+          <img
+            class="h-[100%] w-[100%] object-cover rounded-t-lg"
+            src="{{ $post.Image }}"
+            alt="header image"
+          />
+        </a>
       </div>
       <div class="p-5">
         <a href="/blog/posts/{{ $post.ID }}/">
