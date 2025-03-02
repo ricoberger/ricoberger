@@ -5,9 +5,13 @@
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     {{ range $index, $post := .Content }}
     <div class="bg-mantle border border-mantle rounded-lg">
-      <a href="/blog/posts/{{ $post.ID }}/">
-        <img class="rounded-t-lg" src="{{ $post.Image }}" alt="" />
-      </a>
+      <div class="h-[192px]">
+        <img
+          class="h-[100%] w-[100%] object-cover rounded-t-lg"
+          src="{{ $post.Image }}"
+          alt="header image"
+        />
+      </div>
       <div class="p-5">
         <a href="/blog/posts/{{ $post.ID }}/">
           <h3
