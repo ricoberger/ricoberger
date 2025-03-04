@@ -1,6 +1,6 @@
 ---
 Title: "Neovim: Custom snacks.nvim Picker"
-Description: |
+Description: >-
   Welcome to another blog post about my dotfiles. Today, I will briefly discuss
   how to implement a custom picker using snacks.nvim. Inspired by a Reddit post,
   I wanted to create my own command palette, similar to the one in Visual Studio

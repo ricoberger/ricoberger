@@ -1,6 +1,6 @@
 ---
 Title: Welcome to My New Website
-Description: |
+Description: >-
   I spent the past few days creating a new website for my domain ricoberger.de.
   Previously, I only used the domain as a landing page with links to my social
   media profiles. This time, I wanted to add my cheat sheets, which were

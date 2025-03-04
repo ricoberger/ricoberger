@@ -1,6 +1,6 @@
 ---
 Title: Convert HTML to PDF / PNG with Puppeteer
-Description: |
+Description: >-
   Today, I automated one of the final annoying tasks related to my new website.
   I wanted to provide downloadable versions of the cheat sheets in PNG or PDF
   format. Until now, I had to create the PNGs manually using the FireShot Safari

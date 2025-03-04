@@ -1,6 +1,6 @@
 ---
 Title: "Neovim: Extend snacks.nvim Explorer"
-Description: |
+Description: >-
   In today's blog post, I want to take a quick look at the snacks.nvim explorer
   and how I extended it with some useful functions, so that I can search within
   a directory, diff selected files, and provide multiple copy options.

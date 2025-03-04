@@ -1,6 +1,6 @@
 ---
 Title: My Dotfiles
-Description: |
+Description: >-
   In this blog post, I'll take you through my complete dotfiles, detailing the
   tools and configurations that empower my development process. From my terminal
   choice to the editor I rely on, and even the GitHub CLI commands that simplify
