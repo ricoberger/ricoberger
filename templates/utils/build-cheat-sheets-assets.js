@@ -9,8 +9,8 @@ const getDirectories = (source) => {
     .map((dirent) => dirent.name);
 };
 
-// Create a PDF for the given cheat sheet
-const createCheatSheet = async (cheatSheet) => {
+// Create a PDF and PNG for the given cheat sheet
+const createCheatSheetAssets = async (cheatSheet) => {
   // Create a browser instance
   const browser = await puppeteer.launch({
     headless: true,
@@ -58,6 +58,18 @@ const createCheatSheet = async (cheatSheet) => {
     height: pageHeight + "px",
   });
 
+  // Downlaod the PNG
+  await page.screenshot({
+    path:
+      "dist/cheat-sheets/" +
+      cheatSheet +
+      "/assets/" +
+      cheatSheet +
+      "-cheat-sheet.png",
+    fullPage: true,
+    type: "png",
+  });
+
   // Close the browser instance
   await browser.close();
 };
@@ -77,6 +89,6 @@ const createCheatSheet = async (cheatSheet) => {
       });
     }
 
-    await createCheatSheet(cheatSheet);
+    await createCheatSheetAssets(cheatSheet);
   }
 })();

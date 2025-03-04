@@ -19,7 +19,7 @@ pages:
 
             - [Website](https://yazi-rs.github.io/)
             - [GitHub Repository](https://github.com/sxyazi/yazi)
-            - [Download Cheat Sheet](./assets/yazi-cheat-sheet.png)
+            - Download Cheat Sheet as [PDF](./assets/yazi-cheat-sheet.pdf) | [PNG](./assets/yazi-cheat-sheet.png)
       - title: Navigation
         items:
           - "`k` or `Up` - Move the cursor up"

@@ -35,7 +35,7 @@ pages:
           - |
             - [Documentation](https://cli.github.com/manual/)
             - [Useful Functions](https://github.com/ricoberger/dotfiles/tree/main/.bin)
-            - [Download Cheat Sheet](./assets/gh-cheat-sheet.png)
+            - Download Cheat Sheet as [PDF](./assets/gh-cheat-sheet.pdf) | [PNG](./assets/gh-cheat-sheet.png)
   - title: gh-dash
     columns: 3
     sections:

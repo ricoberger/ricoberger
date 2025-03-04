@@ -48,11 +48,11 @@ jobs:
           npm run build
           echo "ricoberger.de" > ./dist/CNAME
 
-      - name: Generate PDFs for Cheat Sheets
+      - name: Generate Cheat Sheets Assets
         run: |
           ./generator -serve &
           sleep 3s
-          npm run cheat-sheets-to-pdf
+          npm run build-cheat-sheets-assets
           kill -9 $(lsof -t -i:9999)
 
       - name: Upload Artifact

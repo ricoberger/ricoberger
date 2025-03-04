@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "npx @tailwindcss/cli -i ./dist/assets/css/input.css -o ./dist/assets/css/output.css -m",
-    "cheat-sheets-to-pdf": "node ./templates/utils/cheat-sheets-to-pdf.js"
+    "build-cheat-sheets-assets": "node ./templates/utils/build-cheat-sheets-assets.js"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.0.9",
