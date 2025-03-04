@@ -26,6 +26,7 @@ infrastructure that supports rapid deployment and continuous integration.
 
 ### Latest Blog Posts
 
+- [Convert HTML to PDF / PNG with Puppeteer](https://ricoberger.de/blog/posts/convert-html-to-pdf-png-with-puppeteer/)
 - [Neovim: Custom snacks.nvim Picker](https://ricoberger.de/blog/posts/neovim-custom-snacks-nvim-picker/)
 - [Neovim: Extend snacks.nvim Explorer](https://ricoberger.de/blog/posts/neovim-extend-snacks-nvim-explorer/)
 - [My Dotfiles](https://ricoberger.de/blog/posts/my-dotfiles/)
