@@ -153,11 +153,6 @@ func main() {
 	flag.BoolVar(&serve, "serve", false, "Start a local server to preview the generated site.")
 	flag.Parse()
 
-	if err := build(); err != nil {
-		slog.Error("Failed to build site", slog.Any("error", err))
-		os.Exit(1)
-	}
-
 	if serve {
 		fs := http.FileServer(http.Dir("./dist"))
 		http.Handle("/", fs)
@@ -165,6 +160,11 @@ func main() {
 		slog.Info("Start server on :9999...")
 		if err := http.ListenAndServe(":9999", nil); err != nil {
 			slog.Error("Failed to start server", slog.Any("error", err))
+			os.Exit(1)
+		}
+	} else {
+		if err := build(); err != nil {
+			slog.Error("Failed to build site", slog.Any("error", err))
 			os.Exit(1)
 		}
 	}
