@@ -46,7 +46,16 @@ jobs:
         run: |
           ./generator
           npm run build
+
           echo "ricoberger.de" > ./dist/CNAME
+
+          cat >./dist/robots.txt <<EOL
+          User-agent: *
+          Allow: /
+
+          Sitemap: https://ricoberger.de/sitemap.xml
+          EOL
+
 
       - name: Generate Cheat Sheets Assets
         run: |

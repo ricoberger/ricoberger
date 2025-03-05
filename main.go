@@ -147,6 +147,19 @@ type RssGuid struct {
 	IsPermaLink string   `xml:"isPermaLink,attr,omitempty"`
 }
 
+type Sitemap struct {
+	XMLName xml.Name       `xml:"urlset"`
+	URL     []*SitemapItem `xml:"url"`
+	Xmlns   string         `xml:"xmlns,attr"`
+}
+
+type SitemapItem struct {
+	Loc        string `xml:"loc"`
+	LastMod    string `xml:"lastmod"`
+	ChangeFreq string `xml:"changefreq"`
+	Priority   string `xml:"priority"`
+}
+
 func main() {
 	var serve bool
 
@@ -195,6 +208,12 @@ func build() error {
 	err = buildBlog()
 	if err != nil {
 		slog.Error("Failed to build blog", slog.Any("error", err))
+	}
+
+	slog.Info("Build sitemap...")
+	err = buildSitemap()
+	if err != nil {
+		slog.Error("Failed to build sitemap", slog.Any("error", err))
 	}
 
 	slog.Info("Build done")
@@ -655,6 +674,84 @@ func buildRssFeed(distPath string, metadata Metadata, posts []BlogPost) error {
 	}
 
 	err = os.WriteFile(fmt.Sprintf("%s/feed.xml", distPath), data, 0666)
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func buildSitemap() error {
+	lastMod := time.Now().Format("2006-01-02")
+
+	sitemapItems := []*SitemapItem{
+		{
+			Loc:        defaultBaseUrl,
+			LastMod:    lastMod,
+			ChangeFreq: "daily",
+			Priority:   "1.0",
+		},
+		{
+			Loc:        fmt.Sprintf("%s/about/", defaultBaseUrl),
+			LastMod:    lastMod,
+			ChangeFreq: "daily",
+			Priority:   "1.0",
+		},
+		{
+			Loc:        fmt.Sprintf("%s/blog/", defaultBaseUrl),
+			LastMod:    lastMod,
+			ChangeFreq: "daily",
+			Priority:   "1.0",
+		},
+		{
+			Loc:        fmt.Sprintf("%s/cheat-sheets/", defaultBaseUrl),
+			LastMod:    lastMod,
+			ChangeFreq: "daily",
+			Priority:   "1.0",
+		},
+	}
+
+	posts, err := os.ReadDir("./dist/blog/posts")
+	if err != nil {
+		return err
+	}
+
+	for _, post := range posts {
+		if post.IsDir() {
+			sitemapItems = append(sitemapItems, &SitemapItem{
+				Loc:        fmt.Sprintf("%s/blog/posts/%s/", defaultBaseUrl, post.Name()),
+				LastMod:    lastMod,
+				ChangeFreq: "monthly",
+				Priority:   "0.5",
+			})
+		}
+	}
+
+	cheatSheets, err := os.ReadDir("./dist/cheat-sheets")
+	if err != nil {
+		return err
+	}
+
+	for _, post := range cheatSheets {
+		if post.IsDir() {
+			sitemapItems = append(sitemapItems, &SitemapItem{
+				Loc:        fmt.Sprintf("%s/cheat-sheets/%s/", defaultBaseUrl, post.Name()),
+				LastMod:    lastMod,
+				ChangeFreq: "weekly",
+				Priority:   "0.5",
+			})
+		}
+	}
+
+	data, err := xml.Marshal(Sitemap{
+		Xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9",
+		URL:   sitemapItems,
+	})
+	if err != nil {
+		return err
+	}
+
+	err = os.WriteFile("./dist/sitemap.xml", data, 0666)
 	if err != nil {
 		return err
 	}
