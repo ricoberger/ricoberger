@@ -13,7 +13,7 @@ AuthorImage: /assets/img/authors/ricoberger.webp
 PublishedAt: 2025-03-09 12:00:00
 Tags:
   - colima
-  - homeserver
+  - homelab
   - macos
 Image: /blog/posts/mac-mini-as-home-server/assets/mac-mini.jpg
 ---
@@ -186,11 +186,12 @@ chsh -s $(which zsh)
 ./install.sh && source ~/.zshrc
 ```
 
-We installed Colima as our container runtime through the Brewfile because we
-want to deploy most of our services using Docker. To autostart Colima and our
-services, use `brew services start colima`. We can also increase the resources
-of the VM created by Colima by adjusting the following values in the Colima
-configuration file at `~/.colima/default/colima.yaml`:
+We installed [Colima](https://github.com/abiosoft/colima) as our container
+runtime through the Brewfile because we want to deploy most of our services
+using Docker. To autostart Colima and our services, use
+`brew services start colima`. We can also increase the resources of the VM
+created by Colima by adjusting the following values in the Colima configuration
+file at `~/.colima/default/colima.yaml`:
 
 ```plaintext
 # Number of CPUs to be allocated to the virtual machine.
