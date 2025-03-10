@@ -53,7 +53,7 @@ pages:
           - "`Command` + `Page Down` - Scroll page down"
       - title: Font Size
         items:
-          - "`Command` + `+` - Increase font size"
+          - "`Command` + `+` or `Command` + `=` - Increase font size"
           - "`Command` + `-` - Decrease font size"
           - "`Command` + `0` - Reset font size"
       - title: Actions
@@ -74,4 +74,4 @@ pages:
           - "`Command` + `Shift` + `Page Down` - Adjust selection to page down"
       - title: Quick Terminal
         items:
-          - "`Command` + `#` - Toogle quick terminal"
+          - "`Command` + `#` or `Command` + `'` - Toogle quick terminal"
