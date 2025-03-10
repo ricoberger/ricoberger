@@ -22,9 +22,13 @@ import (
 	"github.com/goccy/go-yaml"
 	"github.com/yuin/goldmark"
 	meta "github.com/yuin/goldmark-meta"
+	"github.com/yuin/goldmark/ast"
 	"github.com/yuin/goldmark/extension"
 	"github.com/yuin/goldmark/parser"
+	"github.com/yuin/goldmark/renderer"
+	"github.com/yuin/goldmark/renderer/html"
 	rhtml "github.com/yuin/goldmark/renderer/html"
+	"github.com/yuin/goldmark/util"
 )
 
 const defaultBaseUrl = "https://ricoberger.de"
@@ -244,6 +248,7 @@ func buildTemplate(tmpl string, distPath string, data Data) error {
 				goldmark.WithExtensions(
 					extension.Table,
 					extension.Strikethrough,
+					NewImageExtender(),
 				),
 				goldmark.WithRendererOptions(
 					rhtml.WithUnsafe(),
@@ -442,6 +447,7 @@ func buildBlog() error {
 					extension.Table,
 					extension.Strikethrough,
 					extension.Footnote,
+					NewImageExtender(),
 				),
 				goldmark.WithRendererOptions(
 					rhtml.WithUnsafe(),
@@ -757,4 +763,69 @@ func buildSitemap() error {
 	}
 
 	return nil
+}
+
+type ImageExtender struct{}
+
+func NewImageExtender() goldmark.Extender {
+	return &ImageExtender{}
+}
+
+func (e *ImageExtender) Extend(m goldmark.Markdown) {
+	m.Renderer().AddOptions(
+		renderer.WithNodeRenderers(
+			util.Prioritized(NewImageRenderer(), 500),
+		),
+	)
+}
+
+type ImageRenderer struct {
+	html.Config
+}
+
+func NewImageRenderer() renderer.NodeRenderer {
+	return &ImageRenderer{}
+}
+
+func (r *ImageRenderer) RegisterFuncs(reg renderer.NodeRendererFuncRegisterer) {
+	reg.Register(ast.KindImage, r.render)
+}
+
+func (r *ImageRenderer) render(w util.BufWriter, source []byte, node ast.Node, entering bool) (ast.WalkStatus, error) {
+	if !entering {
+		return ast.WalkContinue, nil
+	}
+
+	n := node.(*ast.Image)
+
+	_, _ = w.WriteString("<a href=\"")
+	if r.Unsafe || !html.IsDangerousURL(n.Destination) {
+		_, _ = w.Write(util.EscapeHTML(util.URLEscape(n.Destination, true)))
+	}
+	_, _ = w.WriteString(`">`)
+
+	_, _ = w.WriteString("<img src=\"")
+	if r.Unsafe || !html.IsDangerousURL(n.Destination) {
+		_, _ = w.Write(util.EscapeHTML(util.URLEscape(n.Destination, true)))
+	}
+	_, _ = w.WriteString(`" alt="`)
+	_, _ = w.Write(util.EscapeHTML(n.Text(source)))
+	_ = w.WriteByte('"')
+	if n.Title != nil {
+		_, _ = w.WriteString(` title="`)
+		_, _ = w.Write(n.Title)
+		_ = w.WriteByte('"')
+	}
+	if n.Attributes() != nil {
+		html.RenderAttributes(w, n, html.ImageAttributeFilter)
+	}
+	if r.XHTML {
+		_, _ = w.WriteString(" />")
+	} else {
+		_, _ = w.WriteString(">")
+	}
+
+	_, _ = w.WriteString("</a>")
+
+	return ast.WalkSkipChildren, nil
 }
