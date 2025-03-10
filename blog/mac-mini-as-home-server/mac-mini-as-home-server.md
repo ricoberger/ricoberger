@@ -84,61 +84,99 @@ for initial hacking. We will use the following system settings:
 
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
   <div>
-    <img class="h-auto max-w-full" src="./assets/screenshot-1-about.png" alt="About">
+    <a href="./assets/screenshot-1-about.png">
+      <img class="h-auto max-w-full" src="./assets/screenshot-1-about.png" alt="About">
+    </a>
   </div>
   <div>
-    <img class="h-auto max-w-full" src="./assets/screenshot-2-bluetooth.png" alt="Bluetooth">
+    <a href="./assets/screenshot-2-bluetooth.png">
+      <img class="h-auto max-w-full" src="./assets/screenshot-2-bluetooth.png" alt="Bluetooth">
+    </a>
   </div>
   <div>
-    <img class="h-auto max-w-full" src="./assets/screenshot-3-firewall.png" alt="Firewall">
+    <a href="./assets/screenshot-3-firewall.png">
+      <img class="h-auto max-w-full" src="./assets/screenshot-3-firewall.png" alt="Firewall">
+    </a>
   </div>
   <div>
-    <img class="h-auto max-w-full" src="./assets/screenshot-4-energy.png" alt="Energy">
+    <a href="./assets/screenshot-4-energy.png">
+      <img class="h-auto max-w-full" src="./assets/screenshot-4-energy.png" alt="Energy">
+    </a>
   </div>
   <div>
-    <img class="h-auto max-w-full" src="./assets/screenshot-5-apple-intelligence-and-siri.png" alt="Apple Intelligence and Siri">
+    <a href="./assets/screenshot-5-apple-intelligence-and-siri.png">
+      <img class="h-auto max-w-full" src="./assets/screenshot-5-apple-intelligence-and-siri.png" alt="Apple Intelligence and Siri">
+    </a>
   </div>
   <div>
-    <img class="h-auto max-w-full" src="./assets/screenshot-6-spotlight.png" alt="Spotlight">
+    <a href="./assets/screenshot-6-spotlight.png">
+      <img class="h-auto max-w-full" src="./assets/screenshot-6-spotlight.png" alt="Spotlight">
+    </a>
   </div>
   <div>
-    <img class="h-auto max-w-full" src="./assets/screenshot-7-notifications.png" alt="Notifications">
+    <a href="./assets/screenshot-7-notifications.png">
+      <img class="h-auto max-w-full" src="./assets/screenshot-7-notifications.png" alt="Notifications">
+    </a>
   </div>
   <div>
-    <img class="h-auto max-w-full" src="./assets/screenshot-8-sound.png" alt="Sound">
+    <a href="./assets/screenshot-8-sound.png">
+      <img class="h-auto max-w-full" src="./assets/screenshot-8-sound.png" alt="Sound">
+    </a>
   </div>
   <div>
-    <img class="h-auto max-w-full" src="./assets/screenshot-9-lock-screen.png" alt="Lock Screen">
+    <a href="./assets/screenshot-9-lock-screen.png">
+      <img class="h-auto max-w-full" src="./assets/screenshot-9-lock-screen.png" alt="Lock Screen">
+    </a>
   </div>
   <div>
-    <img class="h-auto max-w-full" src="./assets/screenshot-10-privacy-and-security.png" alt="Privacy and Security">
+    <a href="./assets/screenshot-10-privacy-and-security.png">
+      <img class="h-auto max-w-full" src="./assets/screenshot-10-privacy-and-security.png" alt="Privacy and Security">
+    </a>
   </div>
   <div>
-    <img class="h-auto max-w-full" src="./assets/screenshot-11-login-password.png" alt="Login Password">
+    <a href="./assets/screenshot-11-login-password.png">
+      <img class="h-auto max-w-full" src="./assets/screenshot-11-login-password.png" alt="Login Password">
+    </a>
   </div>
   <div>
-    <img class="h-auto max-w-full" src="./assets/screenshot-12-users-and-groups.png" alt="Users and Groups">
+    <a href="./assets/screenshot-12-users-and-groups.png">
+      <img class="h-auto max-w-full" src="./assets/screenshot-12-users-and-groups.png" alt="Users and Groups">
+    </a>
   </div>
   <div>
-    <img class="h-auto max-w-full" src="./assets/screenshot-13-game-center.png" alt="Game Center">
+    <a href="./assets/screenshot-13-game-center.png">
+      <img class="h-auto max-w-full" src="./assets/screenshot-13-game-center.png" alt="Game Center">
+    </a>
   </div>
   <div>
-    <img class="h-auto max-w-full" src="./assets/screenshot-14-sharing-1.png" alt="Sharing">
+    <a href="./assets/screenshot-14-sharing-1.png">
+      <img class="h-auto max-w-full" src="./assets/screenshot-14-sharing-1.png" alt="Sharing">
+    </a>
   </div>
   <div>
-    <img class="h-auto max-w-full" src="./assets/screenshot-15-sharing-2.png" alt="Sharing">
+    <a href="./assets/screenshot-15-sharing-2.png">
+      <img class="h-auto max-w-full" src="./assets/screenshot-15-sharing-2.png" alt="Sharing">
+    </a>
   </div>
   <div>
-    <img class="h-auto max-w-full" src="./assets/screenshot-16-sharing-3.png" alt="Sharing">
+    <a href="./assets/screenshot-16-sharing-3.png">
+      <img class="h-auto max-w-full" src="./assets/screenshot-16-sharing-3.png" alt="Sharing">
+    </a>
   </div>
   <div>
-    <img class="h-auto max-w-full" src="./assets/screenshot-17-sharing-4.png" alt="Sharing">
+    <a href="./assets/screenshot-17-sharing-4.png">
+      <img class="h-auto max-w-full" src="./assets/screenshot-17-sharing-4.png" alt="Sharing">
+    </a>
   </div>
   <div>
-    <img class="h-auto max-w-full" src="./assets/screenshot-18-sharing-5.png" alt="Sharing">
+    <a href="./assets/screenshot-18-sharing-5.png">
+      <img class="h-auto max-w-full" src="./assets/screenshot-18-sharing-5.png" alt="Sharing">
+    </a>
   </div>
   <div>
-    <img class="h-auto max-w-full" src="./assets/screenshot-19-screen-sharing.png" alt="Screen Sharing">
+    <a href="./assets/screenshot-19-screen-sharing.png">
+      <img class="h-auto max-w-full" src="./assets/screenshot-19-screen-sharing.png" alt="Screen Sharing">
+    </a>
   </div>
 </div>
 
