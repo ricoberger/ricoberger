@@ -1,6 +1,7 @@
 ---
 title: Yazi
-description: Blazing fast terminal file manager written in Rust, based on async I/O
+description:
+  Blazing fast terminal file manager written in Rust, based on async I/O
 author: Rico Berger
 keywords:
   - yazi
@@ -37,7 +38,8 @@ pages:
           - "`o` - Open selected files"
           - "`O` - Open selected files interactively"
           - "`Enter` - Open selected files"
-          - "`Shift` + `Enter` - Open selected files interactively (some terminals don't support it yet)"
+          - "`Shift` + `Enter` - Open selected files interactively (some
+            terminals don't support it yet)"
           - "`Tab` - Show the file information"
           - "`y` - Yank selected files (copy)"
           - "`x` - Yank selected files (cut)"
@@ -106,3 +108,16 @@ pages:
           - "`{` - Swap current tab with previous tab"
           - "`}` - Swap current tab with next tab"
           - "`Ctrl + c` - Close the current tab"
+      - title: Configuration
+        items:
+          - |
+            There are three configuration files for Yazi:
+
+            - [`yazi.toml`](https://yazi-rs.github.io/docs/configuration/yazi) - General configuration.
+            - [`keymap.toml`](https://yazi-rs.github.io/docs/configuration/keymap) - Keybindings configuration.
+            - [`theme.toml`](https://yazi-rs.github.io/docs/configuration/theme) - Color scheme configuration.
+
+            The location for these configuration files is:
+
+            - `~/.config/yazi/` on Unix-like systems.
+            - `%AppData%\yazi\config\` on Windows.
