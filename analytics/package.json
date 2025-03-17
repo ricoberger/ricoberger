@@ -1,0 +1,18 @@
+{
+  "name": "analytics",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "deploy-database": "wrangler d1 execute ricoberger-de-analytics --remote --file=./schema.sql",
+    "dev": "wrangler dev",
+    "dev-database": "wrangler d1 execute ricoberger-de-analytics --local --file=./schema.sql",
+    "start": "wrangler dev",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.7.5",
+    "vitest": "~3.0.7",
+    "wrangler": "^4.0.0"
+  }
+}

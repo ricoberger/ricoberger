@@ -1,0 +1,16 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "ricoberger-de-analytics",
+	"main": "src/index.js",
+	"compatibility_date": "2025-03-13",
+	"observability": {
+		"enabled": true
+	},
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ricoberger-de-analytics",
+      "database_id": "f29216a4-152c-40aa-a853-d5561e2dab9f"
+    }
+  ]
+}

@@ -177,6 +177,20 @@
       </div>
     </div>
 
+    <script>
+      fetch("https://ricoberger-de-analytics.private-ec2.workers.dev", {
+        method: "POST",
+        body: JSON.stringify({
+          url: location.href,
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      })
+        .then((response) => response.json())
+        .then((json) => console.log(json));
+    </script>
+
     {{ template "content" . }} {{ if .Metadata.Prism }}
     <script src="/assets/js/prism.js"></script>
     {{ end }}
