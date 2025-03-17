@@ -88,6 +88,9 @@ jobs:
   deploy-analytics:
     name: Deploy Analytics
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: "analytics"
 
     steps:
       - name: Checkout
