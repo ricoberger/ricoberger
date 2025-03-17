@@ -1,10 +1,10 @@
-DROP TABLE IF EXISTS "visitors";
-
 CREATE TABLE IF NOT EXISTS "visitors" (
   "id" INTEGER PRIMARY KEY AUTOINCREMENT,
   "url" TEXT DEFAULT NULL,
   "referer" TEXT DEFAULT NULL,
   "user_agent" TEXT DEFAULT NULL,
+  "user_agent_browser" TEXT DEFAULT NULL,
+  "user_agent_os" TEXT DEFAULT NULL,
   "city" TEXT DEFAULT NULL,
   "continent" TEXT DEFAULT NULL,
   "country" TEXT DEFAULT NULL,

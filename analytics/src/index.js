@@ -1,3 +1,5 @@
+const uap = require("ua-parser-js");
+
 export default {
   async fetch(request, env, ctx) {
     const corsHeaders = {
@@ -21,14 +23,19 @@ export default {
         const timezone = request.cf.timezone;
 
         const body = await request.json();
+        const ua = uap(userAgent);
+        const userAgentBrowser = ua.browser.name;
+        const userAgentOS = ua.os.name;
 
         const { results } = await env.DB.prepare(
-          "INSERT INTO visitors (url, referer, user_agent, city, continent, country, latitude, longitude, postal_code, region, region_code, timezone) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11, ?12)",
+          "INSERT INTO visitors (url, referer, user_agent, user_agent_browser, user_agent_os, city, continent, country, latitude, longitude, postal_code, region, region_code, timezone) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11, ?12, ?13, ?14)",
         )
           .bind(
             body.url,
             referer,
             userAgent,
+            userAgentBrowser,
+            userAgentOS,
             city,
             continent,
             country,
