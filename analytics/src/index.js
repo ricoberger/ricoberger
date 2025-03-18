@@ -9,6 +9,40 @@ export default {
     };
 
     try {
+      if (request.method === "GET") {
+        const visitors = await env.DB.prepare(
+          "SELECT date(created_at) as day, COUNT(1) AS count FROM visitors GROUP BY date(created_at) ORDER BY day DESC LIMIT 7",
+        ).run();
+        const url = await env.DB.prepare(
+          "SELECT url, COUNT(*) AS count FROM visitors GROUP BY url ORDER BY count DESC LIMIT 10",
+        ).run();
+        const userAgentBrowser = await env.DB.prepare(
+          "SELECT user_agent_browser, COUNT(*) AS count FROM visitors GROUP BY user_agent_browser ORDER BY count DESC LIMIT 10",
+        ).run();
+        const userAgentOS = await env.DB.prepare(
+          "SELECT user_agent_os, COUNT(*) AS count FROM visitors GROUP BY user_agent_os ORDER BY count DESC LIMIT 10",
+        ).run();
+        const country = await env.DB.prepare(
+          "SELECT country, COUNT(*) AS count FROM visitors GROUP BY country ORDER BY count DESC LIMIT 10",
+        ).run();
+
+        return Response.json(
+          {
+            visitors: visitors.results,
+            url: url.results,
+            userAgentBrowser: userAgentBrowser.results,
+            userAgentOS: userAgentOS.results,
+            country: country.results,
+          },
+          {
+            status: 200,
+            headers: {
+              ...corsHeaders,
+            },
+          },
+        );
+      }
+
       if (request.method === "POST") {
         const userAgent = request.headers.get("user-agent");
         const referer = request.headers.get("referer");
@@ -26,6 +60,18 @@ export default {
         const ua = uap(userAgent);
         const userAgentBrowser = ua.browser.name;
         const userAgentOS = ua.os.name;
+
+        if (referer != "https://ricoberger.de/") {
+          return Response.json(
+            { status: "error", error: "invalid referer" },
+            {
+              status: 500,
+              headers: {
+                ...corsHeaders,
+              },
+            },
+          );
+        }
 
         const { results } = await env.DB.prepare(
           "INSERT INTO visitors (url, referer, user_agent, user_agent_browser, user_agent_os, city, continent, country, latitude, longitude, postal_code, region, region_code, timezone) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11, ?12, ?13, ?14)",
@@ -50,6 +96,7 @@ export default {
 
         return Response.json(results, {
           headers: {
+            status: 200,
             ...corsHeaders,
           },
         });
@@ -59,14 +106,16 @@ export default {
         { status: "success" },
         {
           headers: {
+            status: 200,
             ...corsHeaders,
           },
         },
       );
     } catch (err) {
       return Response.json(
-        { status: "error" },
+        { status: "error", error: err.toString() },
         {
+          status: 500,
           headers: {
             ...corsHeaders,
           },
