@@ -1,0 +1,109 @@
+{{ define "content" }}
+<div class="max-w-3xl mx-auto px-10 py-[64px]">
+  <div
+    x-cloak
+    x-data="{visitors: [], urls: [], userAgentBrowsers: [], userAgentOSs: [], countries: []}"
+    x-init="fetch('https://ricoberger-de-analytics.private-ec2.workers.dev')
+    .then(response => response.json())
+    .then(response => { visitors = response.visitors; urls = response.url; userAgentBrowsers = response.userAgentBrowser; userAgentOSs = response.userAgentOS; countries = response.country; })"
+  >
+    <div class="overflow-x-auto">
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Visitors</th>
+          </tr>
+        </thead>
+        <tbody>
+          <template x-for="visitor in visitors" :key="visitor.day">
+            <tr>
+              <td x-text="visitor.day"></td>
+              <td x-text="visitor.count"></td>
+            </tr>
+          </template>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="overflow-x-auto">
+      <table>
+        <thead>
+          <tr>
+            <th>Post</th>
+            <th>Views</th>
+          </tr>
+        </thead>
+        <tbody>
+          <template x-for="url in urls" :key="url.url">
+            <tr>
+              <td x-text="url.url"></td>
+              <td x-text="url.count"></td>
+            </tr>
+          </template>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="overflow-x-auto">
+      <table>
+        <thead>
+          <tr>
+            <th>Browser</th>
+            <th>Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <template
+            x-for="browser in userAgentBrowsers"
+            :key="browser.user_agent_browser"
+          >
+            <tr>
+              <td x-text="browser.user_agent_browser"></td>
+              <td x-text="browser.count"></td>
+            </tr>
+          </template>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="overflow-x-auto">
+      <table>
+        <thead>
+          <tr>
+            <th>OS</th>
+            <th>Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <template x-for="os in userAgentOSs" :key="os.user_agent_os">
+            <tr>
+              <td x-text="os.user_agent_os"></td>
+              <td x-text="os.count"></td>
+            </tr>
+          </template>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="overflow-x-auto">
+      <table>
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <template x-for="country in countries" :key="country.country">
+            <tr>
+              <td x-text="country.country"></td>
+              <td x-text="country.count"></td>
+            </tr>
+          </template>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{{ end }}

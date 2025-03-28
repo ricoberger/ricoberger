@@ -313,6 +313,23 @@ func buildHome() error {
 		return err
 	}
 
+	var analyticsData = Data{
+		Metadata: Metadata{
+			Title:       "Analytics - Rico Berger",
+			Description: "Site Reliability Engineer, Hacker, Cloud Native Enthusiast",
+			Author:      "Rico Berger",
+			Keywords:    []string{"Rico Berger", "Site Reliability Engineer", "Hacker", "Cloud Native Enthusiast"},
+			BaseUrl:     defaultBaseUrl,
+			Url:         "/analytics/",
+			Image:       defaultImage,
+			Prism:       false,
+		},
+	}
+
+	if err := buildTemplate("analytics", "./dist/analytics", analyticsData); err != nil {
+		return err
+	}
+
 	if err := os.CopyFS("./dist/assets", os.DirFS("./templates/assets")); err != nil {
 		return err
 	}
