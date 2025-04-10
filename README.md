@@ -26,11 +26,11 @@ infrastructure that supports rapid deployment and continuous integration.
 
 ### Latest Blog Posts
 
+- [Getting Started with Vitess](https://ricoberger.de/blog/posts/getting-started-with-vitess/)
 - [Use OpenTelemetry Traces in React Applications](https://ricoberger.de/blog/posts/use-opentelemetry-traces-in-react-applications/)
 - [Use a VPN to Access your Homelab](https://ricoberger.de/blog/posts/use-a-vpn-to-access-your-homelab/)
 - [Use Cloudflare Tunnels to Access your Homelab](https://ricoberger.de/blog/posts/use-cloudflare-tunnels-to-access-your-homelab/)
 - [Mac mini as AI Server](https://ricoberger.de/blog/posts/mac-mini-as-ai-server/)
-- [Mac mini as Home Server](https://ricoberger.de/blog/posts/mac-mini-as-home-server/)
 
 [More Blog Posts](https://ricoberger.de/blog/)
 
