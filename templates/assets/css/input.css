@@ -95,7 +95,25 @@
   }
 
   blockquote p {
-    @apply px-4 py-2 text-sm italic;
+    @apply px-4 text-sm italic;
+  }
+
+  blockquote ul {
+    @apply my-4 text-sm italic list-disc list-outside;
+    padding-inline-start: 40px;
+  }
+
+  blockquote li > p {
+    @apply my-0;
+  }
+
+  blockquote li > ul {
+    @apply my-0 ml-[40px] list-disc list-outside;
+  }
+
+  blockquote ol {
+    @apply my-4 list-decimal list-outside;
+    padding-inline-start: 40px;
   }
 
   hr {
