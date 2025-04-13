@@ -26,11 +26,11 @@ infrastructure that supports rapid deployment and continuous integration.
 
 ### Latest Blog Posts
 
+- [Deploy YugabyteDB on a Multi-Zone AKS Cluster](https://ricoberger.de/blog/posts/deploy-yugabytedb-on-a-multi-zone-aks-cluster/)
 - [Getting Started with YugabyteDB](https://ricoberger.de/blog/posts/getting-started-with-yugabytedb/)
 - [Getting Started with Vitess](https://ricoberger.de/blog/posts/getting-started-with-vitess/)
 - [Use OpenTelemetry Traces in React Applications](https://ricoberger.de/blog/posts/use-opentelemetry-traces-in-react-applications/)
 - [Use a VPN to Access your Homelab](https://ricoberger.de/blog/posts/use-a-vpn-to-access-your-homelab/)
-- [Use Cloudflare Tunnels to Access your Homelab](https://ricoberger.de/blog/posts/use-cloudflare-tunnels-to-access-your-homelab/)
 
 [More Blog Posts](https://ricoberger.de/blog/)
 
