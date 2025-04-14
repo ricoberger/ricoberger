@@ -145,3 +145,30 @@ kubectl exec -it --namespace yb-germanywestcentral-1 yb-master-0 -- bash -c "/ho
 To see the new configuration, we go to `http://localhost:7000/cluster-config`.
 
 ![Cluster Configuration](./assets/cluster-configuration-2.png)
+
+## Single Namespace
+
+> The following section was added after the blog post was first published on
+> April 14, 2025.
+
+After publishing the first version of the blog post, I wondered if it was
+possible to create a zone-aware YugabyteDB cluster within a single namespace,
+allowing PodDisruptionBudgets to apply to the entire cluster. It turns out this
+is achievable by setting the `oldNamingStyle` value to `false` in the Helm
+chart. You can find the updated values files in the
+[ricoberger/playground](https://github.com/ricoberger/playground/tree/3457e1927526849001fbc838d229cc7450f18afa/applications/deploy-yugabytedb-on-a-multi-zone-aks-cluster)
+repository.
+
+```sh
+kubectl create namespace yugabytedb
+```
+
+```sh
+helm upgrade --install yb-germanywestcentral-1 yugabytedb/yugabyte --version 2.25.1 --namespace yugabytedb --wait -f values-single-namespace-yb-germanywestcentral-1.yaml
+helm upgrade --install yb-germanywestcentral-2 yugabytedb/yugabyte --version 2.25.1 --namespace yugabytedb --wait -f values-single-namespace-yb-germanywestcentral-2.yaml
+helm upgrade --install yb-germanywestcentral-3 yugabytedb/yugabyte --version 2.25.1 --namespace yugabytedb --wait -f values-single-namespace-yb-germanywestcentral-3.yaml
+```
+
+```sh
+kubectl exec -it --namespace yugabytedb yb-germanywestcentral-1-yb-master-0 -- bash -c "/home/yugabyte/master/bin/yb-admin --master_addresses yb-germanywestcentral-1-yb-master-0.yb-germanywestcentral-1-yb-masters.yugabytedb.svc.cluster.local:7100,yb-germanywestcentral-2-yb-master-0.yb-germanywestcentral-2-yb-masters.yugabytedb.svc.cluster.local:7100,yb-germanywestcentral-3-yb-master-0.yb-germanywestcentral-3-yb-masters.yugabytedb.svc.cluster.local:7100 modify_placement_info azure.germanywestcentral.germanywestcentral-1,azure.germanywestcentral.germanywestcentral-2,azure.germanywestcentral.germanywestcentral-3 3"
+```
