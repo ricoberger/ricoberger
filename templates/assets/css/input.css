@@ -116,6 +116,10 @@
     padding-inline-start: 40px;
   }
 
+  blockquote pre {
+    @apply mx-4 text-sm;
+  }
+
   hr {
     @apply my-4 border-surface;
   }
