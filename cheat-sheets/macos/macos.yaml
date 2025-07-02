@@ -32,11 +32,15 @@ pages:
           - "`Command` + `Shift` + `3` - Capture entire screen (file)"
           - "`Command` + `Ctrl` + `Shift` + `3` - Capture entire screen (copy)"
           - "`Command` + `Shift` + `4` - Capture portion of screen (file)"
-          - "`Command` + `Ctrl` + `Shift` + `4` - Capture portion of screen (copy)"
+          - "`Command` + `Ctrl` + `Shift` + `4` - Capture portion of screen
+            (copy)"
           - "`Command` + `Shift` + `4` + `Space` - Capture window or menu"
           - "`Command` + `Ctrl` + `5` - Capture options"
         tip:
-          description: "**Tip:** To remove the drop shadow from screenshots taken via `Command` + `Ctrl` + `Shift` + `4` or `Command` + `Shift` + `4` + `Space` hold the `Option` key, while taking the screenshot."
+          description:
+            "**Tip:** To remove the drop shadow from screenshots taken via
+            `Command` + `Ctrl` + `Shift` + `4` or `Command` + `Shift` + `4` +
+            `Space` hold the `Option` key, while taking the screenshot."
       - title: Misc
         items:
           - "`Command` + `Space` - Raycast"

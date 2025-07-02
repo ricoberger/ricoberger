@@ -1,6 +1,8 @@
 ---
 title: Ghostty
-description: A fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration
+description:
+  A fast, feature-rich, and cross-platform terminal emulator that uses
+  platform-native UI and GPU acceleration
 author: Rico Berger
 keywords:
   - ghostty
