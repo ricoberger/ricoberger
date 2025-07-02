@@ -21,14 +21,19 @@ pages:
           - "`M` - Move to middle of screen"
           - "`L` - Move to bottom of screen"
           - "`w` - Jump forwards to the start of a word"
-          - "`W` - Jump forwards to the start of a word (words can contain punctuation)"
+          - "`W` - Jump forwards to the start of a word (words can contain
+            punctuation)"
           - "`e` - Jump forwards to the end of a word"
-          - "`E` - Jump forwards to the end of a word (words can contain punctuation)"
+          - "`E` - Jump forwards to the end of a word (words can contain
+            punctuation)"
           - "`b` - Jump backwards to the start of a word"
-          - "`B` - Jump backwards to the start of a word (words can contain punctuation)"
+          - "`B` - Jump backwards to the start of a word (words can contain
+            punctuation)"
           - "`ge` - Jump backwards to the end of a word"
-          - "`gE` - Jump backwards to the end of a word (words can contain punctuation)"
-          - "`%` - Move cursor to matching character (default supported pairs: `()`, `{}`, `[]` - use `:h matchpairs` in Vim for more info)"
+          - "`gE` - Jump backwards to the end of a word (words can contain
+            punctuation)"
+          - "`%` - Move cursor to matching character (default supported pairs:
+            `()`, `{}`, `[]` - use `:h matchpairs` in Vim for more info)"
           - "`0` - Jump to the start of the line"
           - "`_` - Jump to the first non-blank character of the line"
           - "`$` - Jump to the end of the line"
@@ -45,7 +50,8 @@ pages:
           - "`;` - Repeat previous f, t, F or T movement"
           - "`,` - Repeat previous f, t, F or T movement, backwards"
           - "`}` - Jump to next paragraph (or function/block, when editing code)"
-          - "`{` - Jump to previous paragraph (or function/block, when editing code)"
+          - "`{` - Jump to previous paragraph (or function/block, when editing
+            code)"
           - "`zz` - Center cursor on screen"
           - "`zt` - Position cursor on top of the screen"
           - "`zb` - Position cursor on bottom of the screen"
@@ -56,7 +62,9 @@ pages:
           - "`Ctrl` + `u` - Move cursor and screen up 1/2 page"
           - "`Ctrl` + `d` - Move cursor and screen down 1/2 page"
         tip:
-          description: "**Tip:** Prefix a cursor movement command with a number to repeat it. For example, `4j` moves down 4 lines."
+          description:
+            "**Tip:** Prefix a cursor movement command with a number to repeat
+            it. For example, `4j` moves down 4 lines."
       - title: Insert Mode - Inserting / Appending Text
         items:
           - "`i` - Insert before the cursor"
@@ -66,15 +74,22 @@ pages:
           - "`o` - Append (open) a new line below the current line"
           - "`O` - Append (open) a new line above the current line"
           - "`ea` - Insert (append) at the end of the word"
-          - "`Ctrl` + `h` - Delete the character before the cursor during insert mode"
+          - "`Ctrl` + `h` - Delete the character before the cursor during insert
+            mode"
           - "`Ctrl` + `w` - Delete word before the cursor during insert mode"
-          - "`Ctrl` + `j` - Add a line break at the cursor position during insert mode"
-          - "`Ctrl` + `t` - Indent (move right) line one shiftwidth during insert mode"
-          - "`Ctrl` + `d` - De-indent (move left) line one shiftwidth during insert mode"
-          - "`Ctrl` + `n` - Insert (auto-complete) next match before the cursor during insert mode"
-          - "`Ctrl` + `p` - Insert (auto-complete) previous match before the cursor during insert mode"
+          - "`Ctrl` + `j` - Add a line break at the cursor position during
+            insert mode"
+          - "`Ctrl` + `t` - Indent (move right) line one shiftwidth during
+            insert mode"
+          - "`Ctrl` + `d` - De-indent (move left) line one shiftwidth during
+            insert mode"
+          - "`Ctrl` + `n` - Insert (auto-complete) next match before the cursor
+            during insert mode"
+          - "`Ctrl` + `p` - Insert (auto-complete) previous match before the
+            cursor during insert mode"
           - "`Ctrl` + `rx` - Insert the contents of register x"
-          - "`Ctrl` + `ox` - Temporarily enter normal mode to issue one normal-mode command x"
+          - "`Ctrl` + `ox` - Temporarily enter normal mode to issue one
+            normal-mode command x"
           - "`Esc` or `Ctrl` + `c` - Exit insert mode"
       - title: Editing
         items:
@@ -89,7 +104,8 @@ pages:
           - "`cc` - Change (replace) entire line"
           - "`c$` or `C` - Change (replace) to the end of the line"
           - "`ciw` - Change (replace) entire word"
-          - "`ci\"` or `ci'` - Change (replace) string in double quotes or quotes"
+          - '`ci"` or `ci''` - Change (replace) string in double quotes or
+            quotes'
           - "`cw` or `ce` - Change (replace) to the end of the word"
           - "`s` - Delete character and substitute text"
           - "`S` - Delete line and substitute text (same as cc)"
@@ -100,7 +116,8 @@ pages:
           - "`.` - Repeat last command"
       - title: Marking Text (Visual Mode)
         items:
-          - "`v` - Start visual mode, mark lines, then do a command (like y-yank)"
+          - "`v` - Start visual mode, mark lines, then do a command (like
+            y-yank)"
           - "`V` - Start linewise visual mode"
           - "`o` - Move to other end of marked area"
           - "`Ctrl` + `v` - Start visual block mode"
@@ -112,11 +129,13 @@ pages:
           - "`ib` - Inner block with ()"
           - "`iB` - Inner block with {}"
           - "`it` - Inner block with <> tags"
-          - "`i\"` - Inner block with double quotes"
+          - '`i"` - Inner block with double quotes'
           - "`i'` - Inner block with quotes"
           - "`Esc` or `Ctrl` + `c` - Exit visual mode"
         tip:
-          description: "**Tip:** Instead of `b` or `B` one can also use `(` or `{` respectively."
+          description:
+            "**Tip:** Instead of `b` or `B` one can also use `(` or `{`
+            respectively."
       - title: Visual Commands
         items:
           - "`>` - Shift text right"
@@ -129,15 +148,17 @@ pages:
       - title: Registers
         items:
           - "`:register` - Show registers content"
-          - "`\"xy` - Paste contents of register `x`"
-          - "`\"xp` - Yank into register `x`"
-          - "`\"+y` - Yank into the system clipboard register"
-          - "`\"+p` - Paste from the system clipboard register"
+          - '`"xy` - Paste contents of register `x`'
+          - '`"xp` - Yank into register `x`'
+          - '`"+y` - Yank into the system clipboard register'
+          - '`"+p` - Paste from the system clipboard register'
         tip:
-          description: "**Tip:** Registers are being stored in ~/.viminfo, and will be loaded again on next restart of vim. Special registers:"
+          description:
+            "**Tip:** Registers are being stored in ~/.viminfo, and will be
+            loaded again on next restart of vim. Special registers:"
           items:
             - "`0` - Last yank"
-            - "`\"` - Unnamed register, last delete or yank"
+            - '`"` - Unnamed register, last delete or yank'
             - "`%` - Current file name"
             - "`#` - Alternate file name"
             - "`*` - Clipboard contents (X11 primary)"
@@ -155,7 +176,7 @@ pages:
           - "`` `a`` - Jump to position of mark `a`"
           - "``y`a`` - Yank text to position of mark `a`"
           - "`` `0`` - Go to the position where Vim was previously exited"
-          - "`` `\"`` - Go to the position when last editing this file"
+          - '`` `"`` - Go to the position when last editing this file'
           - "`` `.`` - Go to the position of the last change in this file"
           - "` `` ` - Go to the position before the last jump"
           - "`:jumps` - List of jumps"
@@ -186,33 +207,41 @@ pages:
           - "`gs{` or `gs}` - Surround selection with `{}`"
           - "`gs[` or `gs]` - Surround selection with `[]`"
           - "`gs<` or `gs>` - Surround selection with `<>`"
-          - "`gs\"` - Surround selection with `\"\"`"
+          - '`gs"` - Surround selection with `""`'
           - "`gs'` - Surround selection with `''`"
           - "`` gs` `` - Surround selection with ` `` `"
       - title: Cut and Paste
         items:
           - "`yy` - Yank (copy) a line"
           - "`2yy` - Yank (copy) 2 lines"
-          - "`yw` - Yank (copy) the characters of the word from the cursor position to the start of the next word"
+          - "`yw` - Yank (copy) the characters of the word from the cursor
+            position to the start of the next word"
           - "`yiw` - Yank (copy) word under the cursor"
-          - "`yaw` - Yank (copy) word under the cursor and the space after or before it"
+          - "`yaw` - Yank (copy) word under the cursor and the space after or
+            before it"
           - "`y$` or `Y` - Yank (copy) to end of line"
           - "`p` - Put (paste) the clipboard after cursor"
           - "`P` - Put (paste) before cursor"
-          - "`gp` - Put (paste) the clipboard after cursor and leave cursor after the new text"
-          - "`gP` - Put (paste) before cursor and leave cursor after the new text"
+          - "`gp` - Put (paste) the clipboard after cursor and leave cursor
+            after the new text"
+          - "`gP` - Put (paste) before cursor and leave cursor after the new
+            text"
           - "`dd` - Delete (cut) a line"
           - "`2dd` - Delete (cut) 2 lines"
-          - "`dw` - Delete (cut) the characters of the word from the cursor position to the start of the next word"
+          - "`dw` - Delete (cut) the characters of the word from the cursor
+            position to the start of the next word"
           - "`diw` - Delete (cut) word under the cursor"
-          - "`daw` - Delete (cut) word under the cursor and the space after or before it"
+          - "`daw` - Delete (cut) word under the cursor and the space after or
+            before it"
           - "`d$` or `D` - Delete (cut) to the end of the line"
           - "`x` - Delete (cut) character"
           - "`:3,5d` - Delete lines starting from 3 to 5"
           - "`:g/{pattern}/d` - Delete all lines containing pattern"
           - "`:g!/{pattern}/d` - Delete all lines not containing pattern"
         tip:
-          description: "**Tip:** You can also use the following characters to specify the range:"
+          description:
+            "**Tip:** You can also use the following characters to specify the
+            range:"
           items:
             - "`:.,$d` - From the current line to the end of the file"
             - "`:.,1d` - From the current line to the beginning of the file"
@@ -247,20 +276,28 @@ pages:
         items:
           - "`/pattern` - Search for pattern"
           - "`?pattern` - Search backward for pattern"
-          - "`\\vpattern` - Non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)"
+          - "`\\vpattern` - Non-alphanumeric characters are interpreted as
+            special regex symbols (no escaping needed)"
           - "`n` - Repeat search in same direction"
           - "`N` - Repeat search in opposite direction"
           - "`:%s/old/new/g` - Replace all old with new throughout file"
-          - "`:%s/old/new/gc` - Replace all old with new throughout file with confirmations"
-          - "`:%s/old/new/gci` - Replace all old with new throughout file with confirmations (case insensitive)"
-          - "`:%s/old/new/gcI` - Replace all old with new throughout file with confirmations (case sensitive)"
+          - "`:%s/old/new/gc` - Replace all old with new throughout file with
+            confirmations"
+          - "`:%s/old/new/gci` - Replace all old with new throughout file with
+            confirmations (case insensitive)"
+          - "`:%s/old/new/gcI` - Replace all old with new throughout file with
+            confirmations (case sensitive)"
           - "`:noh or ESC` - Remove highlighting of search matches"
           - "`Space + rr` - Replace in buffer"
           - "`Space + rw` - Replace in buffer (word)"
           - "`Space + rR` - Replace in quickfix list"
           - "`Space + rW` - Replace in quickfix list (word)"
         tip:
-          description: "**Tip:** To replace a pattern for all files in the quickfix list the following command can be used: `:cfdo %s/old/new/gcI | update`. Items can be added to the quickfix list with `Ctrl` + `q` from the picker. To remove items from the quickfix list `dd` can be used."
+          description:
+            "**Tip:** To replace a pattern for all files in the quickfix list
+            the following command can be used: `:cfdo %s/old/new/gcI | update`.
+            Items can be added to the quickfix list with `Ctrl` + `q` from the
+            picker. To remove items from the quickfix list `dd` can be used."
       - title: Working with Multiple Files
         items:
           - "`:e[dit] file` - Edit a file in a new buffer"
@@ -272,7 +309,8 @@ pages:
           - "`:b[uffer]#` - Go to a buffer by index #"
           - "`:b[uffer] file` - Go to a buffer by file"
           - "`:sp[lit] file` - Open a file in a new buffer and split window"
-          - "`:vs[plit] file` - Open a file in a new buffer and vertically split window"
+          - "`:vs[plit] file` - Open a file in a new buffer and vertically split
+            window"
           - "`:vert[ical] ba[ll]` - Edit all buffers as vertical windows"
           - "`Ctrl` + `ws` - Split window"
           - "`Ctrl` + `wv` - Split window vertically"
@@ -284,10 +322,14 @@ pages:
           - "`Ctrl` + `wl` - Move cursor to the right window (vertical split)"
           - "`Ctrl` + `wj` - Move cursor to the window below (horizontal split)"
           - "`Ctrl` + `wk` - Move cursor to the window above (horizontal split)"
-          - "`Ctrl` + `wH` - Make current window full height at far left (leftmost vertical window)"
-          - "`Ctrl` + `wL` - Make current window full height at far right (rightmost vertical window)"
-          - "`Ctrl` + `wJ` - Make current window full width at the very bottom (bottommost horizontal window)"
-          - "`Ctrl` + `wK` - Make current window full width at the very top (topmost horizontal window)"
+          - "`Ctrl` + `wH` - Make current window full height at far left
+            (leftmost vertical window)"
+          - "`Ctrl` + `wL` - Make current window full height at far right
+            (rightmost vertical window)"
+          - "`Ctrl` + `wJ` - Make current window full width at the very bottom
+            (bottommost horizontal window)"
+          - "`Ctrl` + `wK` - Make current window full width at the very top
+            (topmost horizontal window)"
           - "`gt` - Go to the next tab"
           - "`gT` - Go to the previous tab"
       - title: Diff
@@ -308,15 +350,20 @@ pages:
           - "`:dif[fupdate]` - Update differences"
           - "`:diffo[ff]` - Switch off diff mode for current window"
         tip:
-          description: "**Tip:** The commands for folding (e.g. `za`) operate on one level. To operate on all levels, use uppercase letters (e.g. `zA`). To view the differences of files, one can directly start Vim in diff mode by running `vimdiff` in a terminal. One can even set this as `git difftool`."
+          description:
+            "**Tip:** The commands for folding (e.g. `za`) operate on one level.
+            To operate on all levels, use uppercase letters (e.g. `zA`). To view
+            the differences of files, one can directly start Vim in diff mode by
+            running `vimdiff` in a terminal. One can even set this as `git
+            difftool`."
 
   - title: Plugins
     columns: 5
     sections:
       - title: Gitsigns
         items:
-          - "`]c` - Jump to next hunk"
-          - "`[c` - Jump to previous hunk"
+          - "`Space + gs]c` - Jump to next hunk"
+          - "`Space + gs[c` - Jump to previous hunk"
           - "`Space` + `gss` - Stage hunk"
           - "`Space` + `gsr` - Reset hunk"
           - "`Space` + `gsS` - Stage all hunks in current buffer"
@@ -497,7 +544,9 @@ pages:
           - "`Space` + `cr` - Reset"
       - title: Links
         items:
-          - "The Vim Cheat Sheet is inspired by the [Vim Cheat Sheet](https://vim.rtorr.com/) from [rtorr](https://github.com/rtorr)."
+          - "The Vim Cheat Sheet is inspired by the [Vim Cheat
+            Sheet](https://vim.rtorr.com/) from
+            [rtorr](https://github.com/rtorr)."
           - |
             The configuration for the plugins with the mentioned keymaps can be found in my personal [dotfiles](https://github.com/ricoberger/dotfiles).
 
@@ -506,6 +555,6 @@ pages:
             More Neovim related links:
 
             - [Website](https://neovim.io)
-            - [GitHub Repository]()
+            - [GitHub Repository](https://github.com/neovim/neovim)
             - [Collections of Awesome Neovim Plugins](https://github.com/rockerBOO/awesome-neovim)
             - Download Cheat Sheet as [PDF](./assets/vim-cheat-sheet.pdf) | [PNG](./assets/vim-cheat-sheet.png)
