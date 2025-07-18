@@ -63,6 +63,7 @@ pages:
 
             - [Website](https://dlvhdr.github.io/gh-dash/)
             - [GitHub](https://github.com/dlvhdr/gh-dash)
+            - [My Configuration](https://github.com/ricoberger/dotfiles/blob/main/.config/gh-dash/config.yml)
       - title: Movement
         items:
           - "`k` - Move up"
