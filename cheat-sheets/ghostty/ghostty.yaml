@@ -20,6 +20,7 @@ pages:
 
             - [Website](https://ghostty.org)
             - [GitHub](https://github.com/ghostty-org/ghostty)
+            - [My Configuration](https://github.com/ricoberger/dotfiles/blob/main/.config/ghostty/config)
             - Download Cheat Sheet as [PDF](./assets/ghostty-cheat-sheet.pdf) | [PNG](./assets/ghostty-cheat-sheet.png)
       - title: Windows
         items:
