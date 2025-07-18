@@ -66,29 +66,30 @@ pages:
             - [My Configuration](https://github.com/ricoberger/dotfiles/blob/main/.config/gh-dash/config.yml)
       - title: Movement
         items:
-          - "`k` - Move up"
-          - "`j` - Move down"
-          - "`h` - Previous section"
-          - "`l` - Next section"
+          - "`k` or `Up` - Move up"
+          - "`j` or `Down` - Move down"
+          - "`h` or `Left` - Previous section"
+          - "`l` or `Right` - Next section"
           - "`g` - First item"
           - "`G` - Last item"
           - "`Ctrl` + `d` - Preview page down"
           - "`Ctrl` + `u` - Preview page up"
+          - "`[` - Previous sidebar tab"
+          - "`]` - Next sidebar tab"
+          - "`s` - Switch view"
       - title: Refresh, Open, Copy
         items:
           - "`r` - Refresh"
           - "`R` - Refresh all"
-          - "`s` - Switch view"
           - "`p` - Open in Preview"
           - "`o` - Open in GitHub"
           - "`O` - Open in Neovim"
           - "`y` - Copy number"
           - "`Y` - Copy url"
           - "`/` - Search"
-          - "`t` - Toggle smart filtering"
       - title: Actions
         items:
-          - "`y` - Approve"
+          - "`v` - Approve"
           - "`a` - Assign"
           - "`A` - Unassign"
           - "`c` - Comment"
@@ -107,5 +108,6 @@ pages:
           - "`Ctrl` + `w` - Show logs for a workflow run"
       - title: Misc
         items:
+          - "`t` - Toggle smart filtering"
           - "`?` - Help"
           - "`q` - Quit"
