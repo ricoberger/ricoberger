@@ -292,6 +292,10 @@ pages:
           - "`Space + rw` - Replace in buffer (word)"
           - "`Space + rR` - Replace in quickfix list"
           - "`Space + rW` - Replace in quickfix list (word)"
+      - title: Quickfix
+        items:
+          - "`[q` - Previous item"
+          - "`]q` - Next item"
         tip:
           description:
             "**Tip:** To replace a pattern for all files in the quickfix list
@@ -362,8 +366,8 @@ pages:
     sections:
       - title: Gitsigns
         items:
-          - "`Space + gs]c` - Jump to next hunk"
-          - "`Space + gs[c` - Jump to previous hunk"
+          - "`]h` - Jump to next hunk"
+          - "`[h` - Jump to previous hunk"
           - "`Space` + `gss` - Stage hunk"
           - "`Space` + `gsr` - Reset hunk"
           - "`Space` + `gsS` - Stage all hunks in current buffer"
@@ -444,6 +448,10 @@ pages:
           - "`Ctrl` + `q` - Quickfix list"
           - "`Ctrl` + `s` - Edit split"
           - "`Ctrl` + `v` - Edit vsplit"
+          - "`Ctrl` + `x` - Delete buffer"
+          - "`Alt` + `f` - Toggle follow"
+          - "`Alt` + `h` - Toggle hidden"
+          - "`Alt` + `i` - Toggle ignore"
           - "`Esc` or `Ctrl` + `c` or `q` - Close"
       - title: Snacks - Explorer
         items:
@@ -477,6 +485,7 @@ pages:
           - "`Space` + `lq` - Quickfix list"
           - "`Space` + `lL` - Location list"
           - "`gd` - Go to definition"
+          - "`gv` - Go to definition in vertical split"
           - "`gR` or `grr` - Go to references"
           - "`gI` or `gri` - Go to implementation"
           - "`gy` - Go to type definition"
