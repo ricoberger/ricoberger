@@ -551,10 +551,10 @@ pages:
           - "`Space` + `mM` - Match cursors"
       - title: Copilot Chat
         items:
-          - "`Space` + `ca` - Actions"
           - "`Space` + `co` - Open"
           - "`Space` + `cc` - Close"
           - "`Space` + `ct` - Toggle"
+          - "`Space` + `cs` - Stop"
           - "`Space` + `cr` - Reset"
       - title: Links
         items:
