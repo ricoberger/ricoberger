@@ -556,6 +556,32 @@ pages:
           - "`Space` + `ct` - Toggle"
           - "`Space` + `cs` - Stop"
           - "`Space` + `cr` - Reset"
+          - "`Ctrl` + `q` - Trigger / accept completion menu for tokens"
+          - "`Ctrl` + `c` or `q` - Close the chat window"
+          - "`Ctrl` + `l` - Reset and clear the chat window"
+          - "`Ctrl` + `s` or `q` - Submit the current prompt"
+          - "`grr` - Toggle sticky prompt for line under cursor"
+          - "`grx` - Clear all sticky prompts in prompt"
+          - "`Ctrl` + `y` - Accept nearest diff"
+          - "`gj` - Jump to section of nearest diff"
+          - "`gqa` - Add all answers from chat to quickfix list"
+          - "`gqd` - Add all diffs from chat to quickfix list"
+          - "`gy` - Yank nearest diff to register"
+          - "`gd` - Show diff between source and nearest diff"
+          - "`gc` - Show info about current chat"
+        tip:
+          description: |
+            - Resources (`#<name>`) - Add specific content (files, git diffs,
+              URLs) to your prompt
+            - Tools (`@<name>`) - Give LLM access to functions it can call with
+              your approval
+            - Sticky Prompts (`> <text>`) - Persist context across single chat
+              session
+            - Models (`$<model>`) - Specify which AI model to use for the chat
+            - Prompts (`/PromptName`) - Use predefined prompt templates for
+              common tasks
+            - Selection - Automatically includes current user selection in
+              prompts
       - title: Links
         items:
           - "The Vim Cheat Sheet is inspired by the [Vim Cheat
