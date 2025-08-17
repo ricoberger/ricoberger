@@ -114,6 +114,13 @@ pages:
           - "`U` - Restore (undo) last changed line"
           - "`Ctrl` + `r` - Redo"
           - "`.` - Repeat last command"
+          - "`Ctrl` + `a` - Increase number"
+          - "`Ctrl` + `x` - Decrease number"
+        tip:
+          description:
+            "**Tip:** If you make a visual block over numbers with `Ctrl` + `v`
+            and then press `g` + `Ctrl` + `a` it would increment each number by
+            `n + 1`. So from `1, 1, 1` you would get `2, 3, 4`."
       - title: Marking Text (Visual Mode)
         items:
           - "`v` - Start visual mode, mark lines, then do a command (like
