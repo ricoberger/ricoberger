@@ -491,6 +491,7 @@ pages:
           - "`Space` + `ll` - Lint"
           - "`Space` + `lq` - Quickfix list"
           - "`Space` + `lL` - Location list"
+          - "`Space` + `li` - Toggle inlay hints"
           - "`gd` - Go to definition"
           - "`gv` - Go to definition in vertical split"
           - "`gR` or `grr` - Go to references"
