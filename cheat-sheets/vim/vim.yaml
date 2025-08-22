@@ -479,6 +479,14 @@ pages:
           - "`s` - Search in directory"
           - "`S` - Search in directory (case sensitive)"
           - "`D` - Diff selected files"
+      - title: Snacks - Words
+        items:
+          - "`]r` - Next reference"
+          - "`[r` - Previous reference"
+        tip:
+          description: |
+            These keymaps are only working when `Snacks Words` is enabled.
+            `Snacks Words` can be enabled / disabled via the command palette.
       - title: Todo Comments
         items:
           - "`]t` - Next todo comment"
