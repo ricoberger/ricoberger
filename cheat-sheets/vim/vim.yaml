@@ -545,7 +545,7 @@ pages:
           - "`Ctrl` + `b` - Scroll up in documentation"
       - title: Multicursor
         items:
-          - "`Space` + `mm` or `Ctrl` + `n` - Add cursor for next word"
+          - "`Space` + `mn` or `Ctrl` + `n` - Add cursor for next word"
           - "`Space` + `mN` - Add cursor for all words"
           - "`Space` + `ms` - Skip next word"
           - "`Space` + `m` + `Down` - Add cursor below"
