@@ -313,8 +313,8 @@ pages:
         items:
           - "`:e[dit] file` - Edit a file in a new buffer"
           - "`:%!xxd` - Switch to binary format for existing file"
-          - "`:bn[ext]` or `Tab` - Go to the next buffer"
-          - "`:bp[revious]` or `Shift` + `Tab` - Go to the previous buffer"
+          - "`:bn[ext]` - Go to the next buffer"
+          - "`:bp[revious]` - Go to the previous buffer"
           - "`:ls or :buffers` - List all open buffers"
           - "`:bd[elete]` - Delete a buffer (close a file)"
           - "`:b[uffer]#` - Go to a buffer by index #"
