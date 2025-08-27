@@ -565,6 +565,15 @@ pages:
           - "`Space` + `ma` - Align cursors"
           - "`Space` + `mS` - Split cursors"
           - "`Space` + `mM` - Match cursors"
+      - title: Copilot
+        items:
+          - "`Ctrl` + `Enter` - Accept suggestion"
+          - "`Alt` + `]` - Next suggestion"
+          - "`Alt` + `[` - Previous suggestion"
+          - "`Alt` + `Enter` - Open suggestion panel"
+          - "`Enter` - Accept suggestion (in panel)"
+          - "`]]` - Next suggestion (in panel)"
+          - "`[[` - Previous suggestion (in panel)"
       - title: Copilot Chat
         items:
           - "`Space` + `co` - Open"
