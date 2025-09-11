@@ -86,4 +86,5 @@ infrastructure that supports rapid deployment and continuous integration.
 ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=flat-square&logo=GraphQL&logoColor=white)
 ![CSS](https://img.shields.io/badge/-CSS-663399?style=flat-square&logo=CSS&logoColor=white)
 ![Vite](https://img.shields.io/badge/-Vite-646CFF?style=flat-square&logo=Vite&logoColor=white)
+![Neovim](https://img.shields.io/badge/-Neovim-57A143?style=flat-square&logo=Neovim&logoColor=white)
 ![Raycast](https://img.shields.io/badge/-Raycast-FF6363?style=flat-square&logo=Raycast&logoColor=white)
