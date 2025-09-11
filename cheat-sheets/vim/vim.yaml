@@ -94,7 +94,7 @@ pages:
       - title: Editing
         items:
           - "`r` - Replace a single character"
-          - "`R` - Replace more than one character, until ESC is pressed"
+          - "`R` - Replace more than one character, until `Esc` is pressed"
           - "`J` - Join line below to the current one with one space in between"
           - "`gJ` - Join line below to the current one without space in between"
           - "`gwip` - Reflow paragraph"
@@ -208,15 +208,6 @@ pages:
         items:
           - "`gc` - Toggle comment for selection"
           - "`gcc` - Toggle comment for the current line"
-      - title: Surround
-        items:
-          - "`gs(` or `gs)` - Surround selection with `()`"
-          - "`gs{` or `gs}` - Surround selection with `{}`"
-          - "`gs[` or `gs]` - Surround selection with `[]`"
-          - "`gs<` or `gs>` - Surround selection with `<>`"
-          - '`gs"` - Surround selection with `""`'
-          - "`gs'` - Surround selection with `''`"
-          - "`` gs` `` - Surround selection with ` `` `"
       - title: Cut and Paste
         items:
           - "`yy` - Yank (copy) a line"
@@ -255,8 +246,8 @@ pages:
             - "`:10,$d` - From the 10th line to the beginning of the file"
       - title: Indent Text
         items:
-          - "`>>` or `>` - Indent (move right) line one shiftwidth"
-          - "`<<` or `<` - De-indent (move left) line one shiftwidth"
+          - "`>>` - Indent (move right) line one shiftwidth"
+          - "`<<` - De-indent (move left) line one shiftwidth"
           - "`>%` - Indent a block with () or {} (cursor on brace)"
           - "`<%` - De-indent a block with () or {} (cursor on brace)"
           - "`>ib` - Indent inner block with ()"
@@ -266,10 +257,6 @@ pages:
           - "`=iB` - Re-indent inner block with {}"
           - "`gg=G` - Re-indent entire buffer"
           - "`]p` - Paste and adjust indent to current line"
-      - title: Move Text
-        items:
-          - "`Alt` + `j` - Move line down"
-          - "`Alt` + `k` - Move line up"
       - title: Exiting
         items:
           - "`:w` - Write (save) the file, but don't exit"
@@ -277,7 +264,7 @@ pages:
           - "`:wq` - Write (save) and quit"
           - "`:x` - Write (save) and quit"
           - "`:q` - Quit (fails if there are unsaved changes)"
-          - "`:q! or ZQ` - Quit and throw away unsaved changes"
+          - "`:q!` or `ZQ` - Quit and throw away unsaved changes"
           - "`:wqa` - Write (save) and quit all"
       - title: Search and Replace
         items:
@@ -294,21 +281,23 @@ pages:
             confirmations (case insensitive)"
           - "`:%s/old/new/gcI` - Replace all old with new throughout file with
             confirmations (case sensitive)"
-          - "`:noh or ESC` - Remove highlighting of search matches"
-          - "`Space + rr` - Replace in buffer"
-          - "`Space + rw` - Replace in buffer (word)"
-          - "`Space + rR` - Replace in quickfix list"
-          - "`Space + rW` - Replace in quickfix list (word)"
+          - "`:noh` or `ESC` - Remove highlighting of search matches"
       - title: Quickfix
         items:
-          - "`[q` - Previous item"
-          - "`]q` - Next item"
+          - "`:cope[n]` - Open the quickfix window"
+          - "`:ccl[ose]` - Close the quickfix window"
+          - "`:chi[story]` - Show list of quickfix lists"
+          - "`:cnew[er]` - Go to newer quickfix list"
+          - "`:col[der]` - Go to older quickfix list"
+          - "`:#chi[story]` - Go to quickfix list number #"
+          - "`[q` - Go to previous item in quickfix list"
+          - "`]q` - Go to next item in quickfix list"
         tip:
           description:
-            "**Tip:** To replace a pattern for all files in the quickfix list
-            the following command can be used: `:cfdo %s/old/new/gcI | update`.
-            Items can be added to the quickfix list with `Ctrl` + `q` from the
-            picker. To remove items from the quickfix list `dd` can be used."
+            "**Tip:** To replace a pattern in multiple files, use `:grep` to add
+            all files with this pattern to the quickfix list. Afterwards `:cfdo
+            %s/old/new/gcI | update` can be used to replace the old pattern with
+            a new one."
       - title: Working with Multiple Files
         items:
           - "`:e[dit] file` - Edit a file in a new buffer"
@@ -328,7 +317,10 @@ pages:
           - "`Ctrl` + `ww` - Switch windows"
           - "`Ctrl` + `wq` - Quit a window"
           - "`Ctrl` + `wx` - Exchange current window with next one"
+          - "`Ctrl` + `w+` and `Ctrl` + `w-` - Increase / decrease window height"
+          - "`Ctrl` + `w>` and `Ctrl` + `w<` - Increase / decrease window width"
           - "`Ctrl` + `w=` - Make all windows equal height & width"
+          - "`Ctrl` + `wo` - Make current window the only window"
           - "`Ctrl` + `wh` - Move cursor to the left window (vertical split)"
           - "`Ctrl` + `wl` - Move cursor to the right window (vertical split)"
           - "`Ctrl` + `wj` - Move cursor to the window below (horizontal split)"
@@ -341,8 +333,17 @@ pages:
             (bottommost horizontal window)"
           - "`Ctrl` + `wK` - Make current window full width at the very top
             (topmost horizontal window)"
+      - title: Tabs
+        items:
+          - "`:tabnew` - Open a new tab"
+          - "`Ctrl` + `wT` - Move the current split window into its own tab"
           - "`gt` - Go to the next tab"
           - "`gT` - Go to the previous tab"
+          - "`#gt` - Move to tab number #"
+          - "`:tabm[ove] #` - Move current tab to the #th position (indexed from
+            0)"
+          - "`:tabc[lose]` - Close the current tab and all its windows"
+          - "`:tabo[nly]` - Close all tabs except for the current one"
       - title: Diff
         items:
           - "`zf` - Manually define a fold up to motion"
@@ -365,215 +366,146 @@ pages:
             "**Tip:** The commands for folding (e.g. `za`) operate on one level.
             To operate on all levels, use uppercase letters (e.g. `zA`). To view
             the differences of files, one can directly start Vim in diff mode by
-            running `vimdiff` in a terminal. One can even set this as `git
-            difftool`."
+            running `vimdiff` (`nvim -d`) in a terminal. One can even set this
+            as `git difftool`."
 
-  - title: Plugins
+  - title: Custom Keymaps, Functions and Plugins
     columns: 5
     sections:
+      - title: Working with Multiple Files
+        items:
+          - "`Shift` + `Up` and `Shift` + `Down` - Increase / decrease window
+            height"
+          - "`Shift` + `Right` and `Shift` + `Left` - Increase / decrease window
+            width"
+          - "`Ctrl` + `Left` - Move cursor to the left window (vertical split)"
+          - "`Ctrl` + `Right` - Move cursor to the right window (vertical split)"
+          - "`Ctrl` + `Down` - Move cursor to the window below (horizontal
+            split)"
+          - "`Ctrl` + `Up` - Move cursor to the window above (horizontal split)"
+      - title: Move Text
+        items:
+          - "`Alt` + `j` - Move line down"
+          - "`Alt` + `k` - Move line up"
+      - title: Surround Text
+        items:
+          - "`gs(` or `gs)` - Surround selection with `()`"
+          - "`gs{` or `gs}` - Surround selection with `{}`"
+          - "`gs[` or `gs]` - Surround selection with `[]`"
+          - "`gs<` or `gs>` - Surround selection with `<>`"
+          - '`gs"` - Surround selection with `""`'
+          - "`gs'` - Surround selection with `''`"
+          - "`` gs` `` - Surround selection with ` `` `"
+      - title: Quickfix
+        items:
+          - "`Space` + `qo` - Open the quickfix window"
+          - "`Space` + `qc` - Close the quickfix window"
+          - "`Space` + `qh` - Show list of quickfix lists"
+          - "`Space` + `qn` - Go to newer quickfix list"
+          - "`Space` + `qp` - Go to older quickfix list"
+          - "`Space` + `q#` - Go to quickfix list number #"
+          - "`[q` - Go to previous item in quickfix list"
+          - "`]q` - Go to next item in quickfix list"
+          - "`dd` - Delete item from quickfix list"
+          - "`d` - Delete visual selected items from quickfix list"
+      - title: Explorer
+        items:
+          - "`Space` + `ee` - Open `:edit` command in current directory"
+          - "`Space` + `ec` - Copy current file"
+          - "`Space` + `em` - Move current file"
+          - "`Space` + `er` - Remove current file"
+          - "`Space` + `ey` - Copy relative path of current file to clipboard"
+          - "`Space` + `ew` - Save current file"
+          - "`Space` + `eW` - Save current file without running auto commands"
+      - title: Find
+        items:
+          - "`Space` + `ff` - Find files"
+          - "`Space` + `fF` - Find files and send results to quickfix list"
+          - "`Space` + `fc` - Find files in current directory"
+          - "`Space` + `fC` - Find files in current directory and send results
+            to quickfix list"
+          - "`Space` + `fb` - Find buffers"
+          - "`Space` + `fr` - Find recently opened files"
+          - "`Space` + `fm` - Find marks"
+        tip:
+          description:
+            "**Tip:** The find command can be changed using the following
+            keymaps:"
+          items:
+            - "`Alt` + `e` - Change the command to `:edit`"
+            - "`Alt` + `v` - Change the command to `:vsplit`"
+            - "`Alt` + `s` - Change the command to `:split`"
+            - "`Alt` + `t` - Change the command to `:tabedit`"
+            - "`Alt` + `r` - Change the command to `:!rm`"
+      - title: Search
+        items:
+          - "`Space` + `ss` - Search for a pattern"
+          - "`Space` + `sc` - Search for a pattern in the current directory"
+          - "`Space` + `s/` - Search for a pattern in the current file"
+          - "`Space` + `sw` - Search for the word under the cursor"
+          - "`Space` + `sv` - Search for the visual selection"
+          - "`Space` + `st` - Search for all todo comments"
+      - title: Replace
+        items:
+          - "`Space` + `rr` - Replace in buffer"
+          - "`Space` + `rw` - Replace word under cursor in buffer"
+          - "`Space` + `rv` - Replace visual selection in buffer"
+          - "`Space` + `rR` - Replace in quickfix list"
+          - "`Space` + `rW` - Replace word under cursor in quickfix list"
+          - "`Space` + `rV` - Replace visual selection in quickfix list"
       - title: Gitsigns
         items:
-          - "`]h` - Jump to next hunk"
-          - "`[h` - Jump to previous hunk"
+          - "`]c` - Jump to next hunk"
+          - "`[c` - Jump to previous hunk"
           - "`Space` + `gss` - Stage hunk"
           - "`Space` + `gsr` - Reset hunk"
           - "`Space` + `gsS` - Stage all hunks in current buffer"
           - "`Space` + `gsR` - Reset all hunk in current buffer"
           - "`Space` + `gsu` - Undo last hunk"
           - "`Space` + `gsp` - Preview hunk"
-          - "`Space` + `gsb` - Git blame (short)"
-          - "`Space` + `gsB` - Git blame (full)"
-          - "`Space` + `gsd` - Toggle deleted"
-          - "`Space` + `gsq` - Show hunks via quickfix list"
-          - "`Space` + `gsl` - Show hunks via location list"
-      - title: Diffview
-        items:
-          - "`Space` + `gdo` - Open"
-          - "`Space` + `gdO` - Open (HEAD)"
-          - "`Space` + `gdC` - Close"
-          - "`Space` + `gdt` - Toggle files"
-          - "`Space` + `gdf` - Focus files"
-          - "`Space` + `gdhb` - Branch history"
-          - "`Space` + `gdhf` - File history"
-          - "`Tab` - Open diff for the next file"
-          - "`Shift + Tab` - Open diff for the previous file"
-          - "`Space` + `gdx` - Cycle layout through available layouts"
-          - "`[x` - Jump to previous conflict"
-          - "`]x` - Jump to next conflict"
-          - "`Space` + `gdco` - Choose the OURS version of a conflict"
-          - "`Space` + `gdct` - Choose the THEIRS version of a conflict"
-          - "`Space` + `gdcb` - Choose the BASE version of a conflict"
-          - "`Space` + `gdca` - Choose all the versions of a conflict"
-          - "`Space` + `gdcx` - Delete the conflict region"
-      - title: Snacks - Picker
-        items:
-          - "`Space` + `p` - Command palette"
-          - "`Space` + `e` - Explorer"
-          - "`Space` + `ff` - Files"
-          - "`Space` + `fs` - Search"
-          - "`Space` + `fb` - Buffers"
-          - "`Space` + `f/` - Search buffers"
-          - "`Space` + `fr` - Recent"
-          - "`Space` + `fR` - Resume"
-          - "`Space` + `fu` - Undo"
-          - "`Space` + `fk` - Keymaps"
-          - "`Space` + `fm` - Marks"
-          - "`Space` + `ft` - Todo comments"
-          - "`Space` + `fq` - Quickfix list"
-          - "`Space` + `fl` - Location list"
-          - "`Space` + `fd` - Buffer diagnostics"
-          - "`Space` + `fD` - Workspace diagnostics"
-          - "`Space` + `fls` - Buffer symbols"
-          - "`Space` + `flS` - Workspace symbols"
-          - "`Space` + `flr` - References"
-          - "`Space` + `fld` - Definitions"
-          - "`Space` + `flD` - Declarations"
-          - "`Space` + `fly` - Type definitions"
-          - "`Space` + `fli` - Implementations"
-          - "`Space` + `fgf` - Git files"
-          - "`Space` + `fgb` - Git branches"
-          - "`Space` + `fgl` - Git log for (buffer)"
-          - "`Space` + `fgL` - Git log for (workspace)"
-          - "`Space` + `fgs` - Git status"
-          - "`Space` + `fgS` - Git stash"
-          - "`/` - Toggle focus"
-          - "`Enter` - Confirm"
-          - "`Down` or `Ctrl` + `j` or `Ctrl` + `n` or `j` - List down"
-          - "`Up` or `Ctrl` + `k` or `Ctrl` + `p` or `k` - List up"
-          - "`Ctrl` + `d` - List scroll down"
-          - "`Ctrl` + `u` - List scroll up"
-          - "`G` - List bottom"
-          - "`gg` - List top"
-          - "`Ctrl` + `Down` - History forward"
-          - "`Ctrl` + `Up` - History back"
-          - "`Tab` - Select and next"
-          - "`Shift` + `Tab` - Select and prev"
-          - "`Ctrl` + `a` - Select all"
-          - "`Ctrl` + `b` - Preview scroll up"
-          - "`Ctrl` + `f` - Preview scroll down"
-          - "`Ctrl` + `g` - Toggle live"
-          - "`Ctrl` + `q` - Quickfix list"
-          - "`Ctrl` + `s` - Edit split"
-          - "`Ctrl` + `v` - Edit vsplit"
-          - "`Ctrl` + `x` - Delete buffer"
-          - "`Alt` + `f` - Toggle follow"
-          - "`Alt` + `h` - Toggle hidden"
-          - "`Alt` + `i` - Toggle ignore"
-          - "`Esc` or `Ctrl` + `c` or `q` - Close"
-      - title: Snacks - Explorer
-        items:
-          - "`l` - Confirm"
-          - "`h` - Close directory"
-          - "`a` - Add"
-          - "`d` - Delete"
-          - "`r` - Rename"
-          - "`c` - Copy"
-          - "`m` - Move"
-          - "`o` - Open with system application"
-          - "`P` - Toggle preview"
-          - "`u` - Update"
-          - "`I` - Toggle ignored"
-          - "`H` - Toggle hidden"
-          - "`Z` - Close all"
-          - "`y` - Yank"
-          - "`s` - Search in directory"
-          - "`S` - Search in directory (case sensitive)"
-          - "`D` - Diff selected files"
-      - title: Snacks - Words
-        items:
-          - "`]r` - Next reference"
-          - "`[r` - Previous reference"
-        tip:
-          description: |
-            These keymaps are only working when `Snacks Words` is enabled.
-            `Snacks Words` can be enabled / disabled via the command palette.
-      - title: Todo Comments
-        items:
-          - "`]t` - Next todo comment"
-          - "`[t` - Previous todo comment"
+          - "`Space` + `gsb` - Git blame line"
+          - "`Space` + `gsB` - Git blame file"
+          - "`Space` + `gsd` - Diff"
+          - "`Space` + `gsd` - Diff against `~`"
+          - "`Space` + `gsq` - Show hunks in quickfix list"
+          - "`Space` + `gsl` - Show hunks in location list"
+          - "`Space` + `gst` - Toggle word diff and deleted lines"
+          - "`GitDiff <base> <head>` - Open diff between `<base>` and `<head>`"
       - title: LSP
         items:
-          - "`Space` + `lr` or `grn` - Rename"
-          - "`Space` + `lca` or `gra` - Code actions"
-          - "`Space` + `lf` - Format"
-          - "`Space` + `ll` - Lint"
-          - "`Space` + `lq` - Quickfix list"
-          - "`Space` + `lL` - Location list"
-          - "`Space` + `li` - Toggle inlay hints"
-          - "`gd` - Go to definition"
-          - "`gv` - Go to definition in vertical split"
-          - "`gR` or `grr` - Go to references"
-          - "`gI` or `gri` - Go to implementation"
-          - "`gy` - Go to type definition"
-          - "`gD` - Go to declaration"
-          - "`gO` - Go to document symbol"
-          - "`K` - Hover documentation"
-          - "`J` - Hover diagnostics"
+          - "`grn` - Rename"
+          - "`gra` - Code actions"
+          - "`grf` - Format"
+          - "`grr` - Go to references"
+          - "`gri` - Go to implementation"
+          - "`grt` - Go to type definition"
+          - "`gd` or `gD` - Go to definition (in vertical split)"
+          - "`K` - Hover documentation in floating window"
+          - "`Ctrl` + `s` - Hover signature help in floating window"
+          - "`Ctrl` + `w` + `Ctrl` + `d` - Hover diagnostics in floating window"
+          - "`grq` - Show diagnostics in quickfix list"
+          - "`gO` - Show document symbols in location list"
+          - "`gry` - Toggle inlay hints"
           - "`[d` - Go to previous diagnostic"
           - "`]d` - Go to next diagnostic"
           - "`[D` - Go to first diagnostic"
           - "`]D` - Go to last diagnostic"
-      - title: Treesitter
-        items:
-          - "`aa` - Select around parameter"
-          - "`ia` - Select inside parameter"
-          - "`af` - Select around function"
-          - "`if` - Select inside function"
-          - "`ac` - Select around class"
-          - "`ic` - Select inside class"
-          - "`al` - Select around loop"
-          - "`il` - Select inside loop"
-          - "`ab` - Select around block"
-          - "`ib` - Select inside block"
-          - "`]f` - Go to next start function"
-          - "`]c` - Go to next start class"
-          - "`]l` - Go to next start loop"
-          - "`]b` - Go to next start block"
-          - "`]F` - Go to next end function"
-          - "`]C` - Go to next end class"
-          - "`]L` - Go to next end loop"
-          - "`]B` - Go to next end block"
-          - "`[f` - Go to previous start function"
-          - "`[c` - Go to previous start class"
-          - "`[l` - Go to previous start loop"
-          - "`[b` - Go to previous start block"
-          - "`[F` - Go to previous end function"
-          - "`[C` - Go to previous end class"
-          - "`[L` - Go to previous end loop"
-          - "`[B` - Go to previous end block"
       - title: Completions
         items:
-          - "`Ctrl` + `Space` - Show completions, show / hide documentation"
+          - "`Ctrl` + `Space` or `Ctrl` + `x` + `Ctrl` + `o` - Trigger
+            completion"
           - "`Ctrl` + `e` - Hide completions"
-          - "`Enter` - Accept completion"
-          - "`Down` - Select next completion"
-          - "`Up` - Select previous completion"
-          - "`Ctrl` + `n` - Select next completion"
-          - "`Ctrl` + `p` - Select previous completion"
-          - "`Ctrl` + `f` - Scroll down in documentation"
-          - "`Ctrl` + `b` - Scroll up in documentation"
+          - "`Enter` or `Ctrl` + `y` - Accept completion"
+          - "`Ctrl` + `n` or `Down` - Select next completion"
+          - "`Ctrl` + `p` or `Up` - Select previous completion"
+          - "`Ctrl` + `Enter` - Accept inline completion"
       - title: Multicursor
         items:
-          - "`Space` + `mn` or `Ctrl` + `n` - Add cursor for next word"
-          - "`Space` + `mN` - Add cursor for all words"
-          - "`Space` + `ms` - Skip next word"
-          - "`Space` + `m` + `Down` - Add cursor below"
-          - "`Space` + `m` + `Up` - Add cursor above"
-          - "`Space` + `m` + `Left` - Rotate cursor (next)"
-          - "`Space` + `m` + `Right` - Rotate cursor (prev)"
-          - "`Space` + `mx` - Delete cursor"
-          - "`Space` + `ma` - Align cursors"
-          - "`Space` + `mS` - Split cursors"
-          - "`Space` + `mM` - Match cursors"
-      - title: Copilot
-        items:
-          - "`Ctrl` + `Enter` - Accept suggestion"
-          - "`Alt` + `]` - Next suggestion"
-          - "`Alt` + `[` - Previous suggestion"
-          - "`Alt` + `Enter` - Open suggestion panel"
-          - "`Enter` - Accept suggestion (in panel)"
-          - "`]]` - Next suggestion (in panel)"
-          - "`[[` - Previous suggestion (in panel)"
+          - "`Ctrl` + `n` - Add cursor for next word"
+          - "`Ctrl` + `a` - Add cursor for all words"
+          - "`Ctrl` + `j` - Add cursor below"
+          - "`Ctrl` + `k` - Add cursor above"
+          - "`Ctrl` + `m` - Match cursors in visual selection"
       - title: Copilot Chat
         items:
           - "`Space` + `co` - Open"
@@ -581,7 +513,7 @@ pages:
           - "`Space` + `ct` - Toggle"
           - "`Space` + `cs` - Stop"
           - "`Space` + `cr` - Reset"
-          - "`Ctrl` + `q` - Trigger / accept completion menu for tokens"
+          - "`Tab` - Trigger / accept completion menu for tokens"
           - "`Ctrl` + `c` or `q` - Close the chat window"
           - "`Ctrl` + `l` - Reset and clear the chat window"
           - "`Ctrl` + `s` or `q` - Submit the current prompt"
