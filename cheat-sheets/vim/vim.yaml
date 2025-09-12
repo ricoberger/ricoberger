@@ -155,8 +155,8 @@ pages:
       - title: Registers
         items:
           - "`:register` - Show registers content"
-          - '`"xy` - Paste contents of register `x`'
-          - '`"xp` - Yank into register `x`'
+          - '`"xy` - Yank into register `x`'
+          - '`"xp` - Paste contents of register `x`'
           - '`"+y` - Yank into the system clipboard register'
           - '`"+p` - Paste from the system clipboard register'
         tip:
@@ -200,9 +200,9 @@ pages:
             A local mark is specific to a particular file and is indicated by a lowercase letter, while global marks are universal across all of your files and use uppercase letters. That is, many files can have an `` `a `` mark, while `` `A `` points to a particular location in one particular file.
       - title: Macros
         items:
-          - "`qa` - Record macro a"
+          - "`qa` - Record macro `a`"
           - "`q` - Stop recording macro"
-          - "`@a` - Run macro a"
+          - "`@a` - Run macro `a`"
           - "`@@` - Rerun last run macro"
       - title: Comment
         items:
@@ -396,6 +396,10 @@ pages:
           - '`gs"` - Surround selection with `""`'
           - "`gs'` - Surround selection with `''`"
           - "`` gs` `` - Surround selection with ` `` `"
+      - title: Macros
+        items:
+          - "`Q` + `Q` - Record a macro for a selected `pattern`"
+          - "`Ctrl` + `q` - Replay a macro for a selected `pattern`"
       - title: Quickfix
         items:
           - "`Space` + `qo` - Open the quickfix window"
