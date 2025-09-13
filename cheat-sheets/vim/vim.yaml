@@ -412,6 +412,7 @@ pages:
           - "`Space` + `qh` - Show list of quickfix lists"
           - "`Space` + `qn` - Go to newer quickfix list"
           - "`Space` + `qp` - Go to older quickfix list"
+          - "`Space` + `qf` - Filter the quickfix list"
           - "`Space` + `q#` - Go to quickfix list number #"
           - "`[q` - Go to previous item in quickfix list"
           - "`]q` - Go to next item in quickfix list"
