@@ -368,6 +368,11 @@ pages:
             the differences of files, one can directly start Vim in diff mode by
             running `vimdiff` (`nvim -d`) in a terminal. One can even set this
             as `git difftool`."
+      - title: Help
+        items:
+          - "`:h default-mappings` - Show default key mappings"
+          - "`:h motion.txt` - Show available motions"
+          - "`:h vim_diff.txt` - Show differences between Vim and Neovim"
 
   - title: Custom Keymaps, Functions and Plugins
     columns: 5
