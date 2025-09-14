@@ -427,6 +427,7 @@ pages:
           - "`Space` + `ey` - Copy relative path of current file to clipboard"
           - "`Space` + `ew` - Save current file"
           - "`Space` + `eW` - Save current file without running auto commands"
+          - "`Space` + `eg` - Change directory to the git root directory"
       - title: Find
         items:
           - "`Space` + `ff` - Find files"
