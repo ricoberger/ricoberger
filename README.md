@@ -26,11 +26,11 @@ infrastructure that supports rapid deployment and continuous integration.
 
 ### Latest Blog Posts
 
+- [Fixing the YAML Language Server](https://ricoberger.de/blog/posts/fixing-the-yaml-language-server/)
 - [Reworking My Neovim Configuration](https://ricoberger.de/blog/posts/reworking-my-neovim-configuration/)
 - [Continuous Profiling Using Parca](https://ricoberger.de/blog/posts/continuous-profiling-using-parca/)
 - [Deploy YugabyteDB on a Multi-Zone AKS Cluster](https://ricoberger.de/blog/posts/deploy-yugabytedb-on-a-multi-zone-aks-cluster/)
 - [Getting Started with YugabyteDB](https://ricoberger.de/blog/posts/getting-started-with-yugabytedb/)
-- [Getting Started with Vitess](https://ricoberger.de/blog/posts/getting-started-with-vitess/)
 
 [More Blog Posts](https://ricoberger.de/blog/)
 
