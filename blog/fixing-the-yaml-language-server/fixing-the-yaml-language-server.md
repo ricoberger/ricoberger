@@ -8,7 +8,7 @@ Description: >-
 AuthorName: Rico Berger
 AuthorTitle: Site Reliability Engineer
 AuthorImage: /assets/img/authors/ricoberger.webp
-PublishedAt: 2025-09-14 17:00:00
+PublishedAt: 2025-09-14 12:00:00
 Tags:
   - neovim
   - kubernetes
