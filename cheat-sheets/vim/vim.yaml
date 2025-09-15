@@ -401,6 +401,8 @@ pages:
           - '`gs"` - Surround selection with `""`'
           - "`gs'` - Surround selection with `''`"
           - "`` gs` `` - Surround selection with ` `` `"
+          - "`gs*` - Surround selection with `**`"
+          - "`gs_` - Surround selection with `__`"
       - title: Macros
         items:
           - "`Q` + `Q` - Record a macro for a selected `pattern`"
