@@ -319,6 +319,8 @@ pages:
           - "`Ctrl` + `wx` - Exchange current window with next one"
           - "`Ctrl` + `w+` and `Ctrl` + `w-` - Increase / decrease window height"
           - "`Ctrl` + `w>` and `Ctrl` + `w<` - Increase / decrease window width"
+          - "`Ctrl` + `w_` - Maximize window height"
+          - "`Ctrl` + `w|` - Maximize window width"
           - "`Ctrl` + `w=` - Make all windows equal height & width"
           - "`Ctrl` + `wo` - Make current window the only window"
           - "`Ctrl` + `wh` - Move cursor to the left window (vertical split)"
