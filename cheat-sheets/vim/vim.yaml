@@ -513,6 +513,7 @@ pages:
         items:
           - "`Ctrl` + `Space` or `Ctrl` + `x` + `Ctrl` + `o` - Trigger
             completion"
+          - "`Ctrl` + `x` + `Ctrl` + `f` - Trigger file path completion"
           - "`Ctrl` + `e` - Hide completions"
           - "`Enter` or `Ctrl` + `y` - Accept completion"
           - "`Ctrl` + `n` or `Down` - Select next completion"
@@ -525,41 +526,16 @@ pages:
           - "`Ctrl` + `j` - Add cursor below"
           - "`Ctrl` + `k` - Add cursor above"
           - "`Ctrl` + `m` - Match cursors in visual selection"
-      - title: Copilot Chat
+      - title: AI
         items:
-          - "`Space` + `cc` - Chat"
-          - "`Space` + `co` - Open"
-          - "`Space` + `cq` - Close"
-          - "`Space` + `ct` - Toggle"
-          - "`Space` + `cs` - Stop"
-          - "`Space` + `cr` - Reset"
-          - "`Space` + `cp` - Prompts"
-          - "`Tab` - Trigger / accept completion menu for tokens"
-          - "`Ctrl` + `c` or `q` - Close the chat window"
-          - "`Ctrl` + `l` - Reset and clear the chat window"
-          - "`Ctrl` + `s` or `Enter` - Submit the current prompt"
-          - "`grr` - Toggle sticky prompt for line under cursor"
-          - "`grx` - Clear all sticky prompts in prompt"
-          - "`Ctrl` + `y` - Accept nearest diff"
-          - "`gj` - Jump to section of nearest diff"
-          - "`gqa` - Add all answers from chat to quickfix list"
-          - "`gqd` - Add all diffs from chat to quickfix list"
-          - "`gy` - Yank nearest diff to register"
-          - "`gd` - Show diff between source and nearest diff"
-          - "`gc` - Show info about current chat"
-        tip:
-          description: |
-            - Resources (`#<name>`) - Add specific content (files, git diffs,
-              URLs) to your prompt
-            - Tools (`@<name>`) - Give LLM access to functions it can call with
-              your approval
-            - Sticky Prompts (`> <text>`) - Persist context across single chat
-              session
-            - Models (`$<model>`) - Specify which AI model to use for the chat
-            - Prompts (`/PromptName`) - Use predefined prompt templates for
-              common tasks
-            - Selection - Automatically includes current user selection in
-              prompts
+          - "`Tab` - Jump to / accept next edit suggestion"
+          - "`Space` + `aa` - Ask AI"
+          - "`Space` + `at` - Toggle AI chat window"
+          - "`Space` + `ap` - Select a predefined prompt"
+          - "`Esc` + `Esc` - Enter normal mode"
+          - "`q` or `Ctrl` + `q` - Hide AI chat window"
+          - "`Ctrl` + `w` + `p` or `Ctrl` + `o` - Leave the AI chat window"
+          - "`Ctrl` + `p` - Insert prompt or context"
       - title: Links
         items:
           - "The Vim Cheat Sheet is inspired by the [Vim Cheat
