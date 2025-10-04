@@ -509,6 +509,8 @@ pages:
           - "`]d` - Go to next diagnostic"
           - "`[D` - Go to first diagnostic"
           - "`]D` - Go to last diagnostic"
+          - "`an` - Incremental selection (outwards)"
+          - "`in` - Incremental selection (inwards)"
       - title: Completions
         items:
           - "`Ctrl` + `Space` or `Ctrl` + `x` + `Ctrl` + `o` - Trigger
