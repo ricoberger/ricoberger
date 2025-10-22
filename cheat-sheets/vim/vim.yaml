@@ -448,6 +448,8 @@ pages:
             keymaps:"
           items:
             - "`Alt` + `e` - Change the command to `:edit`"
+            - "`Alt` + `f` - Change the command to `:find`"
+            - "`Alt` + `F` - Change the command to `:Find`"
             - "`Alt` + `v` - Change the command to `:vsplit`"
             - "`Alt` + `s` - Change the command to `:split`"
             - "`Alt` + `t` - Change the command to `:tabedit`"
@@ -527,7 +529,7 @@ pages:
           - "`Ctrl` + `a` - Add cursor for all words"
           - "`Ctrl` + `j` - Add cursor below"
           - "`Ctrl` + `k` - Add cursor above"
-          - "`Ctrl` + `m` - Match cursors in visual selection"
+          - "`Ctrl` + `m` - Match cursors in visual selection by regex"
       - title: AI
         items:
           - "`Tab` - Jump to / accept next edit suggestion"
