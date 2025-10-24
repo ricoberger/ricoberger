@@ -405,10 +405,6 @@ pages:
           - "`` gs` `` - Surround selection with ` `` `"
           - "`gs*` - Surround selection with `**`"
           - "`gs_` - Surround selection with `__`"
-      - title: Macros
-        items:
-          - "`Q` + `Q` - Record a macro for a selected `pattern`"
-          - "`Ctrl` + `q` - Replay a macro for a selected `pattern`"
       - title: Quickfix
         items:
           - "`Space` + `qo` - Open the quickfix window"
@@ -442,6 +438,7 @@ pages:
           - "`Space` + `fb` - Find buffers"
           - "`Space` + `fr` - Find recently opened files"
           - "`Space` + `fm` - Find marks"
+          - "`Space` + `fu` - Undotree"
         tip:
           description:
             "**Tip:** The find command can be changed using the following
@@ -470,10 +467,6 @@ pages:
           - "`Space` + `rR` - Replace in quickfix list"
           - "`Space` + `rW` - Replace word under cursor in quickfix list"
           - "`Space` + `rV` - Replace visual selection in quickfix list"
-      - title: Project Management
-        items:
-          - "`Space` + `pss` - Save the session for the project"
-          - "`Space` + `psl` - Load the session for the project"
       - title: Gitsigns
         items:
           - "`]c` - Jump to next hunk"
@@ -491,7 +484,9 @@ pages:
           - "`Space` + `gsq` - Show hunks in quickfix list"
           - "`Space` + `gsl` - Show hunks in location list"
           - "`Space` + `gst` - Toggle word diff and deleted lines"
-          - "`GitDiff <base> <head>` - Open diff between `<base>` and `<head>`"
+          - "`GitDiff <base> <head>` or `DiffTool <base> <head>` - Open diff
+            between `<base>` and `<head>` in quickfix list"
+          - "`GitMerge` - Open merge conflicts in quickfix list"
       - title: LSP
         items:
           - "`grn` - Rename"
