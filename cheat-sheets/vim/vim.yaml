@@ -282,6 +282,10 @@ pages:
           - "`:%s/old/new/gcI` - Replace all old with new throughout file with
             confirmations (case sensitive)"
           - "`:noh` or `ESC` - Remove highlighting of search matches"
+      - title: Macros
+        items:
+          - "`Q` + `Q` - Record a macro for a selected `pattern`"
+          - "`Ctrl` + `q` - Replay a macro for a selected `pattern`"
       - title: Quickfix
         items:
           - "`:cope[n]` - Open the quickfix window"
@@ -437,7 +441,6 @@ pages:
             to quickfix list"
           - "`Space` + `fb` - Find buffers"
           - "`Space` + `fr` - Find recently opened files"
-          - "`Space` + `fm` - Find marks"
           - "`Space` + `fu` - Undotree"
         tip:
           description:
