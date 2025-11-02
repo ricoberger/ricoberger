@@ -282,10 +282,6 @@ pages:
           - "`:%s/old/new/gcI` - Replace all old with new throughout file with
             confirmations (case sensitive)"
           - "`:noh` or `ESC` - Remove highlighting of search matches"
-      - title: Macros
-        items:
-          - "`Q` + `Q` - Record a macro for a selected `pattern`"
-          - "`Ctrl` + `q` - Replay a macro for a selected `pattern`"
       - title: Quickfix
         items:
           - "`:cope[n]` - Open the quickfix window"
@@ -296,6 +292,8 @@ pages:
           - "`:#chi[story]` - Go to quickfix list number #"
           - "`[q` - Go to previous item in quickfix list"
           - "`]q` - Go to next item in quickfix list"
+          - "`dd` - Delete item from quickfix list"
+          - "`d` - Delete visual selected items from quickfix list"
         tip:
           description:
             "**Tip:** To replace a pattern in multiple files, use `:grep` to add
@@ -409,59 +407,88 @@ pages:
           - "`` gs` `` - Surround selection with ` `` `"
           - "`gs*` - Surround selection with `**`"
           - "`gs_` - Surround selection with `__`"
-      - title: Quickfix
-        items:
-          - "`Space` + `qo` - Open the quickfix window"
-          - "`Space` + `qc` - Close the quickfix window"
-          - "`Space` + `qh` - Show list of quickfix lists"
-          - "`Space` + `qn` - Go to newer quickfix list"
-          - "`Space` + `qp` - Go to older quickfix list"
-          - "`Space` + `qf` - Filter the quickfix list"
-          - "`Space` + `q#` - Go to quickfix list number #"
-          - "`[q` - Go to previous item in quickfix list"
-          - "`]q` - Go to next item in quickfix list"
-          - "`dd` - Delete item from quickfix list"
-          - "`d` - Delete visual selected items from quickfix list"
       - title: Explorer
         items:
-          - "`Space` + `ee` - Open `:edit` command in current directory"
-          - "`Space` + `ec` - Copy current file"
-          - "`Space` + `em` - Move current file"
-          - "`Space` + `er` - Remove current file"
-          - "`Space` + `ey` - Copy relative path of current file to clipboard"
-          - "`Space` + `ew` - Save current file"
-          - "`Space` + `eW` - Save current file without running auto commands"
-          - "`Space` + `eg` - Change directory to the git root directory"
-      - title: Find
-        items:
-          - "`Space` + `ff` - Find files"
-          - "`Space` + `fF` - Find files and send results to quickfix list"
-          - "`Space` + `fc` - Find files in current directory"
-          - "`Space` + `fC` - Find files in current directory and send results
-            to quickfix list"
-          - "`Space` + `fb` - Find buffers"
-          - "`Space` + `fr` - Find recently opened files"
-          - "`Space` + `fu` - Undotree"
+          - "`Space` + `ee` - Open explorer"
+          - "`Space` + `en` - Create a new file"
         tip:
           description:
-            "**Tip:** The find command can be changed using the following
-            keymaps:"
+            "**Tip:** You can use the following keymaps within the explorer:"
           items:
-            - "`Alt` + `e` - Change the command to `:edit`"
-            - "`Alt` + `f` - Change the command to `:find`"
-            - "`Alt` + `F` - Change the command to `:Find`"
-            - "`Alt` + `v` - Change the command to `:vsplit`"
-            - "`Alt` + `s` - Change the command to `:split`"
-            - "`Alt` + `t` - Change the command to `:tabedit`"
-            - "`Alt` + `r` - Change the command to `:!rm`"
+            - "`l` - Confirm"
+            - "`h` - Close directory"
+            - "`a` - Add"
+            - "`d` - Delete"
+            - "`r` - Rename"
+            - "`c` - Copy"
+            - "`m` - Move"
+            - "`o` - Open with system application"
+            - "`P` - Toggle preview"
+            - "`u` - Update"
+            - "`I` - Toggle ignored"
+            - "`H` - Toggle hidden"
+            - "`Z` - Close all"
+            - "`y` - Yank"
+            - "`s` - Search in directory"
+            - "`D` - Diff selected files"
+      - title: Picker
+        items:
+          - "`Space` + `ff` - Find files"
+          - "`Space` + `fb` - Find buffers"
+          - "`Space` + `fr` - Find recent files"
+          - "`Space` + `fu` - Find undo"
+          - "`Space` + `fl` - Find location list"
+          - "`Space` + `fq` - Find quickfix list"
+          - "`Space` + `fm` - Find marks"
+          - "`Space` + `ld` - LSP buffer diagnostics"
+          - "`Space` + `lD` - LSP workspace diagnostics"
+          - "`Space` + `ls` - LSP buffer symbols"
+          - "`Space` + `lr` - LSP references"
+          - "`Space` + `ld` - LSP definitions"
+          - "`Space` + `lD` - LSP declarations"
+          - "`Space` + `ly` - LSP type definitions"
+          - "`Space` + `li` - LSP implementations"
+          - "`Space` + `gff` - Git files"
+          - "`Space` + `gfb` - Git branches"
+          - "`Space` + `gfl` - Git log for buffer"
+          - "`Space` + `gfL` - Git log for workspace"
+          - "`Space` + `gfs` - Git status"
+          - "`Space` + `gfS` - Git stash"
+        tip:
+          description:
+            "**Tip:** You can use the following keymaps within the picker:"
+          items:
+            - "`/` - Toggle focus"
+            - "`Enter` - Confirm"
+            - "`Down` or `Ctrl` + `j` or `Ctrl` + `n` or `j` - List down"
+            - "`Up` or `Ctrl` + `k` or `Ctrl` + `p` or `k` - List up"
+            - "`Ctrl` + `d` - List scroll down"
+            - "`Ctrl` + `u` - List scroll up"
+            - "`G` - List bottom"
+            - "`gg` - List top"
+            - "`Ctrl` + `Down` - History forward"
+            - "`Ctrl` + `Up` - History back"
+            - "`Tab` - Select and next"
+            - "`Shift` + `Tab` - Select and prev"
+            - "`Ctrl` + `a` - Select all"
+            - "`Ctrl` + `b` - Preview scroll up"
+            - "`Ctrl` + `f` - Preview scroll down"
+            - "`Ctrl` + `g` - Toggle live"
+            - "`Ctrl` + `q` - Quickfix list"
+            - "`Ctrl` + `s` - Edit split"
+            - "`Ctrl` + `v` - Edit vsplit"
+            - "`Ctrl` + `x` - Delete buffer"
+            - "`Alt` + `f` - Toggle follow"
+            - "`Alt` + `h` - Toggle hidden"
+            - "`Alt` + `i` - Toggle ignore"
+            - "`Esc` or `Ctrl` + `c` or `q` - Close"
       - title: Search
         items:
           - "`Space` + `ss` - Search for a pattern"
-          - "`Space` + `sc` - Search for a pattern in the current directory"
-          - "`Space` + `s/` - Search for a pattern in the current file"
-          - "`Space` + `sw` - Search for the word under the cursor"
-          - "`Space` + `sv` - Search for the visual selection"
+          - "`Space` + `s/` - Search for a pattern in buffers"
+          - "`Space` + `sw` - Search for the word / selection"
           - "`Space` + `st` - Search for all todo comments"
+          - "`Space` + `sr` - Resume search"
       - title: Replace
         items:
           - "`Space` + `rr` - Replace in buffer"
@@ -487,9 +514,23 @@ pages:
           - "`Space` + `gsq` - Show hunks in quickfix list"
           - "`Space` + `gsl` - Show hunks in location list"
           - "`Space` + `gst` - Toggle word diff and deleted lines"
-          - "`GitDiff <base> <head>` or `DiffTool <base> <head>` - Open diff
-            between `<base>` and `<head>` in quickfix list"
           - "`GitMerge` - Open merge conflicts in quickfix list"
+      - title: GitHub
+        items:
+          - "`Space` + `ghi` - Open GitHub issues"
+          - "`Space` + `ghI` - All GitHub issues"
+          - "`Space` + `ghp` - Open GitHub pull requests"
+          - "`Space` + `ghP` - All GitHub pull requests"
+        tip:
+          description:
+            "**Tip:** You can use the following keymaps within the GitHub
+            buffers:"
+          items:
+            - "`Enter` - Select action"
+            - "`i` - Edit"
+            - "`a` - Add comment"
+            - "`c` - Close"
+            - "`o` - Reopen"
       - title: LSP
         items:
           - "`grn` - Rename"
