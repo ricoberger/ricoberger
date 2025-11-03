@@ -69,9 +69,9 @@ However, since it is recommended to build a custom Docker image, we will choose
 this option instead of using one of the pre-built distributions.
 
 We will use the following
-[Dockerfile](https://raw.githubusercontent.com/ricoberger/playground/6b942ebe1df3b121b09042274f6598485d159826/kubernetes/kubernetes-logging-with-clickhouse-and-opentelemetry/otel/Dockerfile)
+[Dockerfile](https://raw.githubusercontent.com/ricoberger/playground/6b942ebe1df3b121b09042274f6598485d159826/kubernetes/kubernetes-logging-with-clickhouse-and-opentelemetry/otel-collector/Dockerfile)
 and
-[builder manifest](https://raw.githubusercontent.com/ricoberger/playground/6b942ebe1df3b121b09042274f6598485d159826/kubernetes/kubernetes-logging-with-clickhouse-and-opentelemetry/otel/builder-config.yaml)
+[builder manifest](https://raw.githubusercontent.com/ricoberger/playground/6b942ebe1df3b121b09042274f6598485d159826/kubernetes/kubernetes-logging-with-clickhouse-and-opentelemetry/otel-collector/builder-config.yaml)
 to build our custom Docker image
 `registry.homelab.ricoberger.dev/otel-collector:v0.138.0` using the following
 command:
@@ -245,10 +245,10 @@ establish the schema in ClickHouse. The following commands can be used to deploy
 the CronJob and DaemonSet:
 
 ```sh
-kubectl apply -f https://raw.githubusercontent.com/ricoberger/playground/6b942ebe1df3b121b09042274f6598485d159826/kubernetes/kubernetes-logging-with-clickhouse-and-opentelemetry/otel/otel-collector-create-schema.yaml
+kubectl apply -f https://raw.githubusercontent.com/ricoberger/playground/6b942ebe1df3b121b09042274f6598485d159826/kubernetes/kubernetes-logging-with-clickhouse-and-opentelemetry/otel-collector/otel-collector-create-schema.yaml
 kubectl create job --from=cronjob/otel-collector-create-schema otel-collector-create-schema-manual
 
-kubectl apply -f https://raw.githubusercontent.com/ricoberger/playground/6b942ebe1df3b121b09042274f6598485d159826/kubernetes/kubernetes-logging-with-clickhouse-and-opentelemetry/otel/otel-collector.yaml
+kubectl apply -f https://raw.githubusercontent.com/ricoberger/playground/6b942ebe1df3b121b09042274f6598485d159826/kubernetes/kubernetes-logging-with-clickhouse-and-opentelemetry/otel-collector/otel-collector.yaml
 ```
 
 ```plaintext
