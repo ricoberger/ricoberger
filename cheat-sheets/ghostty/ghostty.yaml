@@ -27,27 +27,26 @@ pages:
           - "`Command` + `n` - New window"
           - "`Command` + `q` - Quit window"
           - "`Command` + `w` - Close surface"
-          - "`Command` + `Alt` + `Shift` + `w` - Close all windows"
           - "`Command` + `Ctrl` + `f` - Toggle fullscreen"
       - title: Tabs
         items:
           - "`Command` + `t` - New tab"
-          - "`Ctrl` + `Tab` - Next tab"
-          - "`Ctrl` + `Shift` + `Tab` - Previous tab"
+          - "`Command` + `Ctrl` + `Right` - Next tab"
+          - "`Command` + `Ctrl` + `Left` - Previous tab"
           - "`Command` + `NUM` - Go to tab"
       - title: Split
         items:
           - "`Command` + `d` - Split right"
           - "`Command` + `Shift` + `d` - Split bottom"
           - "`Command` + `Shift` + `Enter` - Toogle zoom"
-          - "`Command` + `Alt` + `Left` - Go to left split"
-          - "`Command` + `Alt` + `Right` - Go to right split"
-          - "`Command` + `Alt` + `Up` - Go to top split"
-          - "`Command` + `Alt` + `Down` - Go to bottom split"
-          - "`Command` + `Ctrl` + `Left` - Resize split left"
-          - "`Command` + `Ctrl` + `Right` - Resize split right"
-          - "`Command` + `Ctrl` + `Up` - Resize split up"
-          - "`Command` + `Ctrl` + `Down` - Resize split down"
+          - "`Command` + `Ctrl` + `Left` - Go to left split"
+          - "`Command` + `Ctrl` + `Right` - Go to right split"
+          - "`Command` + `Ctrl` + `Up` - Go to top split"
+          - "`Command` + `Ctrl` + `Down` - Go to bottom split"
+          - "`Command` + `Ctrl` + `Alt` + `Left` - Resize split left"
+          - "`Command` + `Ctrl` + `Alt` + `Right` - Resize split right"
+          - "`Command` + `Ctrl` + `Alt` + `Up` - Resize split up"
+          - "`Command` + `Ctrl` + `Alt` + `Down` - Resize split down"
       - title: Scroll
         items:
           - "`Command` + `Home` - Scroll to top"
