@@ -491,12 +491,12 @@ pages:
           - "`Space` + `sr` - Resume search"
       - title: Replace
         items:
-          - "`Space` + `rr` - Replace in buffer"
+          - "`Space` + `rr` - Replace in buffer / in visual selection"
           - "`Space` + `rw` - Replace word under cursor in buffer"
-          - "`Space` + `rv` - Replace visual selection in buffer"
+          - "`Space` + `rw` - Replace visual selection in buffer"
           - "`Space` + `rR` - Replace in quickfix list"
           - "`Space` + `rW` - Replace word under cursor in quickfix list"
-          - "`Space` + `rV` - Replace visual selection in quickfix list"
+          - "`Space` + `rW` - Replace visual selection in quickfix list"
       - title: Gitsigns
         items:
           - "`]c` - Jump to next hunk"
