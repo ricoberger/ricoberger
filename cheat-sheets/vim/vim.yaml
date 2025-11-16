@@ -411,6 +411,8 @@ pages:
         items:
           - "`Space` + `ee` - Open explorer"
           - "`Space` + `en` - Create a new file"
+          - "`Space` + `ew` - Write a file without auto commands and with
+            creating directories"
         tip:
           description:
             "**Tip:** You can use the following keymaps within the explorer:"
@@ -431,29 +433,15 @@ pages:
             - "`y` - Yank"
             - "`s` - Search in directory"
             - "`D` - Diff selected files"
-      - title: Picker
+      - title: Find
         items:
           - "`Space` + `ff` - Find files"
           - "`Space` + `fb` - Find buffers"
           - "`Space` + `fr` - Find recent files"
           - "`Space` + `fu` - Find undo"
-          - "`Space` + `fl` - Find location list"
-          - "`Space` + `fq` - Find quickfix list"
           - "`Space` + `fm` - Find marks"
-          - "`Space` + `ld` - LSP buffer diagnostics"
-          - "`Space` + `lD` - LSP workspace diagnostics"
-          - "`Space` + `ls` - LSP buffer symbols"
-          - "`Space` + `lr` - LSP references"
-          - "`Space` + `ld` - LSP definitions"
-          - "`Space` + `lD` - LSP declarations"
-          - "`Space` + `ly` - LSP type definitions"
-          - "`Space` + `li` - LSP implementations"
-          - "`Space` + `gff` - Git files"
-          - "`Space` + `gfb` - Git branches"
-          - "`Space` + `gfl` - Git log for buffer"
-          - "`Space` + `gfL` - Git log for workspace"
-          - "`Space` + `gfs` - Git status"
-          - "`Space` + `gfS` - Git stash"
+          - "`Space` + `fd` - Find buffer diagnostics"
+          - "`Space` + `fD` - Find workspace diagnostics"
         tip:
           description:
             "**Tip:** You can use the following keymaps within the picker:"
@@ -481,6 +469,7 @@ pages:
             - "`Alt` + `f` - Toggle follow"
             - "`Alt` + `h` - Toggle hidden"
             - "`Alt` + `i` - Toggle ignore"
+            - "`Alt` + `r` - Toggle regex"
             - "`Esc` or `Ctrl` + `c` or `q` - Close"
       - title: Search
         items:
@@ -488,7 +477,6 @@ pages:
           - "`Space` + `s/` - Search for a pattern in buffers"
           - "`Space` + `sw` - Search for the word / selection"
           - "`Space` + `st` - Search for all todo comments"
-          - "`Space` + `sr` - Resume search"
       - title: Replace
         items:
           - "`Space` + `rr` - Replace in buffer / in visual selection"
@@ -497,7 +485,7 @@ pages:
           - "`Space` + `rR` - Replace in quickfix list"
           - "`Space` + `rW` - Replace word under cursor in quickfix list"
           - "`Space` + `rW` - Replace visual selection in quickfix list"
-      - title: Gitsigns
+      - title: Git
         items:
           - "`]c` - Jump to next hunk"
           - "`[c` - Jump to previous hunk"
@@ -509,12 +497,17 @@ pages:
           - "`Space` + `gsp` - Preview hunk"
           - "`Space` + `gsb` - Git blame line"
           - "`Space` + `gsB` - Git blame file"
-          - "`Space` + `gsd` - Diff"
-          - "`Space` + `gsd` - Diff against `~`"
-          - "`Space` + `gsq` - Show hunks in quickfix list"
-          - "`Space` + `gsl` - Show hunks in location list"
+          - "`Space` + `gsd` - Diff this"
+          - "`Space` + `gsd` - Diff this `~`"
           - "`Space` + `gst` - Toggle word diff and deleted lines"
-          - "`GitMerge` - Open merge conflicts in quickfix list"
+          - "`Space` + `gff` - Git files"
+          - "`Space` + `gfd` - Git diff"
+          - "`Space` + `gfb` - Git branches"
+          - "`Space` + `gfl` - Git log for buffer"
+          - "`Space` + `gfL` - Git log for workspace"
+          - "`Space` + `gfs` - Git status"
+          - "`Space` + `gfS` - Git stash"
+          - "`Space` + `gm` - Open merge conflicts in quickfix list"
       - title: GitHub
         items:
           - "`Space` + `ghi` - Open GitHub issues"
@@ -536,16 +529,16 @@ pages:
           - "`grn` - Rename"
           - "`gra` - Code actions"
           - "`grf` - Format"
-          - "`grr` - Go to references"
-          - "`gri` - Go to implementation"
-          - "`grt` - Go to type definition"
-          - "`gd` or `gD` - Go to definition (in vertical split)"
-          - "`K` - Hover documentation in floating window"
-          - "`Ctrl` + `s` - Hover signature help in floating window"
-          - "`Ctrl` + `w` + `d` - Hover diagnostics in floating window"
-          - "`grq` - Show diagnostics in quickfix list"
-          - "`gO` - Show document symbols in location list"
-          - "`gry` - Toggle inlay hints"
+          - "`gd` - Definitions"
+          - "`gD` - Declarations"
+          - "`grr` - References"
+          - "`gri` - Implementations"
+          - "`grt` - Type definition"
+          - "`grh` - Toggle inlay hints"
+          - "`gO` - Show document symbols"
+          - "`K` - Hover documentation"
+          - "`Ctrl` + `s` - Hover signature help"
+          - "`Ctrl` + `w` + `d` - Hover diagnostics"
           - "`[d` - Go to previous diagnostic"
           - "`]d` - Go to next diagnostic"
           - "`[D` - Go to first diagnostic"
@@ -571,10 +564,10 @@ pages:
           - "`Ctrl` + `m` - Match cursors in visual selection by regex"
       - title: AI
         items:
+          - "`Space` + `an` - Toggle next edit suggestion"
           - "`Tab` - Jump to / accept next edit suggestion"
-          - "`Space` + `aa` - Ask AI"
-          - "`Space` + `at` - Toggle AI chat window"
-          - "`Space` + `ap` - Select a predefined prompt"
+          - "`Space` + `at` - Toggle AI chat window and focus"
+          - "`Space` + `ap` - Select a predefined prompt or context"
           - "`Esc` + `Esc` - Enter normal mode"
           - "`q` or `Ctrl` + `q` - Hide AI chat window"
           - "`Ctrl` + `w` + `p` or `Ctrl` + `o` - Leave the AI chat window"
