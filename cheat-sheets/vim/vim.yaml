@@ -507,7 +507,7 @@ pages:
           - "`Space` + `gfL` - Git log for workspace"
           - "`Space` + `gfs` - Git status"
           - "`Space` + `gfS` - Git stash"
-          - "`Space` + `gm` - Open merge conflicts in quickfix list"
+          - "`Space` + `gfm` - Git merge conflicts"
       - title: GitHub
         items:
           - "`Space` + `ghi` - Open GitHub issues"
