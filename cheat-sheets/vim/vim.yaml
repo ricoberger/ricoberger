@@ -515,13 +515,6 @@ pages:
           - "`Space` + `ghI` - All GitHub issues"
           - "`Space` + `ghp` - Open GitHub pull requests"
           - "`Space` + `ghP` - All GitHub pull requests"
-      - title: Terminal
-        items:
-          - "`Space` + `tt` - Toggle terminal"
-          - "`Space` + `to` - Open terminal"
-      - title: Zen Mode
-        items:
-          - "`Space` + `zz` - Toogle zen mode"
         tip:
           description:
             "**Tip:** You can use the following keymaps within the GitHub
@@ -532,6 +525,13 @@ pages:
             - "`a` - Add comment"
             - "`c` - Close"
             - "`o` - Reopen"
+      - title: Terminal
+        items:
+          - "`Space` + `tt` - Toggle terminal"
+          - "`Space` + `to` - Open terminal"
+      - title: Zen Mode
+        items:
+          - "`Space` + `zz` - Toogle zen mode"
       - title: LSP
         items:
           - "`grn` - Rename"
