@@ -580,6 +580,15 @@ pages:
           - "`q` or `Ctrl` + `q` - Hide AI chat window"
           - "`Ctrl` + `w` + `p` or `Ctrl` + `o` - Leave the AI chat window"
           - "`Ctrl` + `p` - Insert prompt or context"
+      - title: Notes
+        items:
+          - "`Space` + `nd` - Open daily note"
+          - "`Space` + `ny` - Open daily note for yesterday"
+          - "`Space` + `nf` - Find notes"
+          - "`Space` + `ns` - Search in notes"
+          - "`Space` + `nt` - Show open tasks"
+          - "`Space` + `nk` - Show keywors / tags"
+          - "`Space` + `ne` - Open explorer"
       - title: Links
         items:
           - "The Vim Cheat Sheet is inspired by the [Vim Cheat
