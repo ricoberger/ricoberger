@@ -436,6 +436,7 @@ pages:
       - title: Find
         items:
           - "`Space` + `ff` - Find files"
+          - "`Space` + `fs` - Find files (smart)"
           - "`Space` + `fb` - Find buffers"
           - "`Space` + `fr` - Find recent files"
           - "`Space` + `fu` - Find undo"
