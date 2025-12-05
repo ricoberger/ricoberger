@@ -526,13 +526,18 @@ pages:
             - "`a` - Add comment"
             - "`c` - Close"
             - "`o` - Reopen"
-      - title: Terminal
+      - title: Misc
         items:
-          - "`Space` + `tt` - Toggle terminal"
-          - "`Space` + `to` - Open terminal"
-      - title: Zen Mode
-        items:
-          - "`Space` + `zz` - Toogle zen mode"
+          - "`Space` + `mz` - Toogle zen mode"
+          - "`Space` + `ms` - Toogle spell checking"
+        tip:
+          description:
+            "**Tip:** You can use the following keymaps for spell checking:"
+          items:
+            - "`]s` - Next misspelled word"
+            - "`[s` - Previous misspelled word"
+            - "`zg` - Mark word as good"
+            - "`zw` - Mark word as wrong"
       - title: LSP
         items:
           - "`grn` - Rename"
