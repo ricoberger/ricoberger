@@ -497,7 +497,6 @@ pages:
           - "`Space` + `gsu` - Undo last hunk"
           - "`Space` + `gsp` - Preview hunk"
           - "`Space` + `gsb` - Git blame line"
-          - "`Space` + `gsB` - Git blame file"
           - "`Space` + `gsd` - Diff this"
           - "`Space` + `gsd` - Diff this `~`"
           - "`Space` + `gst` - Toggle word diff and deleted lines"
