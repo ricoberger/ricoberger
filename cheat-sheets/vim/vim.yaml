@@ -466,11 +466,15 @@ pages:
             - "`Ctrl` + `q` - Quickfix list"
             - "`Ctrl` + `s` - Edit split"
             - "`Ctrl` + `v` - Edit vsplit"
+            - "`Ctrl` + `t` - Edit tab"
             - "`Ctrl` + `x` - Delete buffer"
             - "`Alt` + `f` - Toggle follow"
             - "`Alt` + `h` - Toggle hidden"
             - "`Alt` + `i` - Toggle ignore"
             - "`Alt` + `r` - Toggle regex"
+            - "`Alt` + `m` - Toggle maximize"
+            - "`Alt` + `p` - Toggle preview"
+            - "`Alt` + `w` - Cycle window"
             - "`Esc` or `Ctrl` + `c` or `q` - Close"
       - title: Search
         items:
@@ -511,10 +515,16 @@ pages:
           - "`Space` + `gb` - Git browse"
       - title: GitHub
         items:
-          - "`Space` + `ghi` - Open GitHub issues"
-          - "`Space` + `ghI` - All GitHub issues"
-          - "`Space` + `ghp` - Open GitHub pull requests"
-          - "`Space` + `ghP` - All GitHub pull requests"
+          - "`Space` + `ghn` - Notifications"
+          - "`Space` + `ghpi` - Pull requests: involved"
+          - "`Space` + `ghpc` - Pull requests: created"
+          - "`Space` + `ghpa` - Pull requests: assigned"
+          - "`Space` + `ghpm` - Pull requests: mentioned"
+          - "`Space` + `ghpr` - Pull requests: review requested"
+          - "`Space` + `ghii` - Issues: involved"
+          - "`Space` + `ghic` - Issues: created"
+          - "`Space` + `ghia` - Issues: assigned"
+          - "`Space` + `ghim` - Issues: mentioned"
         tip:
           description:
             "**Tip:** You can use the following keymaps within the GitHub
