@@ -94,7 +94,7 @@ pages:
           - "`A` - Unassign"
           - "`c` - Comment"
           - "`d` - Diff"
-          - "`D` - Open diff in Neovim"
+          - "`D` - Diff in Neovim"
           - "`C` - Checkout"
           - "`x` - Close"
           - "`W` - Ready for review"
@@ -103,9 +103,6 @@ pages:
           - "`m` - Merge"
           - "`M` - Merge (admin)"
           - "`u` - Update pr from base branch"
-          - "`Ctrl` + `l` - Add label to PR"
-          - "`Ctrl` + `k` - Remove label from PR"
-          - "`Ctrl` + `w` - Show logs for a workflow run"
       - title: Misc
         items:
           - "`t` - Toggle smart filtering"
