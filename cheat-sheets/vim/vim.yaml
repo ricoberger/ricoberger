@@ -443,6 +443,7 @@ pages:
           - "`Space` + `fm` - Find marks"
           - "`Space` + `fd` - Find buffer diagnostics"
           - "`Space` + `fD` - Find workspace diagnostics"
+          - "`Space` + `fp` - Find projects"
         tip:
           description:
             "**Tip:** You can use the following keymaps within the picker:"
