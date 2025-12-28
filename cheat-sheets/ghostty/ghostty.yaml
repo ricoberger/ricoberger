@@ -31,8 +31,8 @@ pages:
       - title: Tabs
         items:
           - "`Command` + `t` - New tab"
-          - "`Command` + `Ctrl` + `Right` - Next tab"
-          - "`Command` + `Ctrl` + `Left` - Previous tab"
+          - "`Command` + `Alt` + `Right` - Next tab"
+          - "`Command` + `Alt` + `Left` - Previous tab"
           - "`Command` + `NUM` - Go to tab"
       - title: Split
         items:
