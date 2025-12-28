@@ -6,9 +6,9 @@
     "build-cheat-sheets-assets": "node ./templates/utils/build-cheat-sheets-assets.js"
   },
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.16",
-    "prettier": "^3.6.2",
-    "puppeteer": "^24.27.0",
+    "@tailwindcss/cli": "^4.1.17",
+    "prettier": "^3.7.3",
+    "puppeteer": "^24.31.0",
     "tailwindcss": "^4.0.5"
   }
 }
