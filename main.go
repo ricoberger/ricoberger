@@ -27,7 +27,6 @@ import (
 	"github.com/yuin/goldmark/parser"
 	"github.com/yuin/goldmark/renderer"
 	"github.com/yuin/goldmark/renderer/html"
-	rhtml "github.com/yuin/goldmark/renderer/html"
 	"github.com/yuin/goldmark/util"
 )
 
@@ -251,7 +250,7 @@ func buildTemplate(tmpl string, distPath string, data Data) error {
 					NewImageExtender(),
 				),
 				goldmark.WithRendererOptions(
-					rhtml.WithUnsafe(),
+					html.WithUnsafe(),
 				),
 			)
 
@@ -467,7 +466,7 @@ func buildBlog() error {
 					NewImageExtender(),
 				),
 				goldmark.WithRendererOptions(
-					rhtml.WithUnsafe(),
+					html.WithUnsafe(),
 				),
 			)
 			context := parser.NewContext()
