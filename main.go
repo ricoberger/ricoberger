@@ -174,7 +174,12 @@ func main() {
 		http.Handle("/", fs)
 
 		slog.Info("Start server on :9999...")
-		if err := http.ListenAndServe(":9999", nil); err != nil {
+		server := &http.Server{
+			Addr:         ":9999",
+			ReadTimeout:  10 * time.Second,
+			WriteTimeout: 10 * time.Second,
+		}
+		if err := server.ListenAndServe(); err != nil {
 			slog.Error("Failed to start server", slog.Any("error", err))
 			os.Exit(1)
 		}
@@ -258,6 +263,7 @@ func buildTemplate(tmpl string, distPath string, data Data) error {
 			if err := md.Convert([]byte(s), &buf); err != nil {
 				slog.Error("Failed to convert markdown", slog.Any("error", err))
 			}
+			// #nosec G203
 			return template.HTML(buf.String())
 		},
 	}).ParseFiles("templates/base.html", fmt.Sprintf("templates/%s.html", tmpl))
@@ -502,7 +508,8 @@ func buildBlog() error {
 				PublishedAt: publishedAt,
 				Tags:        tags,
 				Image:       image,
-				Content:     template.HTML(buf.String()),
+				// #nosec G203
+				Content: template.HTML(buf.String()),
 			}
 
 			posts = append(posts, post)
@@ -695,7 +702,7 @@ func buildRssFeed(distPath string, metadata Metadata, posts []BlogPost) error {
 		return err
 	}
 
-	err = os.WriteFile(fmt.Sprintf("%s/feed.xml", distPath), data, 0666)
+	err = os.WriteFile(fmt.Sprintf("%s/feed.xml", distPath), data, 0600)
 	if err != nil {
 		return err
 	}
@@ -773,7 +780,7 @@ func buildSitemap() error {
 		return err
 	}
 
-	err = os.WriteFile("./dist/sitemap.xml", data, 0666)
+	err = os.WriteFile("./dist/sitemap.xml", data, 0600)
 	if err != nil {
 		return err
 	}
