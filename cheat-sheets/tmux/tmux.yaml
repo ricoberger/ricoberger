@@ -1,0 +1,73 @@
+---
+title: tmux
+description: tmux Cheat Sheet
+author: Rico Berger
+keywords:
+  - tmux
+pages:
+  - title: tmux
+    columns: 3
+    sections:
+      - title: Session
+        items:
+          - "`tmux new -s <sessionname>` - Create a new tmux session named
+            `<sessionname>`"
+          - "`tmux attach -t <sessionname>` - Attach to an existing tmux session
+            named `<sessionname>`"
+          - "`tmux kill-session -t <sessionname>` - Kill the tmux session named
+            `<sessionname>`"
+          - "`tmux ls` - List all existing tmux sessions"
+          - "`Ctrl` + `a` + `$` - Rename session"
+          - "`Ctrl` + `a` + `d` - Detache session"
+          - "`Ctrl` + `a` + `s` - Select session"
+          - "`Ctrl` + `a` + `)` - Next session"
+          - "`Ctrl` + `a` + `(` - Previous session"
+          - "`Ctrl` + `t` - Create / attach to session in popup"
+      - title: Windows
+        items:
+          - "`Ctrl` + `a` + `c` - Create window"
+          - "`Ctrl` + `a` + `n` - Next window"
+          - "`Ctrl` + `a` + `p` - Previous window"
+          - "`Ctrl` + `a` + `l` - Last window"
+          - "`Ctrl` + `a` + `NUM` - Select window by number `NUM`"
+          - "`Ctrl` + `a` + `w` - List windows"
+          - "`Ctrl` + `a` + `&` - Kill window"
+          - "`Ctrl` + `a` + `,` - Rename window"
+      - title: Panes
+        items:
+          - "`Ctrl` + `a` + `%` - Vertical split"
+          - '`Ctrl` + `a` + `"` - Horizontal split'
+          - "`Ctrl` + `a` + `Up` - Move up to pane"
+          - "`Ctrl` + `a` + `Down` - Move down to pane"
+          - "`Ctrl` + `a` + `Left` - Move to pane to left"
+          - "`Ctrl` + `a` + `Right` - Move to pane to right"
+          - "`Ctrl` + `a` + `x` - Kill pane"
+          - "`Ctrl` + `a` + `:resize-pane -U NUM` - Resize pane up by `NUM`
+            cells"
+          - "`Ctrl` + `a` + `:resize-pane -D NUM` - Resize pane down by `NUM`
+            cells"
+          - "`Ctrl` + `a` + `:resize-pane -L NUM` - Resize pane left by `NUM`
+            cells"
+          - "`Ctrl` + `a` + `:resize-pane -R NUM` - Resize pane right by `NUM`
+            cells"
+      - title: Copy Mode
+        items:
+          - "`Ctrl` + `a` + `[` - Enter copy mode"
+          - "`Ctrl` + `a` + `]` - Paste from buffer"
+          - "`v` - Start selection in copy mode"
+          - "`y` - Copy selection in copy mode"
+          - "`/` - Search forward in copy mode"
+          - "`q` - Exit copy mode"
+      - title: Links
+        items:
+          - |
+            My tmux configuration can be found in my personal [dotfiles](https://github.com/ricoberger/dotfiles/blob/main/.tmux.conf).
+
+            ![tmux](./assets/tmux.png)
+          - |
+            More tmux related links:
+
+            - [GitHub Repository](https://github.com/tmux/tmux)
+            - [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
+            - [Tmux Catppuccin Theme](https://github.com/catppuccin/tmux)
+            - Download Cheat Sheet as [PDF](./assets/tmux-cheat-sheet.pdf) | [PNG](./assets/tmux-cheat-sheet.png)
