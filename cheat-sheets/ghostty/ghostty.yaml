@@ -63,9 +63,9 @@ pages:
           - "`Command` + `v` - Paste"
           - "`Command` + `c` - Copy"
           - "`Command` + `a` - Select all"
-          - "`Command` + `f` - Start search"
           - "`Command` + `k` - Clear screen"
           - "`Command` + `p` - Command palette"
+          - "`Command` + `f` - Open screen file in Neovim"
       - title: Selection
         items:
           - "`Command` + `Shift` + `Left` - Adjust selection left"
