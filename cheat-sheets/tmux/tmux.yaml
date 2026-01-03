@@ -41,6 +41,7 @@ pages:
           - "`Ctrl` + `a` + `Down` - Move down to pane"
           - "`Ctrl` + `a` + `Left` - Move to pane to left"
           - "`Ctrl` + `a` + `Right` - Move to pane to right"
+          - "`Ctrl` + `a` + `z` - Zoom pane"
           - "`Ctrl` + `a` + `x` - Kill pane"
           - "`Ctrl` + `a` + `:resize-pane -U NUM` - Resize pane up by `NUM`
             cells"
