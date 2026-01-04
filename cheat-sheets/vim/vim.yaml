@@ -528,6 +528,7 @@ pages:
           - "`Space` + `ghia` - Issues: assigned"
           - "`Space` + `ghim` - Issues: mentioned"
           - "`Space` + `ghI` - Issues: current repository"
+          - "`Space` + `ghc` - Show checks"
         tip:
           description:
             "**Tip:** You can use the following keymaps within the GitHub
