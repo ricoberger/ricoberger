@@ -123,6 +123,14 @@
   hr {
     @apply my-4 border-surface;
   }
+
+  details {
+    @apply my-4 px-4 border-s-4 border-primary;
+  }
+
+  summary {
+    @apply font-bold cursor-pointer;
+  }
 }
 
 .blog-post img {
