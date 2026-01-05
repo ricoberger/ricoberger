@@ -192,6 +192,8 @@ pages:
           - "`:changes` - List of changes"
           - "`g,` - Go to newer position in change list"
           - "`g;` - Go to older position in change list"
+          - "`gi` - Go to last insert position"
+          - "`gv` - Re-select last visual selection"
           - "`Ctrl` + `]` - Jump to the tag under cursor"
         tip:
           description: |
@@ -424,14 +426,16 @@ pages:
             - "`r` - Rename"
             - "`c` - Copy"
             - "`m` - Move"
+            - "`p` - Paste"
             - "`o` - Open with system application"
             - "`P` - Toggle preview"
-            - "`u` - Update"
+            - "`u` - Update / refresh file tree"
             - "`I` - Toggle ignored"
             - "`H` - Toggle hidden"
             - "`Z` - Close all"
-            - "`y` - Yank"
-            - "`s` - Search in directory"
+            - "`Space` + `/` - Search in directory"
+            - "`y` - Yank path"
+            - "`Y` - Yank path with selection"
             - "`D` - Diff selected files"
       - title: Find
         items:
