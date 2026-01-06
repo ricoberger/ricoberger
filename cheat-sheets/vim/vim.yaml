@@ -532,7 +532,8 @@ pages:
           - "`Space` + `ghia` - Issues: assigned"
           - "`Space` + `ghim` - Issues: mentioned"
           - "`Space` + `ghI` - Issues: current repository"
-          - "`Space` + `ghc` - Show checks"
+          - "`Space` + `ghac` - Action: show pull request checks"
+          - "`Space` + `gham` - Action: merge pull request"
         tip:
           description:
             "**Tip:** You can use the following keymaps within the GitHub
@@ -543,6 +544,13 @@ pages:
             - "`a` - Add comment"
             - "`c` - Close"
             - "`o` - Reopen"
+            - "`Alt` + `b` or `b` - Open url in browser"
+            - "`Ctrl` + `y` or `y` - Yank url"
+            - "`Ctrl` + `r` or `r` - Mark as read"
+            - "`Ctrl` + `d` or `d` - Mark as done"
+            - "`R` - Mark as unread"
+            - "`D` - Mark as undone"
+            - "`c` - Change cwd to repository root"
       - title: Misc
         items:
           - "`Space` + `mz` - Toogle zen mode"
