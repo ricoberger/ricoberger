@@ -374,6 +374,11 @@ pages:
             the differences of files, one can directly start Vim in diff mode by
             running `vimdiff` (`nvim -d`) in a terminal. One can even set this
             as `git difftool`."
+      - title: Misc
+        items:
+          - "`gf` - Edit the file whose name is under or after the cursor"
+          - "`gx` - Opens the current filepath or URL under cursor using the
+            system default handler."
       - title: Help
         items:
           - "`:h default-mappings` - Show default key mappings"
