@@ -622,6 +622,7 @@ pages:
           - "`Space` + `nd` - Open daily note"
           - "`Space` + `ny` - Open daily note for yesterday"
           - "`Space` + `nf` - Find notes"
+          - "`Space` + `nr` - Recent notes"
           - "`Space` + `ns` - Search in notes"
           - "`Space` + `nt` - Show open tasks"
           - "`Space` + `nk` - Show keywors / tags"
