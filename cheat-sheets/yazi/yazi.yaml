@@ -5,8 +5,6 @@ description:
 author: Rico Berger
 keywords:
   - yazi
-  - terminal file manager
-  - rust
 pages:
   - title: Yazi
     columns: 5
