@@ -101,7 +101,6 @@ pages:
           - "`w` - Watch checks"
           - "`X` - Reopen"
           - "`m` - Merge"
-          - "`M` - Merge (admin)"
           - "`u` - Update pr from base branch"
       - title: Misc
         items:
