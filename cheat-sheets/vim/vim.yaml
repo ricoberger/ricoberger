@@ -453,6 +453,7 @@ pages:
           - "`Space` + `fd` - Find buffer diagnostics"
           - "`Space` + `fD` - Find workspace diagnostics"
           - "`Space` + `fp` - Find projects"
+          - "`Space` + `fq` - Find quickfix list"
         tip:
           description:
             "**Tip:** You can use the following keymaps within the picker:"
@@ -511,13 +512,14 @@ pages:
           - "`Space` + `gsu` - Undo last hunk"
           - "`Space` + `gsp` - Preview hunk"
           - "`Space` + `gsb` - Git blame line"
-          - "`Space` + `gsd` - Diff this"
-          - "`Space` + `gsd` - Diff this `~`"
-          - "`Space` + `gst` - Toggle word diff and deleted lines"
+          - "`Space` + `gsd` - Diff current file"
+          - "`Space` + `gsD` - Diff current branch"
+          - "`Space` + `gst` - Toggle line highlighting, word diff and deleted
+            lines"
           - "`Space` + `gff` - Git files"
           - "`Space` + `gfd` - Git diff"
           - "`Space` + `gfb` - Git branches"
-          - "`Space` + `gfl` - Git log for buffer"
+          - "`Space` + `gfl` - Git log for file"
           - "`Space` + `gfL` - Git log for workspace"
           - "`Space` + `gfs` - Git status"
           - "`Space` + `gfS` - Git stash"
