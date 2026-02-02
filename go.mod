@@ -4,8 +4,8 @@ go 1.25.5
 
 require (
 	github.com/PuerkitoBio/goquery v1.11.0
-	github.com/goccy/go-yaml v1.19.1
-	github.com/yuin/goldmark v1.7.13
+	github.com/goccy/go-yaml v1.19.2
+	github.com/yuin/goldmark v1.7.16
 	github.com/yuin/goldmark-meta v1.1.0
 )
 
