@@ -563,6 +563,7 @@ pages:
         items:
           - "`Space` + `mz` - Toogle zen mode"
           - "`Space` + `ms` - Toogle spell checking"
+          - "`Space` + `mt` - Toogle terminal"
         tip:
           description:
             "**Tip:** You can use the following keymaps for spell checking:"
