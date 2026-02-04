@@ -525,6 +525,14 @@ pages:
           - "`Space` + `gfS` - Git stash"
           - "`Space` + `gfm` - Git merge conflicts"
           - "`Space` + `gb` - Git browse"
+        tip:
+          description:
+            "**Tip:** You can use the following keymaps within the picker:"
+          items:
+            - "`Ctrl` + `a` - Add branch"
+            - "`Ctrl` + `x` - Delete branch"
+            - "`Tab` - Stage"
+            - "`Ctrl` + `r` - Restore"
       - title: GitHub
         items:
           - "`Space` + `ghn` - Notifications"
@@ -552,7 +560,7 @@ pages:
             - "`a` - Add comment"
             - "`c` - Close"
             - "`o` - Reopen"
-            - "`Alt` + `y` or `y` - Yank url"
+            - "`Ctrl` + `y` or `y` - Yank url"
             - "`Alt` + `b` or `b` - Open url in browser"
             - "`Alt` + `r` or `r` - Mark as read"
             - "`Alt` + `R` or `R` - Mark as unread"
