@@ -442,6 +442,7 @@ pages:
             - "`y` - Yank path"
             - "`Y` - Yank path with selection"
             - "`D` - Diff selected files"
+            - "`Ctrl` + `c` - Change directory to current directory"
       - title: Find
         items:
           - "`Space` + `ff` - Find files"
