@@ -573,6 +573,7 @@ pages:
           - "`Space` + `mz` - Toogle zen mode"
           - "`Space` + `ms` - Toogle spell checking"
           - "`Space` + `mt` - Toogle terminal"
+          - "`Space` + `mf` - Set file type for buffer"
         tip:
           description:
             "**Tip:** You can use the following keymaps for spell checking:"
