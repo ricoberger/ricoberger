@@ -627,9 +627,9 @@ pages:
           - "`Space` + `aa` - Toggle AI chat window and focus"
           - "`Space` + `ap` - Select a predefined prompt or context"
           - "`Esc` + `Esc` - Enter normal mode"
-          - "`q` or `Ctrl` + `q` - Hide AI chat window"
-          - "`Ctrl` + `w` + `p` or `Ctrl` + `o` - Leave the AI chat window"
-          - "`Ctrl` + `p` - Insert prompt or context"
+          - "`Ctrl` + `z` - Leave the AI chat window"
+          - "`Ctrl` + `f` - Select file"
+          - "`Ctrl` + `b` - Select buffer"
       - title: Notes
         items:
           - "`Space` + `nd` - Open daily note"
