@@ -284,6 +284,17 @@ pages:
           - "`:%s/old/new/gcI` - Replace all old with new throughout file with
             confirmations (case sensitive)"
           - "`:noh` or `ESC` - Remove highlighting of search matches"
+        tip:
+          description:
+            "**Tip:** To replace a pattern in multiple files, the following
+            commands can be used:"
+          items:
+            - "`argdo` - Selected set of files (`:args`)"
+            - "`bufdo` - All open buffers (`:buffers`)"
+            - "`windo` - All visible windows in the curren tab"
+            - "`tabdo` - Each tab"
+            - "`cdo` - Each quickfix list item"
+            - "`cfdo` - Each file in the quickfix list"
       - title: Quickfix
         items:
           - "`:cope[n]` - Open the quickfix window"
@@ -376,6 +387,7 @@ pages:
             as `git difftool`."
       - title: Misc
         items:
+          - "`Ctrl` + `^` - Edit alternate file"
           - "`gf` - Edit the file whose name is under or after the cursor"
           - "`gx` - Opens the current filepath or URL under cursor using the
             system default handler."
@@ -574,6 +586,7 @@ pages:
           - "`Space` + `ms` - Toogle spell checking"
           - "`Space` + `mt` - Toogle terminal"
           - "`Space` + `mf` - Set file type for buffer"
+          - "`Space` + `mlo` - Organize imports (TypeScript LSP)"
         tip:
           description:
             "**Tip:** You can use the following keymaps for spell checking:"
@@ -613,6 +626,7 @@ pages:
           - "`Ctrl` + `n` or `Down` - Select next completion"
           - "`Ctrl` + `p` or `Up` - Select previous completion"
           - "`Ctrl` + `Enter` - Accept inline completion"
+          - "`Ctrl` + `Right` - Accept next word of inline completion"
       - title: Multicursor
         items:
           - "`Ctrl` + `n` - Add cursor for next word"
