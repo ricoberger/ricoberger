@@ -548,7 +548,8 @@ pages:
             - "`Ctrl` + `r` - Restore"
       - title: GitHub
         items:
-          - "`Space` + `ghn` - Notifications"
+          - "`Space` + `ghn` - Notifications: unread"
+          - "`Space` + `ghN` - Notifications: all"
           - "`Space` + `ghpi` - Pull requests: involved"
           - "`Space` + `ghpc` - Pull requests: created"
           - "`Space` + `ghpa` - Pull requests: assigned"
@@ -576,9 +577,7 @@ pages:
             - "`Ctrl` + `y` or `y` - Yank url"
             - "`Alt` + `b` or `b` - Open url in browser"
             - "`Alt` + `r` or `r` - Mark as read"
-            - "`Alt` + `R` or `R` - Mark as unread"
             - "`Alt` + `d` or `d` - Mark as done"
-            - "`Alt` + `D` or `D` - Mark as undone"
             - "`Alt` + `c` or `c` - Change cwd to repository root"
       - title: Misc
         items:
