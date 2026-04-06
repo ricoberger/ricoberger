@@ -615,6 +615,8 @@ pages:
           - "`]D` - Go to last diagnostic"
           - "`an` - Incremental selection (outwards)"
           - "`in` - Incremental selection (inwards)"
+          - "`]n` - Select previous node"
+          - "`[n` - Select next node"
       - title: Completions
         items:
           - "`Ctrl` + `Space` or `Ctrl` + `x` + `Ctrl` + `o` - Trigger
