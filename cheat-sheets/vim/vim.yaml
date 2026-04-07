@@ -391,6 +391,7 @@ pages:
           - "`gf` - Edit the file whose name is under or after the cursor"
           - "`gx` - Opens the current filepath or URL under cursor using the
             system default handler."
+          - "`q:` or `Ctrl` + `f` - Command-line window"
       - title: Help
         items:
           - "`:h default-mappings` - Show default key mappings"
@@ -549,7 +550,6 @@ pages:
       - title: GitHub
         items:
           - "`Space` + `ghn` - Notifications: unread"
-          - "`Space` + `ghN` - Notifications: all"
           - "`Space` + `ghpi` - Pull requests: involved"
           - "`Space` + `ghpc` - Pull requests: created"
           - "`Space` + `ghpa` - Pull requests: assigned"
