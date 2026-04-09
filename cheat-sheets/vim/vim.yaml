@@ -391,7 +391,7 @@ pages:
           - "`gf` - Edit the file whose name is under or after the cursor"
           - "`gx` - Opens the current filepath or URL under cursor using the
             system default handler."
-          - "`q:` or `Ctrl` + `f` - Command-line window"
+          - "`q:` or `q/` or `Ctrl` + `f` - Command-line window"
       - title: Help
         items:
           - "`:h default-mappings` - Show default key mappings"
