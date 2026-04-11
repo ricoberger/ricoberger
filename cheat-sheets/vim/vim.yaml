@@ -283,6 +283,7 @@ pages:
             confirmations (case insensitive)"
           - "`:%s/old/new/gcI` - Replace all old with new throughout file with
             confirmations (case sensitive)"
+          - "`cgn` - Replace next search match, can be repeated with `n.`"
           - "`:noh` or `ESC` - Remove highlighting of search matches"
         tip:
           description:
@@ -295,6 +296,20 @@ pages:
             - "`tabdo` - Each tab"
             - "`cdo` - Each quickfix list item"
             - "`cfdo` - Each file in the quickfix list"
+            - |
+              <br/>**Tip:** Use capture groups and regular expressions to
+              perform more complex replacements. For example `:%s/"\(.*\)"/\1`
+              can be used to remove double quotes around a pattern.
+            - "`.` - Matches any single character"
+            - "`.*` - Matches zero or more of any character"
+            - "`.+` - Matches one or more of any character "
+            - "`()` - Capture group"
+            - "`\\w` - Matches any word character"
+            - "`\\d` - Matches any digit"
+            - "`\\s` - Matches any whitespace"
+            - "`\\v` - Very magic mode"
+            - "`\\n` - Matches a newline"
+            - "`\\r` - Matches a carriage return"
       - title: Quickfix
         items:
           - "`:cope[n]` - Open the quickfix window"
@@ -510,11 +525,11 @@ pages:
       - title: Replace
         items:
           - "`Space` + `rr` - Replace in buffer / in visual selection"
-          - "`Space` + `rw` - Replace word under cursor in buffer"
-          - "`Space` + `rw` - Replace visual selection in buffer"
+          - "`Space` + `rw` - Replace word under cursor / visual selection in
+            buffer"
           - "`Space` + `rR` - Replace in quickfix list"
-          - "`Space` + `rW` - Replace word under cursor in quickfix list"
-          - "`Space` + `rW` - Replace visual selection in quickfix list"
+          - "`Space` + `rW` - Replace word under cursor / visual selection in
+            quickfix list"
       - title: Git
         items:
           - "`]c` - Jump to next hunk"
