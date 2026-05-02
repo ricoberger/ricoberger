@@ -64,7 +64,7 @@ jobs:
           kill -9 $(lsof -t -i:9999)
 
       - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./dist
 
