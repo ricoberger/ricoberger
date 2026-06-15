@@ -655,6 +655,7 @@ pages:
           - "`Space` + `an` - Toggle next edit suggestion"
           - "`Tab` - Jump to / accept next edit suggestion"
           - "`Space` + `aa` - Toggle AI chat window and focus"
+          - "`Space` + `as` - Open AI chat window"
           - "`Space` + `ap` - Select a predefined prompt or context"
           - "`Ctrl` + `q` - Enter normal mode"
           - "`Ctrl` + `z` - Leave the AI chat window"
