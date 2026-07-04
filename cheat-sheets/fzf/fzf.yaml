@@ -1,0 +1,267 @@
+---
+title: fzf
+description:
+  fzf is a general-purpose command-line fuzzy finder. It is an interactive
+  filter for any kind of list - files, command history, processes, hostnames,
+  git commits and more - that integrates with the shell and can be composed with
+  other tools.
+author: Rico Berger
+keywords:
+  - fzf
+  - fuzzy-finder
+pages:
+  - title: fzf
+    columns: 3
+    sections:
+      - title: General
+        items:
+          - |
+            fzf is a general-purpose command-line fuzzy finder. It is an
+            interactive filter for any kind of list that integrates with the
+            shell and can be composed with other tools.
+
+            - [Website](https://junegunn.github.io/fzf/)
+            - [GitHub](https://github.com/junegunn/fzf)
+            - Download Cheat Sheet as [PDF](./assets/fzf-cheat-sheet.pdf) | [PNG](./assets/fzf-cheat-sheet.png)
+      - title: Finder Keybindings
+        items:
+          - "`Enter` - Accept the current item and exit"
+          - "`Ctrl` + `c` or `Ctrl` + `g` or `Esc` - Abort"
+          - "`↑` or `Ctrl` + `k` or `Ctrl` + `p` - Move the cursor up"
+          - "`↓` or `Ctrl` + `j` or `Ctrl` + `n` - Move the cursor down"
+          - "`Tab` - Toggle the selection and move down (multi-select mode)"
+          - "`Shift` + `Tab` - Toggle the selection and move up (multi-select
+            mode)"
+          - "`PgUp` / `PgDn` - Scroll the list a page up / down"
+          - "`Shift` + `↑` / `Shift` + `↓` - Scroll the preview up / down"
+          - "`Ctrl` + `l` - Redraw the screen"
+      - title: Query Editing
+        items:
+          - "`Ctrl` + `a` / `Ctrl` + `e` - Move to the beginning / end of the
+            query"
+          - "`Ctrl` + `b` / `Ctrl` + `f` - Move one character backward / forward"
+          - "`Alt` + `b` / `Alt` + `f` - Move one word backward / forward"
+          - "`Ctrl` + `h` or `Backspace` - Delete the character before the
+            cursor"
+          - "`Del` - Delete the character under the cursor"
+          - "`Ctrl` + `w` - Delete the word before the cursor"
+          - "`Alt` + `d` - Delete the word after the cursor"
+          - "`Ctrl` + `u` - Delete the whole query before the cursor"
+          - "`Ctrl` + `y` - Paste (yank) the deleted text"
+      - title: Search Syntax
+        items:
+          - |
+            fzf uses an extended-search mode by default. A query is split into
+            space-separated terms; each term is an AND condition and can use the
+            following operators:
+          - "`sbtrkt` - Fuzzy-match items that match `sbtrkt`"
+          - "`'wild` - Exact-match items that include `wild`"
+          - "`^music` - Prefix-exact-match items that start with `music`"
+          - "`.mp3$` - Suffix-exact-match items that end with `.mp3`"
+          - "`!fire` - Inverse-exact-match items that do not include `fire`"
+          - "`!^music` - Inverse-prefix-exact-match"
+          - "`!.mp3$` - Inverse-suffix-exact-match"
+          - "`foo bar` - AND: items that match both `foo` and `bar`"
+          - "`.md$ | .txt$` - `|` acts as an OR operator between terms"
+      - title: zsh Integration
+        items:
+          - |
+            Add the following to your `.zshrc` to set up the key bindings and
+            fuzzy completion for zsh (fzf 0.48+):
+
+            ```
+            eval "$(fzf --zsh)"
+            ```
+          - "`Ctrl` + `t` - Paste the selected files and directories onto the
+            command line"
+          - "`Ctrl` + `r` - Search through the command history and paste the
+            selected command"
+          - "`Alt` + `c` - `cd` into the selected directory"
+      - title: Fuzzy Completion
+        items:
+          - |
+            The trigger sequence `**` followed by `Tab` starts fuzzy completion
+            for the current word:
+          - "`vim **`+`Tab` - Complete files and directories"
+          - "`cd **`+`Tab` - Complete directories only"
+          - "`kill -9 `+`Tab` - Complete process IDs"
+          - "`ssh **`+`Tab` - Complete host names"
+          - "`export **`+`Tab` or `unset **`+`Tab` - Complete environment
+            variables"
+          - "`unalias **`+`Tab` - Complete aliases"
+      - title: Environment Variables
+        items:
+          - "`FZF_DEFAULT_COMMAND` - Default command used to feed the input list"
+          - "`FZF_DEFAULT_OPTS` - Default options passed to every fzf invocation"
+          - "`FZF_DEFAULT_OPTS_FILE` - File that contains the default options"
+          - "`FZF_CTRL_T_COMMAND` / `FZF_CTRL_T_OPTS` - Command / options for
+            `Ctrl` + `t`"
+          - "`FZF_CTRL_R_OPTS` - Options for `Ctrl` + `r`"
+          - "`FZF_ALT_C_COMMAND` / `FZF_ALT_C_OPTS` - Command / options for
+            `Alt` + `c`"
+      - title: Configuration
+        items:
+          - |
+            My fzf setup in
+            [`.zshrc`](https://github.com/ricoberger/dotfiles/blob/main/.zshrc)
+            enables the zsh integration, uses `fd` as the default command and
+            applies the Catppuccin Macchiato colors:
+
+            ```sh
+            eval "$(fzf --zsh)"
+
+            export FZF_DEFAULT_COMMAND='fd --full-path --hidden \
+              --color never --type f --exclude .git \
+              --exclude node_modules --exclude dist \
+              --exclude .DS_Store'
+
+            export FZF_DEFAULT_OPTS='--color=fg:#cad3f5,...'
+            ```
+  - title: Scripts
+    columns: 3
+    sections:
+      - title: General
+        items:
+          - |
+            A collection of custom fzf-based scripts to interactively browse and
+            act on files, Kubernetes resources, Jira work items, Vault secrets
+            and GitHub pull requests, issues and notifications.
+
+            - [dotfiles](https://github.com/ricoberger/dotfiles/tree/main/.local/bin)
+
+            Run any script with `-h` / `--help` to see its full usage.
+
+            ![fzfgh](./assets/fzfgh.png)
+      - title: fzfe - File Explorer
+        items:
+          - |
+            `fzfe [directory]` - Browse files and directories, with a preview of
+            folder contents and syntax-highlighted files.
+          - "`Enter` - Open the file / enter the directory"
+          - "`Tab` / `Shift` + `Tab` - Select item and move down / up"
+          - "`Alt` + `a` / `Alt` + `x` - Select all / deselect all"
+          - "`Alt` + `y` - Copy absolute paths of the selection to the clipboard"
+          - "`Alt` + `c` / `Alt` + `m` - Mark the selection to be copied / moved"
+          - "`Alt` + `p` - Paste the copied / moved selection into the current
+            directory"
+          - "`Alt` + `d` - Delete the selection (`rm -r`, with confirmation)"
+          - "`Alt` + `r` - Reload the list"
+          - "`Ctrl` + `p` - Toggle the preview"
+          - "`Ctrl` + `d` / `Ctrl` + `u` - Half page down / up"
+          - "`Ctrl` + `f` / `Ctrl` + `b` - Preview half page down / up"
+      - title: fzfk - Kubernetes
+        items:
+          - |
+            `fzfk <resource> [kubectl get args...]` - Browse Kubernetes
+            resources; the list refreshes every 5 seconds.
+          - "`Tab` / `Shift` + `Tab` - Mark / unmark a resource (multi-select)"
+          - "`Enter` - Describe the resource under the cursor"
+          - "`Alt` + `p` - Port-forward (pick a port via fzf)"
+          - "`Alt` + `e` - Exec into a container (pick a container via fzf)"
+          - "`Alt` + `l` - Show container logs (pick a container via fzf)"
+          - "`Alt` + `y` - Open the YAML manifest in nvim"
+          - "`Alt` + `d` - Delete the marked resources (confirmation offers a
+            force option)"
+          - "`Alt` + `r` - Reload the list"
+          - "`Ctrl` + `p` - Toggle the preview"
+          - "`Ctrl` + `d` / `Ctrl` + `u` - Half page down / up"
+          - "`Ctrl` + `f` / `Ctrl` + `b` - Preview half page down / up"
+      - title: fzfjira - Jira
+        items:
+          - |
+            `fzfjira [JQL]` - Browse Jira work items via `acli`; without a JQL a
+            picker of named filters is shown.
+          - "`Enter` - View the work item (opens in nvim)"
+          - "`Alt` + `a` - Assign the work item"
+          - "`Alt` + `t` - Transition the work item (pick a status)"
+          - "`Alt` + `c` - Add a comment (opens in nvim)"
+          - "`Alt` + `e` - Edit the work item (type / summary / description)"
+          - "`Alt` + `p` - Set / change the work item's parent Epic"
+          - "`Alt` + `f` - Flag / unflag the work item (Impediment)"
+          - "`Alt` + `n` - Create a new work item"
+          - "`Alt` + `l` - Manage links (list / delete / create): `Enter` open
+            the linked work item, `Alt` + `d` delete the highlighted link (after
+            confirmation), `Alt` + `n` create a new link (pick a target work
+            item, then a link type), `Esc` back to the list"
+          - "`Alt` + `s` - Show the work item's sub-tasks in a nested picker (a
+            new fzfjira list scoped to `parent = <key>` where every action above
+            is available)"
+          - "`Alt` + `o` - Open the work item in the web browser"
+          - "`Alt` + `r` - Reload the list"
+          - "`Ctrl` + `p` - Toggle the preview"
+          - "`Ctrl` + `d` / `Ctrl` + `u` - Half page down / up"
+          - "`Ctrl` + `f` / `Ctrl` + `b` - Preview half page down / up"
+      - title: fzfvault - Vault
+        items:
+          - |
+            `fzfvault` - Drill down into the paths of a Vault kv secrets engine
+            (v1 and v2 are auto-detected).
+          - "`Enter` - Open a folder (descend) or view a secret (read-only in
+            nvim)"
+          - "`Alt` + `e` - Edit the secret (data JSON in nvim, full overwrite on
+            save)"
+          - "`Alt` + `n` - Create a new secret"
+          - "`Alt` + `d` - Delete the secret permanently (after confirmation)"
+          - "`Alt` + `y` - Yank one field's value to the clipboard"
+          - "`Alt` + `o` - Open the secret / folder in the Vault web UI"
+          - "`Alt` + `r` - Reload the current level"
+          - "`Esc` - Go up one level (at the root, back to the mount picker)"
+          - "`Ctrl` + `p` - Toggle the preview"
+          - "`Ctrl` + `d` / `Ctrl` + `u` - Half page down / up"
+          - "`Ctrl` + `f` / `Ctrl` + `b` - Preview half page down / up"
+      - title: fzfgh - Pull Requests
+        items:
+          - |
+            `fzfgh prs` - Pick a filter, then browse the matching pull requests.
+          - "`Alt` + `o` - Open the PR in the web browser"
+          - "`Alt` + `y` - Copy the PR url to the clipboard"
+          - "`Alt` + `m` - Merge the PR (pick a method) or close the PR"
+          - "`Alt` + `l` - Add / remove a label"
+          - "`Alt` + `e` - Edit the PR title / body (opens nvim)"
+          - "`Alt` + `d` - Browse the PR diff hunk-by-hunk in fzf (preview shows
+            the hunk and its review threads with resolved state; `Alt` + `c`
+            reply, `Alt` + `n` new thread on a line, `Alt` + `x` resolve /
+            unresolve, `Alt` + `o` web, `Alt` + `y` yank path)"
+          - "`Alt` + `g` - Check out the PR and open nvim with `:GitDiff`"
+          - "`Alt` + `v` - Review the PR (approve / comment / request changes)"
+          - "`Alt` + `q` - Request a review (multi-select reviewers)"
+          - "`Alt` + `c` - Add a comment (opens nvim)"
+          - "`Alt` + `a` - Assign the PR to me"
+          - "`Alt` + `k` - Open the checks sub-picker (GitHub Actions): `Enter`
+            view the job summary and logs in nvim, `Alt` + `r` rerun failed jobs
+            for the check's run, `Alt` + `o` open the check in the web browser"
+          - "`Alt` + `w` - Toggle draft / ready for review"
+          - "`Alt` + `r` - Reload the list"
+          - "`Ctrl` + `p` - Toggle the preview"
+          - "`Ctrl` + `d` / `Ctrl` + `u` - Half page down / up"
+          - "`Ctrl` + `f` / `Ctrl` + `b` - Preview half page down / up"
+      - title: fzfgh - Issues
+        items:
+          - |
+            `fzfgh issues` - Pick a filter, then browse the matching issues.
+          - "`Alt` + `o` - Open the issue in the web browser"
+          - "`Alt` + `y` - Copy the issue url to the clipboard"
+          - "`Alt` + `l` - Add / remove a label"
+          - "`Alt` + `a` - Assign the issue to me"
+          - "`Alt` + `e` - Edit the issue title / body (opens nvim)"
+          - "`Alt` + `c` - Add a comment (opens nvim)"
+          - "`Alt` + `x` - Close the issue (pick a reason)"
+          - "`Alt` + `r` - Reload the list"
+          - "`Ctrl` + `p` - Toggle the preview"
+          - "`Ctrl` + `d` / `Ctrl` + `u` - Half page down / up"
+          - "`Ctrl` + `f` / `Ctrl` + `b` - Preview half page down / up"
+      - title: fzfgh - Notifications
+        items:
+          - |
+            `fzfgh` - Browse your GitHub notifications (the default view).
+          - "`Enter` - Open the notification (PR / issue in nvim, else in the
+            browser)"
+          - "`Tab` - Select / deselect (multi-select for batch read / done)"
+          - "`Alt` + `d` - Mark selected notifications as done"
+          - "`Alt` + `e` - Mark selected notifications as read"
+          - "`Alt` + `o` - Open the notification in the web browser"
+          - "`Alt` + `y` - Copy the notification url to the clipboard"
+          - "`Alt` + `r` - Reload the list"
+          - "`Ctrl` + `p` - Toggle the preview"
+          - "`Ctrl` + `d` / `Ctrl` + `u` - Half page down / up"
+          - "`Ctrl` + `f` / `Ctrl` + `b` - Preview half page down / up"
