@@ -104,6 +104,28 @@ pages:
             branch but combine all commits into a single commit"
           - "`git cherry-pick <commit>` - Apply the changes introduced by
             `<commit>` onto the current branch"
+      - title: git-status
+        items:
+          - |
+            [`git-status`](https://github.com/ricoberger/dotfiles/blob/main/.local/bin/git-status)
+            is a fuzzy finder (fzf) for staging, unstaging and committing
+            changes. It starts in the "Add" view listing the modified / deleted
+            / untracked files; `ctrl-s` toggles to the "Reset" view listing the
+            staged files. The selection is multi-capable (`tab` / `shift-tab`).
+          - "`enter` - Stage (Add view) or unstage (Reset view) the selection"
+          - "`ctrl-s` - Toggle between the Add and Reset views"
+          - "`alt-p` - Stage the selection interactively (`git add --patch`; Add
+            view only)"
+          - "`alt-c` - Commit the staged changes (`git commit`) and exit"
+          - "`alt-a` - Amend the last commit (`git commit --amend`) and exit"
+          - "`alt-e` - Open the selection in `$EDITOR`"
+          - "`alt-d` - Show the diff in the preview"
+          - "`alt-b` - Show the blame in the preview"
+          - "`ctrl-p` - Toggle preview"
+          - "`ctrl-d` - Half page down"
+          - "`ctrl-u` - Half page up"
+          - "`ctrl-f` - Preview half page down"
+          - "`ctrl-b` - Preview half page up"
       - title: Conventional Commits
         items:
           - |
