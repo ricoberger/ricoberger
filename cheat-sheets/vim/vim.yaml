@@ -431,95 +431,57 @@ pages:
         items:
           - "`Alt` + `j` - Move line down"
           - "`Alt` + `k` - Move line up"
-      - title: Surround Text
+      - title: Yank
         items:
-          - "`gs(` or `gs)` - Surround selection with `()`"
-          - "`gs{` or `gs}` - Surround selection with `{}`"
-          - "`gs[` or `gs]` - Surround selection with `[]`"
-          - "`gs<` or `gs>` - Surround selection with `<>`"
-          - '`gs"` - Surround selection with `""`'
-          - "`gs'` - Surround selection with `''`"
-          - "`` gs` `` - Surround selection with ` `` `"
-          - "`gs*` - Surround selection with `**`"
-          - "`gs_` - Surround selection with `__`"
+          - "`Space` + `y` - Yank file / directory / diagnostic / quickfix list"
       - title: Explorer
         items:
           - "`Space` + `ee` - Open explorer"
-          - "`Space` + `en` - Create a new file"
           - "`Space` + `ew` - Write a file without auto commands and with
             creating directories"
         tip:
           description:
             "**Tip:** You can use the following keymaps within the explorer:"
           items:
-            - "`l` - Confirm"
-            - "`h` - Close directory"
-            - "`a` - Add"
-            - "`d` - Delete"
-            - "`r` - Rename"
-            - "`c` - Copy"
-            - "`m` - Move"
-            - "`p` - Paste"
-            - "`o` - Open with system application"
-            - "`P` - Toggle preview"
-            - "`u` - Update / refresh file tree"
-            - "`I` - Toggle ignored"
-            - "`H` - Toggle hidden"
-            - "`Z` - Close all"
-            - "`Space` + `/` - Search in directory"
-            - "`y` - Yank path"
-            - "`Y` - Yank path with selection"
-            - "`D` - Diff selected files"
-            - "`Ctrl` + `c` - Change directory to current directory"
+            - "`Enter` - Open file / directory"
+            - "`-` - Go to parent directory"
+            - "`R` - Reload explorer"
+            - "`Tab` - Mark file / directory"
+            - "`n` - New file / directory"
+            - "`d` - Delete file / directory"
+            - "`r` - Rename file / directory"
+            - "`c` - Copy file / directory"
+            - "`m` - Move file / directory"
+            - "`s` - Search in directory"
+            - "`q` - Show marked files / directories in quickfix list"
       - title: Find
         items:
           - "`Space` + `ff` - Find files"
-          - "`Space` + `fs` - Find files (smart)"
           - "`Space` + `fb` - Find buffers"
           - "`Space` + `fr` - Find recent files"
-          - "`Space` + `fu` - Find undo"
-          - "`Space` + `fm` - Find marks"
-          - "`Space` + `fd` - Find buffer diagnostics"
-          - "`Space` + `fD` - Find workspace diagnostics"
-          - "`Space` + `fp` - Find projects"
-          - "`Space` + `fq` - Find quickfix list"
         tip:
           description:
             "**Tip:** You can use the following keymaps within the picker:"
           items:
-            - "`/` - Toggle focus"
             - "`Enter` - Confirm"
-            - "`Down` or `Ctrl` + `j` or `Ctrl` + `n` or `j` - List down"
-            - "`Up` or `Ctrl` + `k` or `Ctrl` + `p` or `k` - List up"
+            - "`Down` or `Ctrl` + `j` - List down"
+            - "`Up` or `Ctrl` + `k` - List up"
             - "`Ctrl` + `d` - List scroll down"
             - "`Ctrl` + `u` - List scroll up"
-            - "`G` - List bottom"
-            - "`gg` - List top"
-            - "`Ctrl` + `Down` - History forward"
-            - "`Ctrl` + `Up` - History back"
-            - "`Tab` - Select and next"
-            - "`Shift` + `Tab` - Select and prev"
-            - "`Ctrl` + `a` - Select all"
+            - "`Ctrl` + `p` - Toggle preview"
             - "`Ctrl` + `b` - Preview scroll up"
             - "`Ctrl` + `f` - Preview scroll down"
-            - "`Ctrl` + `g` - Toggle live"
+            - "`Tab` - Select and next"
+            - "`Shift` + `Tab` - Select and prev"
             - "`Ctrl` + `q` - Quickfix list"
             - "`Ctrl` + `s` - Edit split"
             - "`Ctrl` + `v` - Edit vsplit"
             - "`Ctrl` + `t` - Edit tab"
             - "`Ctrl` + `x` - Delete buffer"
-            - "`Alt` + `f` - Toggle follow"
-            - "`Alt` + `h` - Toggle hidden"
-            - "`Alt` + `i` - Toggle ignore"
-            - "`Alt` + `r` - Toggle regex"
-            - "`Alt` + `m` - Toggle maximize"
-            - "`Alt` + `p` - Toggle preview"
-            - "`Alt` + `w` - Cycle window"
-            - "`Esc` or `Ctrl` + `c` or `q` - Close"
+            - "`Esc` or `Ctrl` + `c` - Close"
       - title: Search
         items:
           - "`Space` + `ss` - Search for a pattern"
-          - "`Space` + `s/` - Search for a pattern in buffers"
           - "`Space` + `sw` - Search for the word / selection"
           - "`Space` + `st` - Search for all todo comments"
       - title: Replace
@@ -551,64 +513,14 @@ pages:
           - "`Space` + `gfl` - Git log for file"
           - "`Space` + `gfL` - Git log for workspace"
           - "`Space` + `gfs` - Git status"
-          - "`Space` + `gfS` - Git stash"
+          - "`Space` + `gfz` - Git stash"
           - "`Space` + `gfm` - Git merge conflicts"
-          - "`Space` + `gb` - Git browse"
-        tip:
-          description:
-            "**Tip:** You can use the following keymaps within the picker:"
-          items:
-            - "`Ctrl` + `a` - Add branch"
-            - "`Ctrl` + `x` - Delete branch"
-            - "`Tab` - Stage"
-            - "`Ctrl` + `r` - Restore"
       - title: GitHub
         items:
-          - "`Space` + `ghn` - Notifications: unread"
-          - "`Space` + `ghpi` - Pull requests: involved"
-          - "`Space` + `ghpc` - Pull requests: created"
-          - "`Space` + `ghpa` - Pull requests: assigned"
-          - "`Space` + `ghpm` - Pull requests: mentioned"
-          - "`Space` + `ghpr` - Pull requests: review requested"
-          - "`Space` + `ghpp` - Pull requests: current"
-          - "`Space` + `ghP` - Pull requests: current repository"
-          - "`Space` + `ghii` - Issues: involved"
-          - "`Space` + `ghic` - Issues: created"
-          - "`Space` + `ghia` - Issues: assigned"
-          - "`Space` + `ghim` - Issues: mentioned"
-          - "`Space` + `ghI` - Issues: current repository"
-          - "`Space` + `ghac` - Action: show pull request checks"
-          - "`Space` + `gham` - Action: merge pull request"
-        tip:
-          description:
-            "**Tip:** You can use the following keymaps within the GitHub
-            buffers:"
-          items:
-            - "`Enter` - Select action"
-            - "`i` - Edit"
-            - "`a` - Add comment"
-            - "`c` - Close"
-            - "`o` - Reopen"
-            - "`Ctrl` + `y` or `y` - Yank url"
-            - "`Alt` + `b` or `b` - Open url in browser"
-            - "`Alt` + `r` or `r` - Mark as read"
-            - "`Alt` + `d` or `d` - Mark as done"
-            - "`Alt` + `c` or `c` - Change cwd to repository root"
-      - title: Misc
-        items:
-          - "`Space` + `mz` - Toogle zen mode"
-          - "`Space` + `ms` - Toogle spell checking"
-          - "`Space` + `mt` - Toogle terminal"
-          - "`Space` + `mf` - Set file type for buffer"
-          - "`Space` + `mlo` - Organize imports (TypeScript LSP)"
-        tip:
-          description:
-            "**Tip:** You can use the following keymaps for spell checking:"
-          items:
-            - "`]s` - Next misspelled word"
-            - "`[s` - Previous misspelled word"
-            - "`zg` - Mark word as good"
-            - "`zw` - Mark word as wrong"
+          - "`Space` + `ghc` - Create review comment"
+          - "`Space` + `ghr` - Reply to review thread"
+          - "`Space` + `ghs` - Show review threads"
+          - "`Space` + `ghu` - Refresh review threads"
       - title: LSP
         items:
           - "`grn` - Rename"
@@ -620,6 +532,7 @@ pages:
           - "`gri` - Implementations"
           - "`grt` - Type definition"
           - "`grh` - Toggle inlay hints"
+          - "`grx` - Run code lens"
           - "`gO` - Show document symbols"
           - "`K` - Hover documentation"
           - "`Ctrl` + `s` - Hover signature help"
@@ -632,6 +545,7 @@ pages:
           - "`in` - Incremental selection (inwards)"
           - "`]n` - Select previous node"
           - "`[n` - Select next node"
+          - "`Space` + `d` - Show diagnostics"
       - title: Completions
         items:
           - "`Ctrl` + `Space` or `Ctrl` + `x` + `Ctrl` + `o` - Trigger
@@ -650,17 +564,6 @@ pages:
           - "`Ctrl` + `j` - Add cursor below"
           - "`Ctrl` + `k` - Add cursor above"
           - "`Ctrl` + `m` - Match cursors in visual selection by regex"
-      - title: AI
-        items:
-          - "`Space` + `an` - Toggle next edit suggestion"
-          - "`Tab` - Jump to / accept next edit suggestion"
-          - "`Space` + `aa` - Toggle AI chat window and focus"
-          - "`Space` + `as` - Open AI chat window"
-          - "`Space` + `ap` - Select a predefined prompt or context"
-          - "`Ctrl` + `q` - Enter normal mode"
-          - "`Ctrl` + `z` - Leave the AI chat window"
-          - "`Ctrl` + `f` - Select file"
-          - "`Ctrl` + `b` - Select buffer"
       - title: Notes
         items:
           - "`Space` + `nd` - Open daily note"
