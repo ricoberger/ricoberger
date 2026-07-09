@@ -161,6 +161,7 @@ pages:
           - "`Alt` + `m` - Mark selection to be moved"
           - "`Alt` + `p` - Paste copied / moved selection into the current
             directory"
+          - "`Alt` + `n`-  Create new file / directory"
           - "`Alt` + `r` - Rename item under the cursor"
           - "`Alt` + `d` - Delete selection"
           - "`Alt` + `s` - Toggle sort order"
