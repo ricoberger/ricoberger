@@ -115,7 +115,14 @@ pages:
               --exclude node_modules --exclude dist \
               --exclude .DS_Store'
 
-            export FZF_DEFAULT_OPTS='--color=fg:#cad3f5,...'
+            export FZF_DEFAULT_OPTS='--bind ctrl-p:toggle-preview \
+              --bind ctrl-d:half-page-down \
+              --bind ctrl-u:half-page-up \
+              --bind ctrl-f:preview-half-page-down \
+              --bind ctrl-b:preview-half-page-up \
+              --bind home:preview-top \
+              --bind end:preview-bottom \
+              --color=fg:#cad3f5,fg+:#cad3f5,bg+:#363a4f,border:#6e738d,label:#6e738d,bg:#24273a,spinner:#c6a0f6,hl:#ed8796,hl+:#ed8796,header:#ed8796,info:#c6a0f6,pointer:#c6a0f6,marker:#f4dbd6,prompt:#c6a0f6'
             ```
   - title: Scripts
     columns: 3
@@ -132,136 +139,138 @@ pages:
             Run any script with `-h` / `--help` to see its full usage.
 
             ![fzfgh](./assets/fzfgh.png)
+          - "`Ctrl` + `r` - Reload list"
+          - "`Ctrl` + `p` - Toggle preview"
+          - "`Down` or `Ctrl` + `j` - Scroll down"
+          - "`Up` or `Ctrl` + `k` - Scroll up"
+          - "`Ctrl` + `d` - Scroll half page down"
+          - "`Ctrl` + `u` - Scroll half page up"
+          - "`Ctrl` + `f` - Scroll preview half page down"
+          - "`Ctrl` + `b` - Scroll preview half page up"
+          - "`Home` - Scroll preview to top"
+          - "`End` - Scroll preview to bottom"
+          - "`Alt` + `h` - Show help"
       - title: fzfe - File Explorer
         items:
           - |
             `fzfe [directory]` - Browse files and directories, with a preview of
             folder contents and syntax-highlighted files.
-          - "`Enter` - Open the file / enter the directory"
-          - "`Tab` / `Shift` + `Tab` - Select item and move down / up"
-          - "`Alt` + `a` / `Alt` + `x` - Select all / deselect all"
+          - "`Enter` - Open file / enter directory"
           - "`Alt` + `y` - Copy absolute paths of the selection to the clipboard"
-          - "`Alt` + `c` / `Alt` + `m` - Mark the selection to be copied / moved"
-          - "`Alt` + `p` - Paste the copied / moved selection into the current
+          - "`Alt` + `c` - Mark selection to be copied"
+          - "`Alt` + `m` - Mark selection to be moved"
+          - "`Alt` + `p` - Paste copied / moved selection into the current
             directory"
-          - "`Alt` + `d` - Delete the selection (`rm -r`, with confirmation)"
-          - "`Alt` + `r` - Reload the list"
-          - "`Ctrl` + `p` - Toggle the preview"
-          - "`Ctrl` + `d` / `Ctrl` + `u` - Half page down / up"
-          - "`Ctrl` + `f` / `Ctrl` + `b` - Preview half page down / up"
+          - "`Alt` + `r` - Rename item under the cursor"
+          - "`Alt` + `d` - Delete selection"
+          - "`Alt` + `s` - Toggle sort order"
+      - title: fzfrclone - Object Storage
+        items:
+          - |
+            `fzfrclone` - Browse the local filesystem and rclone remotes (S3,
+            Azure Blob, GCS, ...) in a single pane and copy / move files between
+            any of them: local <-> remote, remote <-> remote, local <-> local.
+            The top-level view lists your configured rclone remotes plus a
+            `local/` entry.
+          - "`Enter` - Enter directory / remote, or open file"
+          - "`Alt` + `y` - Copy full path(s) of selection to the clipboard"
+          - "`Alt` + `c` - Mark selection to be copied"
+          - "`Alt` + `m` - Mark selection to be moved"
+          - "`Alt` + `p` - Paste copied / moved selection into current location"
+          - "`Alt` + `r` - Rename item under the cursor"
+          - "`Alt` + `k` - Create new directory in current location"
+          - "`Alt` + `d` - Delete selection"
       - title: fzfk - Kubernetes
         items:
           - |
             `fzfk <resource> [kubectl get args...]` - Browse Kubernetes
             resources; the list refreshes every 5 seconds.
-          - "`Tab` / `Shift` + `Tab` - Mark / unmark a resource (multi-select)"
           - "`Enter` - Describe the resource under the cursor"
-          - "`Alt` + `p` - Port-forward (pick a port via fzf)"
-          - "`Alt` + `e` - Exec into a container (pick a container via fzf)"
-          - "`Alt` + `l` - Show container logs (pick a container via fzf)"
-          - "`Alt` + `y` - Open the YAML manifest in nvim"
-          - "`Alt` + `d` - Delete the marked resources (confirmation offers a
-            force option)"
-          - "`Alt` + `r` - Reload the list"
-          - "`Ctrl` + `p` - Toggle the preview"
-          - "`Ctrl` + `d` / `Ctrl` + `u` - Half page down / up"
-          - "`Ctrl` + `f` / `Ctrl` + `b` - Preview half page down / up"
+          - "`Alt` + `p` - Port-forward"
+          - "`Alt` + `x` - Exec into container"
+          - "`Alt` + `l` - Show container logs"
+          - "`Alt` + `y` - Open manifest"
+          - "`Alt` + `e` - Edit manifest"
+          - "`Alt` + `d` - Delete marked resources; the confirmation offers a
+            force option (`--grace-period=0 --force`)"
       - title: fzfjira - Jira
         items:
           - |
             `fzfjira [JQL]` - Browse Jira work items via `acli`; without a JQL a
             picker of named filters is shown.
-          - "`Enter` - View the work item (opens in nvim)"
-          - "`Alt` + `a` - Assign the work item"
-          - "`Alt` + `t` - Transition the work item (pick a status)"
-          - "`Alt` + `c` - Add a comment (opens in nvim)"
-          - "`Alt` + `e` - Edit the work item (type / summary / description)"
-          - "`Alt` + `p` - Set / change the work item's parent Epic"
-          - "`Alt` + `f` - Flag / unflag the work item (Impediment)"
-          - "`Alt` + `n` - Create a new work item"
-          - "`Alt` + `l` - Manage links (list / delete / create): `Enter` open
-            the linked work item, `Alt` + `d` delete the highlighted link (after
-            confirmation), `Alt` + `n` create a new link (pick a target work
-            item, then a link type), `Esc` back to the list"
-          - "`Alt` + `s` - Show the work item's sub-tasks in a nested picker (a
-            new fzfjira list scoped to `parent = <key>` where every action above
-            is available)"
-          - "`Alt` + `o` - Open the work item in the web browser"
-          - "`Alt` + `r` - Reload the list"
-          - "`Ctrl` + `p` - Toggle the preview"
-          - "`Ctrl` + `d` / `Ctrl` + `u` - Half page down / up"
-          - "`Ctrl` + `f` / `Ctrl` + `b` - Preview half page down / up"
+          - "`Enter` - View work item"
+          - "`Alt` + `a` - Assign work item"
+          - "`Alt` + `t` - Transition work item"
+          - "`Alt` + `c` - Add comment to the work item"
+          - "`Alt` + `e` - Edit work item"
+          - "`Alt` + `p` - Set / change the work item's parent epic"
+          - "`Alt` + `f` - Flag / unflag the work item"
+          - "`Alt` + `n` - Create new work item"
+          - "`Alt` + `l` - Manage links; `Enter` open linked work item; `Alt` +
+            `d` delete link; `Alt` + `n` create new link"
+          - "`Alt` + `s` - Show work item's sub-tasks in a nested picker"
+          - "`Alt` + `o` - Open work item in the web browser"
       - title: fzfvault - Vault
         items:
           - |
             `fzfvault` - Drill down into the paths of a Vault kv secrets engine
             (v1 and v2 are auto-detected).
-          - "`Enter` - Open a folder (descend) or view a secret (read-only in
-            nvim)"
-          - "`Alt` + `e` - Edit the secret (data JSON in nvim, full overwrite on
-            save)"
-          - "`Alt` + `n` - Create a new secret"
-          - "`Alt` + `d` - Delete the secret permanently (after confirmation)"
+          - "`Enter` - Open folder / view secret"
+          - "`Alt` + `e` - Edit secret"
+          - "`Alt` + `n` - Create new secret"
+          - "`Alt` + `r` - Rename / move secret"
+          - "`Alt` + `d` - Delete secret"
           - "`Alt` + `y` - Yank one field's value to the clipboard"
-          - "`Alt` + `o` - Open the secret / folder in the Vault web UI"
-          - "`Alt` + `r` - Reload the current level"
+          - "`Alt` + `o` - Open secret / folder in the Vault web UI"
           - "`Esc` - Go up one level (at the root, back to the mount picker)"
-          - "`Ctrl` + `p` - Toggle the preview"
-          - "`Ctrl` + `d` / `Ctrl` + `u` - Half page down / up"
-          - "`Ctrl` + `f` / `Ctrl` + `b` - Preview half page down / up"
-      - title: fzfgh - Pull Requests
-        items:
-          - |
-            `fzfgh prs` - Pick a filter, then browse the matching pull requests.
-          - "`Alt` + `o` - Open the PR in the web browser"
-          - "`Alt` + `y` - Copy the PR url to the clipboard"
-          - "`Alt` + `m` - Merge the PR (pick a method) or close the PR"
-          - "`Alt` + `l` - Add / remove a label"
-          - "`Alt` + `e` - Edit the PR title / body (opens nvim)"
-          - "`Alt` + `d` - Browse the PR diff hunk-by-hunk in fzf (preview shows
-            the hunk and its review threads with resolved state; `Alt` + `c`
-            reply, `Alt` + `n` new thread on a line, `Alt` + `x` resolve /
-            unresolve, `Alt` + `o` web, `Alt` + `y` yank path)"
-          - "`Alt` + `g` - Check out the PR and open nvim with `:GitDiff`"
-          - "`Alt` + `v` - Review the PR (approve / comment / request changes)"
-          - "`Alt` + `q` - Request a review (multi-select reviewers)"
-          - "`Alt` + `c` - Add a comment (opens nvim)"
-          - "`Alt` + `a` - Assign the PR to me"
-          - "`Alt` + `k` - Open the checks sub-picker (GitHub Actions): `Enter`
-            view the job summary and logs in nvim, `Alt` + `r` rerun failed jobs
-            for the check's run, `Alt` + `o` open the check in the web browser"
-          - "`Alt` + `w` - Toggle draft / ready for review"
-          - "`Alt` + `r` - Reload the list"
-          - "`Ctrl` + `p` - Toggle the preview"
-          - "`Ctrl` + `d` / `Ctrl` + `u` - Half page down / up"
-          - "`Ctrl` + `f` / `Ctrl` + `b` - Preview half page down / up"
-      - title: fzfgh - Issues
-        items:
-          - |
-            `fzfgh issues` - Pick a filter, then browse the matching issues.
-          - "`Alt` + `o` - Open the issue in the web browser"
-          - "`Alt` + `y` - Copy the issue url to the clipboard"
-          - "`Alt` + `l` - Add / remove a label"
-          - "`Alt` + `a` - Assign the issue to me"
-          - "`Alt` + `e` - Edit the issue title / body (opens nvim)"
-          - "`Alt` + `c` - Add a comment (opens nvim)"
-          - "`Alt` + `x` - Close the issue (pick a reason)"
-          - "`Alt` + `r` - Reload the list"
-          - "`Ctrl` + `p` - Toggle the preview"
-          - "`Ctrl` + `d` / `Ctrl` + `u` - Half page down / up"
-          - "`Ctrl` + `f` / `Ctrl` + `b` - Preview half page down / up"
       - title: fzfgh - Notifications
         items:
           - |
             `fzfgh` - Browse your GitHub notifications (the default view).
-          - "`Enter` - Open the notification (PR / issue in nvim, else in the
-            browser)"
-          - "`Tab` - Select / deselect (multi-select for batch read / done)"
+          - "`Enter` - Open notification"
           - "`Alt` + `d` - Mark selected notifications as done"
           - "`Alt` + `e` - Mark selected notifications as read"
-          - "`Alt` + `o` - Open the notification in the web browser"
-          - "`Alt` + `y` - Copy the notification url to the clipboard"
-          - "`Alt` + `r` - Reload the list"
-          - "`Ctrl` + `p` - Toggle the preview"
-          - "`Ctrl` + `d` / `Ctrl` + `u` - Half page down / up"
-          - "`Ctrl` + `f` / `Ctrl` + `b` - Preview half page down / up"
+          - "`Alt` + `o` - Open notification in the web browser"
+          - "`Alt` + `y` - Copy notification url to the clipboard"
+      - title: fzfgh - Pull Requests
+        items:
+          - |
+            `fzfgh prs` - Pick a filter, then browse the matching pull requests.
+          - "`Enter` - Open preview (details, description, checks, comments) in
+            nvim"
+          - "`Alt` + `o` - Open pull request in the web browser"
+          - "`Alt` + `y` - Copy pull request url to the clipboard"
+          - "`Alt` + `m` - Merge pull request (merge / squash / rebase,
+            with/without admin; edit the commit subject & body in nvim)"
+          - "`Alt` + `l` - Add / remove label"
+          - "`Alt` + `a` - Assign pull request to me"
+          - "`Alt` + `e` - Edit pull request title and body"
+          - "`Alt` + `c` - Add a comment"
+          - "`Alt` + `x` - Close pull request (close / and delete branch / with
+            comment / with comment and delete branch)"
+          - "`Alt` + `k` - Show checks; `Enter` view job summary and logs; `Alt`
+            + `r` rerun failed job; `Alt` + `o` open check in the web browser"
+          - "`Alt` + `w` - Toggle draft / ready for review"
+          - "`Alt` + `v` - Review pull request (approve / comment / request
+            changes)"
+          - "`Alt` + `q` - Request a review (suggested + assignable reviewers)"
+          - "`Alt` + `d` - Browse pull request diff hunk-by-hunk in fzf (shows
+            the hunk and its review threads with resolved state); `Alt` + `o`
+            open in the web browser; `Alt` + `y` yank path to file; `Alt` + `r`
+            reply to thread; `Alt` + `x` resolve / unresolve thread; `Alt` + `c`
+            new thread on a line or range (nvim opens pre-filled with a
+            `suggestion` block)"
+          - "`Alt` + `g` - Check out pull request and open nvim with `:GitDiff`
+            command (current repo only, requires a clean worktree)"
+      - title: fzfgh - Issues
+        items:
+          - |
+            `fzfgh issues` - Pick a filter, then browse the matching issues.
+          - "`Enter` - Open preview (details, description, comments) in nvim"
+          - "`Alt` + `o` - Open issue in the web browser"
+          - "`Alt` + `y` - Copy issue url to the clipboard"
+          - "`Alt` + `l` - Add / remove a label"
+          - "`Alt` + `a` - Assign issue to me"
+          - "`Alt` + `e` - Edit issue title / body"
+          - "`Alt` + `c` - Add a comment"
+          - "`Alt` + `x` - Close the issue (completed / not planned / duplicate)"
