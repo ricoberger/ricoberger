@@ -109,23 +109,18 @@ pages:
           - |
             [`git-status`](https://github.com/ricoberger/dotfiles/blob/main/.local/bin/git-status)
             is a fuzzy finder (fzf) for staging, unstaging and committing
-            changes. It starts in the "Add" view listing the modified / deleted
-            / untracked files; `ctrl-s` toggles to the "Reset" view listing the
+            changes. It starts in the "add" view listing the modified / deleted
+            / untracked files; `alt-s` toggles to the "reset" view listing the
             staged files. The selection is multi-capable (`tab` / `shift-tab`).
-          - "`enter` - Stage (Add view) or unstage (Reset view) the selection"
-          - "`ctrl-s` - Toggle between the Add and Reset views"
-          - "`alt-p` - Stage the selection interactively (`git add --patch`; Add
-            view only)"
-          - "`alt-c` - Commit the staged changes (`git commit`) and exit"
-          - "`alt-a` - Amend the last commit (`git commit --amend`) and exit"
-          - "`alt-e` - Open the selection in `$EDITOR`"
-          - "`alt-d` - Show the diff in the preview"
-          - "`alt-b` - Show the blame in the preview"
-          - "`ctrl-p` - Toggle preview"
-          - "`ctrl-d` - Half page down"
-          - "`ctrl-u` - Half page up"
-          - "`ctrl-f` - Preview half page down"
-          - "`ctrl-b` - Preview half page up"
+          - "`enter` - Stage (add view) or unstage (reset view) selection"
+          - "`Alt` + `s` - Toggle between add and reset views"
+          - "`Alt` + `p` - Stage selection interactively"
+          - "`Alt` + `c` - Commit staged changes (`git commit`)"
+          - "`Alt` + `a` - Amend staged changes to the last commit (`git commit
+            --amend`)"
+          - "`Alt` + `e` - Open selection in `$EDITOR`"
+          - "`Alt` + `d` - Show diff in the preview"
+          - "`Alt` + `b` - Show blame in the preview"
       - title: Conventional Commits
         items:
           - |
