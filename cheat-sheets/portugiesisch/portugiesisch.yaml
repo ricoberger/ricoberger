@@ -1,0 +1,787 @@
+---
+title: Portugiesisch
+hidden: true
+description:
+  Cheat Sheet zum Lernen der portugiesischen Sprache für deutschsprachige
+  Lernende. Der Fokus liegt auf dem europäischen Portugiesisch (Portugal) und
+  deckt Aussprache, Grammatik, Zahlen und nützliche Sätze für den Alltag ab.
+author: Rico Berger
+keywords:
+  - Portugiesisch
+  - Português
+  - Sprache lernen
+pages:
+  - title: Portugiesisch
+    columns: 5
+    sections:
+      - title: Allgemein
+        items:
+          - |
+            Portugiesisch (Português) ist eine romanische Sprache und wird von
+            mehr als 250 Millionen Menschen gesprochen, unter anderem in
+            Portugal, Brasilien, Angola, Mosambik und auf Kap Verde.
+          - |
+            Dieses Cheat Sheet richtet sich an deutschsprachige Lernende und
+            konzentriert sich auf das **europäische Portugiesisch** (wie es in
+            Portugal gesprochen wird). Wichtige Unterschiede zum
+            brasilianischen Portugiesisch (BR) sind entsprechend
+            gekennzeichnet.
+          - |
+            Download Cheat Sheet as [PDF](./assets/portugiesisch-cheat-sheet.pdf) | [PNG](./assets/portugiesisch-cheat-sheet.png)
+      - title: Aussprache
+        items:
+          - "`ã`, `õ` - nasale Vokale, durch die Nase gesprochen (z. B. `pão` =
+            Brot, `mãe` = Mutter)"
+          - "`nh` - wie deutsches »nj« in Kognak (z. B. `vinho` = Wein)"
+          - "`lh` - wie »lj« (z. B. `mulher` = Frau, `filho` = Sohn)"
+          - "`ch` - wie »sch« in Schule (z. B. `chá` = Tee)"
+          - "`x` - meist »sch« (z. B. `peixe` = Fisch)"
+          - "`j` - stimmhaftes »sch« wie in Journal (z. B. `hoje` = heute)"
+          - "`s` - am Wortende oder vor Konsonant wie »sch« (z. B. `dois`,
+            `Lisboa`)"
+          - "`ç` - wie scharfes »ss« (z. B. `almoço` = Mittagessen)"
+          - "`z` - am Wortende wie »sch« (z. B. `feliz` = glücklich)"
+          - "`ou` - wie ein langes »oh« (z. B. `pouco` = wenig)"
+          - "`m`, `n` - am Silbenende wird der davorstehende Vokal nasal (z. B.
+            `sim` = ja, `um` = ein, `também` = auch, `onde` = wo)"
+          - "`r` - zwischen Vokalen oder nach einem Konsonanten kurz angetippt,
+            fast wie ein schnelles »d« (z. B. `caro` = teuer, `três` = drei,
+            `livro` = Buch)"
+          - "`r`, `rr` - am Wortanfang bzw. doppeltes `rr` kehlig/gerollt (z. B.
+            `rua` = Straße, `rádio` = Radio, `carro` = Auto, `ferro` = Eisen)"
+          - "`r` - am Wort- oder Silbenende regional unterschiedlich, oft
+            schwach angetippt (z. B. `mar` = Meer, `certo` = richtig)"
+        tip:
+          description:
+            "**Tipp:** Im europäischen Portugiesisch werden unbetonte Vokale
+            stark verschluckt. Ein `e` am Wortende ist oft fast stumm (z. B.
+            `verde` klingt wie »werd«)."
+      - title: Begrüßung & Höflichkeit
+        items:
+          - "`Olá` - Hallo"
+          - "`Oi` - Hi (informell, v. a. in Brasilien)"
+          - "`Bom dia` - Guten Morgen"
+          - "`Boa tarde` - Guten Tag (nachmittags)"
+          - "`Boa noite` - Guten Abend / Gute Nacht"
+          - "`Adeus` - Auf Wiedersehen"
+          - "`Tchau` - Tschüss (informell)"
+          - "`Até logo` - Bis später"
+          - "`Até amanhã` - Bis morgen"
+          - "`Por favor` / `Se faz favor` - Bitte"
+          - "`Obrigado` / `Obrigada` - Danke"
+          - "`Valeu` - Danke (umgangssprachlich, v. a. in Brasilien)"
+          - "`De nada` - Gern geschehen"
+          - "`Desculpe` - Entschuldigung (Verzeihung)"
+          - "`Desculpa` - Entschuldigung (informell, zu `tu`)"
+          - "`Com licença` - Entschuldigung (um vorbeizugehen)"
+          - "`Sim` - Ja"
+          - "`Não` - Nein"
+          - "`Talvez` - Vielleicht"
+        tip:
+          description:
+            "**Tipp:** `Obrigado` sagen Männer, `Obrigada` sagen Frauen – die
+            Endung richtet sich nach dem Geschlecht der sprechenden Person."
+      - title: Sich vorstellen
+        items:
+          - "`Como te chamas?` - Wie heißt du?"
+          - "`Como se chama?` - Wie heißen Sie?"
+          - "`Chamo-me ...` - Ich heiße ..."
+          - "`O meu nome é ...` - Mein Name ist ..."
+          - "`Qual é o seu apelido?` - Wie ist Ihr Nachname?"
+          - "`O meu apelido é ...` - Mein Nachname ist ..."
+          - "`Muito prazer` - Sehr erfreut / Freut mich"
+          - "`Como estás?` - Wie geht es dir?"
+          - "`Como está?` - Wie geht es Ihnen?"
+          - "`Estou bem, obrigado` - Mir geht es gut, danke"
+          - "`E tu?` / `E você?` - Und dir? / Und Ihnen?"
+          - "`De onde és?` - Woher kommst du?"
+          - "`Sou da Alemanha` - Ich komme aus Deutschland"
+          - "`Sou alemão` / `Sou alemã` - Ich bin Deutscher / Deutsche"
+          - "`Quantos anos tens?` - Wie alt bist du?"
+          - "`Tenho ... anos` - Ich bin ... Jahre alt"
+        tip:
+          description:
+            "**Tipp:** In Portugal heißt der Nachname `apelido`. Achtung: In
+            Brasilien (BR) bedeutet `apelido` »Spitzname« – der Nachname heißt
+            dort `sobrenome` (z. B. `Qual é o seu sobrenome?`)."
+      - title: Verständigung
+        items:
+          - "`Fala alemão?` - Sprechen Sie Deutsch?"
+          - "`Fala inglês?` - Sprechen Sie Englisch?"
+          - "`Falo um pouco de português` - Ich spreche ein wenig Portugiesisch"
+          - "`Não falo português` - Ich spreche kein Portugiesisch"
+          - "`Não percebo` - Ich verstehe nicht"
+          - "`Não percebi` - Ich habe nicht verstanden (BR: `Não entendi`)"
+          - "`Percebe?` - Verstehen Sie?"
+          - "`Pode repetir, por favor?` - Können Sie das wiederholen?"
+          - "`Pode falar mais devagar?` - Können Sie langsamer sprechen?"
+          - "`Mais devagar, por favor` - Langsamer, bitte"
+          - "`O que significa ...?` - Was bedeutet ...?"
+          - "`Como se diz ... em português?` - Wie sagt man ... auf
+            Portugiesisch?"
+      - title: Länder & Sprachen
+        items:
+          - "`alemão` / `alemã` - deutsch / Deutsche(r)"
+          - "`inglês` / `inglesa` - englisch / Engländer(in)"
+          - "`francês` / `francesa` - französisch / Franzose (Französin)"
+          - "`espanhol` / `espanhola` - spanisch / Spanier(in)"
+          - "`italiano` / `italiana` - italienisch / Italiener(in)"
+          - "`a Alemanha` - Deutschland"
+          - "`o Brasil` - Brasilien"
+          - "`os Estados Unidos` - die Vereinigten Staaten"
+          - "`as Filipinas` - die Philippinen"
+          - "`Eu só falo alemão` - Ich spreche nur Deutsch"
+          - "`Vocês falam inglês?` - Sprecht ihr Englisch?"
+          - "`Ela é do Brasil` - Sie ist aus Brasilien"
+          - "`Moro nos Estados Unidos` - Ich wohne in den USA"
+        tip:
+          description:
+            "**Tipp:** Sprachen und Nationalitäten schreibt man klein. Herkunft
+            mit `ser` + `de` (+ Artikel): `Sou da Alemanha`, `Ela é do Brasil`.
+            Standort/Wohnort mit `em` (+ Artikel): `Moro nas Filipinas`."
+      - title: Fragewörter
+        items:
+          - "`Quem?` - Wer?"
+          - "`O que?` / `Que?` - Was?"
+          - "`Quando?` - Wann?"
+          - "`Onde?` - Wo?"
+          - "`Para onde?` - Wohin?"
+          - "`De onde?` - Woher?"
+          - "`Porquê?` - Warum?"
+          - "`Porque` - Weil"
+          - "`Como?` - Wie?"
+          - "`Qual?` - Welche(r)?"
+          - "`Quanto?` - Wie viel?"
+          - "`Quantos?` - Wie viele?"
+      - title: Personalpronomen
+        items:
+          - "`eu` - ich"
+          - "`tu` - du (informell)"
+          - "`você` - Sie (formell, Singular)"
+          - "`ele` / `ela` - er / sie"
+          - "`nós` - wir"
+          - "`a gente` - wir (umgangssprachlich, mit Verb in der 3. Person)"
+          - "`vocês` - ihr / Sie (Plural)"
+          - "`eles` / `elas` - sie (männl. / weibl., Plural)"
+        tip:
+          description:
+            "**Tipp:** In Portugal wird `tu` für vertraute Personen genutzt;
+            höflich verwendet man `o senhor` / `a senhora` statt `você`."
+      - title: Possessivpronomen
+        items:
+          - "`o meu` / `a minha` - mein"
+          - "`o teu` / `a tua` - dein"
+          - "`o seu` / `a sua` - sein / ihr / Ihr"
+          - "`o nosso` / `a nossa` - unser"
+          - "`o vosso` / `a vossa` - euer"
+        tip:
+          description:
+            "**Tipp:** Possessivpronomen richten sich nach dem Geschlecht der
+            besessenen Sache, nicht nach dem Besitzer (z. B. `o meu carro`, `a
+            minha casa`)."
+      - title: Possessivpronomen (Mehrzahl)
+        items:
+          - "`os meus` / `as minhas` - meine"
+          - "`os teus` / `as tuas` - deine"
+          - "`os seus` / `as suas` - seine / ihre / Ihre"
+          - "`os nossos` / `as nossas` - unsere"
+          - "`os vossos` / `as vossas` - eure"
+        tip:
+          description:
+            "**Tipp:** Die Mehrzahl bildet man mit der Endung `-s`. Sie richtet
+            sich nach Geschlecht UND Zahl des Besitzes (z. B. `os meus avôs` =
+            meine Großväter, `as minhas avós` = meine Großmütter)."
+      - title: Besitz mit »de«
+        items:
+          - "`de` + `ele` = `dele` - sein (von ihm)"
+          - "`de` + `ela` = `dela` - ihr (von ihr)"
+          - "`de` + `eles` = `deles` - ihr (von ihnen, männl.)"
+          - "`de` + `elas` = `delas` - ihr (von ihnen, weibl.)"
+          - "`de vocês` - euer (von euch)"
+          - "`os filhos dele` - seine Söhne"
+          - "`a filha delas` - ihre Tochter (von ihnen)"
+        tip:
+          description:
+            "**Tipp:** Da `seu/sua` mehrdeutig ist (sein/ihr/Ihr), nutzt man zur
+            Klarheit oft `de` + Pronomen. Diese Formen stehen immer NACH dem
+            Substantiv (z. B. `a filha dele`)."
+      - title: Artikel
+        items:
+          - "`o` - der (männl. Singular)"
+          - "`a` - die (weibl. Singular)"
+          - "`os` - die (männl. Plural)"
+          - "`as` - die (weibl. Plural)"
+          - "`um` - ein (männl.)"
+          - "`uma` - eine (weibl.)"
+          - "`uns` - einige (männl.)"
+          - "`umas` - einige (weibl.)"
+        tip:
+          description:
+            "**Tipp:** Jedes Substantiv hat ein Geschlecht. Wörter auf `-o` sind
+            meist männlich, Wörter auf `-a` meist weiblich – lerne das
+            Substantiv am besten immer mit Artikel."
+      - title: Präpositionen
+        items:
+          - "`de` - von / aus"
+          - "`em` - in / an / auf"
+          - "`a` - zu / nach / an"
+          - "`para` - für / nach (Richtung)"
+          - "`por` - durch / pro / wegen"
+          - "`com` - mit"
+          - "`sem` - ohne"
+          - "`sobre` - über"
+          - "`entre` - zwischen"
+          - "`até` - bis"
+          - "`desde` - seit"
+      - title: Kontraktionen
+        items:
+          - "`de` + `o` = `do` - von dem"
+          - "`de` + `a` = `da` - von der"
+          - "`de` + `os` = `dos` - von den (männl.)"
+          - "`de` + `as` = `das` - von den (weibl.)"
+          - "`em` + `o` = `no` - in dem"
+          - "`em` + `a` = `na` - in der"
+          - "`em` + `os` = `nos` - in den (männl.)"
+          - "`em` + `as` = `nas` - in den (weibl.)"
+          - "`a` + `o` = `ao` - zu dem"
+          - "`a` + `a` = `à` - zu der"
+          - "`por` + `o` = `pelo` - durch / für das"
+          - "`por` + `a` = `pela` - durch / für die"
+          - "`em` + `um` = `num` - in einem"
+        tip:
+          description:
+            "**Tipp:** Präpositionen verschmelzen im Portugiesischen fast immer
+            mit dem folgenden Artikel. `Vou ao café` (Ich gehe ins Café). Mit
+            `em` gibt man den Standort an (`Moro no Porto`), mit `ser` + `de`
+            die Herkunft (`Sou do Porto`)."
+      - title: Verb »ser« (sein, dauerhaft)
+        items:
+          - "`eu sou` - ich bin"
+          - "`tu és` - du bist"
+          - "`ele / ela é` - er / sie ist"
+          - "`nós somos` - wir sind"
+          - "`vocês / eles são` - ihr seid / sie sind"
+        tip:
+          description:
+            "**Tipp:** `ser` für dauerhafte Eigenschaften: Identität, Herkunft,
+            Beruf, Uhrzeit (z. B. `Sou alemão`, `São três horas`)."
+      - title: Verb »estar« (sein, vorübergehend)
+        items:
+          - "`eu estou` - ich bin"
+          - "`tu estás` - du bist"
+          - "`ele / ela está` - er / sie ist"
+          - "`nós estamos` - wir sind"
+          - "`vocês / eles estão` - ihr seid / sie sind"
+        tip:
+          description:
+            "**Tipp:** `estar` für vorübergehende Zustände, Gefühle und Orte (z.
+            B. `Estou cansado`, `Estou em Lisboa`)."
+      - title: Verb »ter« (haben)
+        items:
+          - "`eu tenho` - ich habe"
+          - "`tu tens` - du hast"
+          - "`ele / ela tem` - er / sie hat"
+          - "`nós temos` - wir haben"
+          - "`vocês / eles têm` - ihr habt / sie haben"
+      - title: Verb »ir« (gehen)
+        items:
+          - "`eu vou` - ich gehe"
+          - "`tu vais` - du gehst"
+          - "`ele / ela vai` - er / sie geht"
+          - "`nós vamos` - wir gehen"
+          - "`vocês / eles vão` - ihr geht / sie gehen"
+        tip:
+          description:
+            "**Tipp:** `ir` + Infinitiv bildet die nahe Zukunft (z. B. `Vou
+            comer` = Ich werde essen)."
+      - title: Verb »chamar-se« (heißen)
+        items:
+          - "`eu chamo-me` - ich heiße"
+          - "`tu chamas-te` - du heißt"
+          - "`ele / ela chama-se` - er / sie heißt"
+          - "`nós chamamo-nos` - wir heißen"
+          - "`vocês / eles chamam-se` - ihr heißt / sie heißen"
+          - "`Como te chamas?` - Wie heißt du?"
+        tip:
+          description:
+            "**Tipp:** In Portugal hängt man das Reflexivpronomen mit
+            Bindestrich an das Verb (`chamo-me`). In Brasilien (BR) steht es
+            davor: `eu me chamo`, `você se chama`, `nós nos chamamos`."
+      - title: Verb »querer« (wollen)
+        items:
+          - "`eu quero` - ich will / möchte"
+          - "`tu queres` - du willst"
+          - "`ele / ela quer` - er / sie will"
+          - "`nós queremos` - wir wollen"
+          - "`vocês / eles querem` - ihr wollt / sie wollen"
+        tip:
+          description:
+            "**Tipp:** Bis auf `quer` (3. Person Singular, ohne Endung) sind die
+            Formen regelmäßig wie bei `beber`. Mit `Quero ...` drückt man
+            höflich einen Wunsch aus (»Ich möchte ...«). In Brasilien (BR) sagt
+            man statt `tu queres` meist `você quer`."
+      - title: Regelmäßige Verben (Präsens)
+        items:
+          - "**-ar** (`falar` = sprechen): `falo`, `falas`, `fala`, `falamos`,
+            `falam`"
+          - "**-er** (`comer` = essen): `como`, `comes`, `come`, `comemos`,
+            `comem`"
+          - "**-ir** (`dividir` = teilen): `divido`, `divides`, `divide`,
+            `dividimos`, `dividem`"
+        tip:
+          description:
+            "**Tipp:** Die Endung des Infinitivs (`-ar`/`-er`/`-ir`) wird durch
+            die Personalendung ersetzt; das Pronomen kann oft entfallen. Die
+            `eu`-Form endet immer auf `-o`, und `você`/`vocês` nutzen die Formen
+            der 3. Person (`ele/ela`, `eles/elas`)."
+      - title: Weitere Verben
+        items:
+          - "`falar` - sprechen"
+          - "`comer` - essen"
+          - "`beber` - trinken"
+          - "`vender` - verkaufen"
+          - "`dividir` - teilen"
+          - "`decidir` - entscheiden"
+          - "`curtir` - genießen / mögen"
+          - "`gostar (de)` - mögen"
+          - "`morar` - wohnen"
+          - "`trabalhar` - arbeiten"
+          - "`estudar` - lernen / studieren"
+          - "`querer` - wollen"
+          - "`sair` - ausgehen / hinausgehen"
+      - title: Zahlen 0–20
+        items:
+          - "`0` - zero"
+          - "`1` - um / uma"
+          - "`2` - dois / duas"
+          - "`3` - três"
+          - "`4` - quatro"
+          - "`5` - cinco"
+          - "`6` - seis"
+          - "`7` - sete"
+          - "`8` - oito"
+          - "`9` - nove"
+          - "`10` - dez"
+          - "`11` - onze"
+          - "`12` - doze"
+          - "`13` - treze"
+          - "`14` - catorze"
+          - "`15` - quinze"
+          - "`16` - dezasseis"
+          - "`17` - dezassete"
+          - "`18` - dezoito"
+          - "`19` - dezanove"
+          - "`20` - vinte"
+        tip:
+          description:
+            "**Tipp:** `1` und `2` haben weibliche Formen (`uma`, `duas`), die
+            sich nach dem Substantiv richten. In Brasilien (BR): `dezesseis`,
+            `dezessete`, `dezenove`."
+      - title: Zahlen 30+
+        items:
+          - "`30` - trinta"
+          - "`40` - quarenta"
+          - "`50` - cinquenta"
+          - "`60` - sessenta"
+          - "`70` - setenta"
+          - "`80` - oitenta"
+          - "`90` - noventa"
+          - "`100` - cem"
+          - "`101` - cento e um"
+          - "`200` - duzentos"
+          - "`1000` - mil"
+          - "`1.000.000` - um milhão"
+          - "`21` - vinte e um (Zehner + `e` + Einer)"
+      - title: Wochentage
+        items:
+          - "`segunda-feira` - Montag"
+          - "`terça-feira` - Dienstag"
+          - "`quarta-feira` - Mittwoch"
+          - "`quinta-feira` - Donnerstag"
+          - "`sexta-feira` - Freitag"
+          - "`sábado` - Samstag"
+          - "`domingo` - Sonntag"
+          - "`na segunda-feira` - am Montag"
+          - "`no sábado` - am Samstag"
+          - "`no domingo` - am Sonntag"
+        tip:
+          description:
+            "**Tipp:** Im Alltag wird `-feira` oft weggelassen (z. B. `segunda`
+            statt `segunda-feira`). Um auszudrücken, dass etwas **an** einem
+            Wochentag ist, nutzt man `em` + Artikel: `na segunda-feira` (am
+            Montag), `no sábado` (am Samstag)."
+      - title: Monate
+        items:
+          - "`janeiro` - Januar"
+          - "`fevereiro` - Februar"
+          - "`março` - März"
+          - "`abril` - April"
+          - "`maio` - Mai"
+          - "`junho` - Juni"
+          - "`julho` - Juli"
+          - "`agosto` - August"
+          - "`setembro` - September"
+          - "`outubro` - Oktober"
+          - "`novembro` - November"
+          - "`dezembro` - Dezember"
+      - title: Zeit
+        items:
+          - "`hoje` - heute"
+          - "`amanhã` - morgen"
+          - "`ontem` - gestern"
+          - "`agora` - jetzt"
+          - "`mais tarde` - später"
+          - "`de manhã` - morgens / vormittags"
+          - "`à tarde` - nachmittags"
+          - "`à noite` - abends / nachts"
+          - "`o meio-dia` - der Mittag (12 Uhr)"
+          - "`a meia-noite` - die Mitternacht (0 Uhr)"
+          - "`a hora` - die Stunde"
+          - "`o minuto` - die Minute"
+          - "`o dia` - der Tag"
+          - "`a semana` - die Woche"
+          - "`o mês` - der Monat"
+          - "`o ano` - das Jahr"
+        tip:
+          description:
+            "**Tipp:** `de manhã` (vormittags / am Vormittag), `à tarde`
+            (nachmittags) und `à noite` (abends) sind feste Wendungen für
+            Tageszeiten (z. B. `Eu trabalho à tarde`)."
+      - title: Uhrzeit
+        items:
+          - "`Que horas são?` - Wie spät ist es?"
+          - "`É uma hora` - Es ist ein Uhr"
+          - "`São sete horas` - Es ist sieben Uhr"
+          - "`São sete e dez` - Es ist zehn nach sieben (Stunde + `e` + Minuten)"
+          - "`São seis e meia` - Es ist halb sieben (wörtl. sechs und halb)"
+          - "`São três e um quarto` - Es ist Viertel nach drei (BR: `e quinze`)"
+          - "`É meio-dia` / `É meia-noite` - Es ist Mittag / Mitternacht"
+          - "`É meio-dia e meia` - Es ist halb eins"
+          - "`São quinze para as quatro` - Es ist Viertel vor vier"
+          - "`São vinte para a uma` - Es ist zwanzig vor eins"
+        tip:
+          description:
+            "**Tipp:** Vor `uma hora`, `meio-dia` und `meia-noite` steht die
+            Einzahlform `é`, ab zwei Uhr die Mehrzahlform `são`. Stunde und
+            Minuten verbindet `e` (und). Für »Viertel« nutzt man in Portugal
+            meist `um quarto`, in Brasilien (BR) immer `quinze`. `hora(s)` und
+            `minuto(s)` darf man bei nicht vollen Uhrzeiten weglassen."
+      - title: Uhrzeit mit »a«
+        items:
+          - "`A que horas?` - Um wie viel Uhr?"
+          - "`a` + `a uma hora` = `à uma hora` - um ein Uhr"
+          - "`a` + `as duas horas` = `às duas horas` - um zwei Uhr"
+          - "`a` + `o meio-dia` = `ao meio-dia` - am Mittag"
+          - "`Amanhã ao meio-dia e meia` - Morgen um halb eins"
+        tip:
+          description:
+            "**Tipp:** Den Zeitpunkt erfragt man mit `A que horas?`. Die
+            Präposition `a` verschmilzt dabei mit dem Artikel der Uhrzeit zu `à`
+            (vor `uma`), `às` (ab zwei) bzw. `ao` (vor `meio-dia` /
+            `meia-noite`)."
+      - title: Farben
+        items:
+          - "`vermelho` - rot"
+          - "`azul` - blau"
+          - "`verde` - grün"
+          - "`amarelo` - gelb"
+          - "`preto` - schwarz"
+          - "`branco` - weiß"
+          - "`cor-de-rosa` - rosa"
+          - "`laranja` - orange"
+          - "`castanho` - braun (BR: `marrom`)"
+          - "`cinzento` - grau (BR: `cinza`)"
+          - "`roxo` - lila"
+      - title: Familie
+        items:
+          - "`a família` - die Familie"
+          - "`os pais` - die Eltern"
+          - "`o pai` - der Vater"
+          - "`a mãe` - die Mutter"
+          - "`o filho` / `a filha` - der Sohn / die Tochter"
+          - "`o irmão` / `a irmã` - der Bruder / die Schwester"
+          - "`o avô` / `a avó` - der Großvater / die Großmutter"
+          - "`o marido` / `a mulher` - der Ehemann / die Ehefrau"
+          - "`o amigo` / `a amiga` - der Freund / die Freundin"
+          - "`o namorado` / `a namorada` - der Partner / die Partnerin"
+          - "`o tio` / `a tia` - der Onkel / die Tante"
+          - "`o primo` / `a prima` - der Cousin / die Cousine"
+          - "`o menino` / `a menina` - der Junge / das Mädchen"
+      - title: Essen & Trinken
+        items:
+          - "`a água` - das Wasser"
+          - "`o pão` - das Brot"
+          - "`o café` - der Kaffee"
+          - "`o vinho` - der Wein"
+          - "`a cerveja` - das Bier"
+          - "`o pequeno-almoço` - das Frühstück (BR: `café da manhã`)"
+          - "`o almoço` - das Mittagessen"
+          - "`o jantar` - das Abendessen"
+          - "`a ementa` - die Speisekarte (BR: `cardápio`)"
+          - "`Queria ...` - Ich hätte gern ..."
+          - "`A conta, por favor` - Die Rechnung, bitte"
+          - "`Bom apetite` - Guten Appetit"
+          - "`Saúde!` - Prost!"
+          - "`com gás` / `sem gás` - mit / ohne Kohlensäure"
+          - "`o sumo` - der Saft (BR: `suco`)"
+          - "`o sumo de laranja` - der Orangensaft"
+          - "`a garrafa` - die Flasche"
+          - "`o copo` - das (Trink-)Glas"
+          - "`a taça` - das Weinglas / der Pokal"
+          - "`Para mim, só um café` - Für mich nur einen Kaffee"
+          - "`Mais alguma coisa?` - Sonst noch etwas?"
+        tip:
+          description:
+            "**Tipp:** Nach Maßeinheiten steht `de`: `uma garrafa de vinho`
+            (eine Flasche Wein), `uma taça de vinho` (ein Glas Wein). Weingläser
+            heißen `taças`, normale Trinkgläser `copos`."
+      - title: Einkaufen
+        items:
+          - "`Quanto custa?` - Wie viel kostet das?"
+          - "`É muito caro` - Das ist zu teuer"
+          - "`barato` - billig"
+          - "`a loja` - das Geschäft"
+          - "`o dinheiro` - das Geld"
+          - "`Aceita cartão?` - Akzeptieren Sie Karte?"
+          - "`Onde fica ...?` - Wo befindet sich ...?"
+          - "`Só estou a ver, obrigado` - Ich schaue nur, danke"
+          - "`Quanto dá tudo?` - Wie viel macht das zusammen?"
+          - "`Aqui está o troco` - Hier ist das Wechselgeld"
+          - "`o troco` - das Wechselgeld"
+      - title: Unterwegs
+        items:
+          - "`à esquerda` - links"
+          - "`à direita` - rechts"
+          - "`em frente` - geradeaus"
+          - "`perto` - nah"
+          - "`longe` - weit"
+          - "`aqui` - hier"
+          - "`ali` / `lá` - dort"
+          - "`a estação` - der Bahnhof"
+          - "`o aeroporto` - der Flughafen"
+          - "`o comboio` - der Zug (BR: `trem`)"
+          - "`o autocarro` - der Bus (BR: `ônibus`)"
+          - "`a paragem` - die Haltestelle (BR: `parada`)"
+          - "`o bilhete` - das Ticket"
+          - "`a casa de banho` - die Toilette (BR: `banheiro`)"
+          - "`a rua` - die Straße"
+          - "`o mar` - das Meer"
+      - title: Notfall
+        items:
+          - "`Socorro!` - Hilfe!"
+          - "`Cuidado!` - Vorsicht!"
+          - "`Chame a polícia` - Rufen Sie die Polizei"
+          - "`Preciso de um médico` - Ich brauche einen Arzt"
+          - "`Estou perdido` / `Estou perdida` - Ich habe mich verlaufen"
+          - "`Não me sinto bem` - Mir geht es nicht gut"
+          - "`a farmácia` - die Apotheke"
+          - "`o hospital` - das Krankenhaus"
+      - title: Adjektive
+        items:
+          - "`grande` - groß"
+          - "`pequeno` - klein"
+          - "`bom` / `mau` - gut / schlecht"
+          - "`novo` / `velho` - neu (jung) / alt"
+          - "`bonito` / `feio` - schön / hässlich"
+          - "`caro` / `barato` - teuer / billig"
+          - "`quente` / `frio` - heiß / kalt"
+          - "`fácil` / `difícil` - einfach / schwierig"
+          - "`muito` / `pouco` - viel / wenig"
+          - "`cansado` - müde"
+          - "`forte` - stark"
+          - "`triste` - traurig"
+          - "`doente` - krank"
+          - "`contente` - zufrieden / froh"
+          - "`inteligente` - intelligent"
+        tip:
+          description:
+            "**Tipp:** Adjektive stehen meist nach dem Substantiv und passen
+            sich in Geschlecht und Zahl an (z. B. `uma casa bonita`, `carros
+            caros`)."
+      - title: Angleichung der Adjektive
+        items:
+          - "Endung `-o`/`-a` richtet sich nach dem Geschlecht: `o menino
+            cansado`, `a menina cansada`"
+          - "Adjektive auf `-e` sind im Geschlecht unveränderlich: `o menino
+            forte`, `a menina forte`"
+          - "Mehrzahl beider Gruppen mit `-s`: `os meninos cansados`, `as
+            meninas fortes`"
+          - "`Ela está um pouco cansada` - Sie ist ein bisschen müde"
+          - "`Vocês estão tristes ou doentes?` - Seid ihr traurig oder krank?"
+          - "`As crianças são fortes e inteligentes` - Die Kinder sind stark und
+            intelligent"
+        tip:
+          description:
+            "**Tipp:** Endet ein Adjektiv auf einen Konsonanten, bildet man die
+            Mehrzahl oft mit `-es` (z. B. `fácil` → `fáceis`). Mehrere Adjektive
+            verbindet man mit `e` (und) oder `ou` (oder)."
+      - title: Nützliche Sätze
+        items:
+          - "`Tudo bem?` - Alles gut? / Wie geht's?"
+          - "`Como vai?` - Wie geht es dir? / Wie läuft's?"
+          - "`Está bem` - In Ordnung / Okay"
+          - "`Que bom!` - Wie schön! / Toll!"
+          - "`Já está melhor?` - Geht es schon besser?"
+          - "`Claro` - Klar / Natürlich"
+          - "`Não faz mal` - Macht nichts"
+          - "`Com certeza` - Auf jeden Fall"
+          - "`Gosto de ...` - Ich mag ..."
+          - "`Não gosto de ...` - Ich mag ... nicht"
+          - "`Quero ...` / `Não quero ...` - Ich will ... / Ich will ... nicht"
+          - "`Vamos ...?` - Wollen wir ...? / Lass uns ... (z. B. `Vamos sair?`
+            = Wollen wir ausgehen?)"
+          - "`Posso ...?` - Darf ich ...?"
+          - "`Pode ajudar-me?` - Können Sie mir helfen?"
+          - "`Onde é a casa de banho?` - Wo ist die Toilette?"
+      - title: Weitere Wörter
+        items:
+          - "`o livro` - das Buch"
+          - "`o rádio` - das Radio"
+          - "`o ferro` - das Eisen / das Bügeleisen"
+          - "`o computador` - der Computer"
+          - "`a criança` - das Kind"
+          - "`o nome` - der Name"
+          - "`as férias` - die Ferien / der Urlaub"
+          - "`as relações` - die Beziehungen"
+          - "`o apartamento` - die Wohnung"
+          - "`também` - auch"
+          - "`tudo` - alles"
+          - "`a coisa` - die Sache / das Ding"
+          - "`só` - nur"
+          - "`ou` - oder"
+          - "`mais` - mehr / plus"
+          - "`menos` - weniger / minus"
+          - "`igual a` - gleich (z. B. `dez mais dez é igual a vinte`)"
+          - "`aonde` - wohin (BR; in Portugal: `para onde`)"
+          - "`mal` - schlecht (z. B. `Estou mal` = Mir geht es schlecht)"
+          - "`melhor` - besser"
+          - "`certo` - richtig / sicher"
+          - "`para mim` - für mich"
+          - "`o Brasil` - Brasilien"
+
+  - title: Urlaub in Portugal
+    columns: 5
+    sections:
+      - title: Ankunft & Flughafen
+        items:
+          - "`Estou de férias` - Ich bin im Urlaub"
+          - "`Onde fica a recolha de bagagem?` - Wo ist die Gepäckausgabe?"
+          - "`Perdi a minha mala` - Ich habe meinen Koffer verloren"
+          - "`Onde posso apanhar um táxi?` - Wo bekomme ich ein Taxi?"
+          - "`Onde fica a paragem do autocarro?` - Wo ist die Bushaltestelle?"
+          - "`Quanto custa o bilhete para o centro?` - Wie viel kostet das
+            Ticket ins Zentrum?"
+          - "`Leve-me a esta morada, por favor` - Bringen Sie mich bitte zu
+            dieser Adresse"
+          - "`Pode ligar o taxímetro?` - Können Sie das Taxameter einschalten?"
+        tip:
+          description:
+            "**Tipp:** `apanhar` (nehmen / erwischen) nutzt man in Portugal für
+            Verkehrsmittel: `apanhar o autocarro` (den Bus nehmen). In Brasilien
+            (BR) sagt man eher `pegar o ônibus`."
+      - title: Im Hotel
+        items:
+          - "`Tenho uma reserva em nome de ...` - Ich habe eine Reservierung auf
+            den Namen ..."
+          - "`Tem quartos livres?` - Haben Sie freie Zimmer?"
+          - "`Quanto custa a noite?` - Wie viel kostet die Nacht?"
+          - "`O pequeno-almoço está incluído?` - Ist das Frühstück inbegriffen?"
+          - "`A que horas é o check-out?` - Wann ist der Check-out?"
+          - "`A chave, por favor` - Den Schlüssel, bitte"
+          - "`O wi-fi não funciona` - Das WLAN funktioniert nicht"
+          - "`O ar condicionado não funciona` - Die Klimaanlage funktioniert
+            nicht"
+          - "`Pode chamar um táxi, por favor?` - Können Sie ein Taxi rufen?"
+          - "`Posso deixar a bagagem aqui?` - Kann ich das Gepäck hier lassen?"
+      - title: Im Restaurant
+        items:
+          - "`Uma mesa para dois, por favor` - Einen Tisch für zwei, bitte"
+          - "`A ementa, por favor` - Die Speisekarte, bitte"
+          - "`Qual é o prato do dia?` - Was ist das Tagesgericht?"
+          - "`O que recomenda?` - Was empfehlen Sie?"
+          - "`Para mim, ...` - Für mich ..."
+          - "`Sou vegetariano` / `Sou vegetariana` - Ich bin Vegetarier(in)"
+          - "`Tem pratos sem glúten?` - Haben Sie glutenfreie Gerichte?"
+          - "`Mais água, por favor` - Noch etwas Wasser, bitte"
+          - "`Estava tudo delicioso` - Es war alles köstlich"
+          - "`A conta, por favor` - Die Rechnung, bitte"
+          - "`Podemos pagar separadamente?` - Können wir getrennt zahlen?"
+        tip:
+          description:
+            "**Tipp:** Trinkgeld (`a gorjeta`) ist nicht verpflichtend; bei
+            Zufriedenheit rundet man auf oder lässt etwa 5–10 %. `Para mim, ...`
+            ist die einfachste Art zu bestellen."
+      - title: Nach dem Weg fragen
+        items:
+          - "`Onde fica ...?` - Wo befindet sich ...?"
+          - "`Como chego a ...?` - Wie komme ich zu ...?"
+          - "`Pode mostrar-me no mapa?` - Können Sie es mir auf der Karte
+            zeigen?"
+          - "`É longe daqui?` - Ist es weit von hier?"
+          - "`Siga em frente` - Gehen Sie geradeaus"
+          - "`Vire à esquerda` / `Vire à direita` - Biegen Sie links / rechts ab"
+          - "`Fica ao lado de ...` - Es ist neben ..."
+          - "`Estou perdido` / `Estou perdida` - Ich habe mich verlaufen"
+      - title: Sehenswürdigkeiten
+        items:
+          - "`Onde fica o centro histórico?` - Wo ist die Altstadt?"
+          - "`Quanto custa a entrada?` - Wie viel kostet der Eintritt?"
+          - "`Há desconto para estudantes?` - Gibt es Ermäßigung für Studenten?"
+          - "`A que horas abre?` / `A que horas fecha?` - Wann öffnet / schließt
+            es?"
+          - "`Onde posso comprar bilhetes?` - Wo kann ich Tickets kaufen?"
+          - "`Posso tirar fotografias?` - Darf ich fotografieren? (BR: `tirar
+            fotos`)"
+          - "`Pode tirar-nos uma foto?` - Können Sie ein Foto von uns machen?"
+          - "`Há uma visita guiada?` - Gibt es eine Führung?"
+      - title: Am Strand
+        items:
+          - "`Onde fica a praia?` - Wo ist der Strand?"
+          - "`É seguro nadar aqui?` - Ist es sicher, hier zu schwimmen?"
+          - "`A água está fria` - Das Wasser ist kalt"
+          - "`Cuidado com as ondas` - Vorsicht vor den Wellen"
+          - "`Posso alugar uma espreguiçadeira?` - Kann ich eine Liege mieten?"
+          - "`o protetor solar` - die Sonnencreme"
+          - "`a toalha` - das Handtuch"
+          - "`o chapéu de sol` - der Sonnenschirm"
+      - title: Einkaufen & Souvenirs
+        items:
+          - "`Só estou a ver, obrigado` - Ich schaue nur, danke"
+          - "`Quanto custa isto?` - Wie viel kostet das?"
+          - "`Tem outro tamanho?` - Haben Sie eine andere Größe?"
+          - "`Posso experimentar?` - Kann ich es anprobieren?"
+          - "`Aceita cartão?` - Akzeptieren Sie Karte?"
+          - "`Faz desconto?` - Geben Sie Rabatt?"
+          - "`Pode embrulhar para presente?` - Können Sie es als Geschenk
+            einpacken?"
+          - "`Onde há um multibanco?` - Wo gibt es einen Geldautomaten?"
+        tip:
+          description:
+            "**Tipp:** Der Geldautomat heißt in Portugal `multibanco` (oft kurz
+            `MB`); in Brasilien (BR) `caixa eletrônico`."
+      - title: Probleme & Notfälle
+        items:
+          - "`Pode ajudar-me, por favor?` - Können Sie mir bitte helfen?"
+          - "`Perdi o meu passaporte` - Ich habe meinen Pass verloren"
+          - "`Roubaram-me a carteira` - Mir wurde die Brieftasche gestohlen"
+          - "`Não me sinto bem` - Mir geht es nicht gut"
+          - "`Preciso de ir ao hospital` - Ich muss ins Krankenhaus"
+          - "`Chame uma ambulância` - Rufen Sie einen Krankenwagen"
+          - "`Onde fica a esquadra da polícia?` - Wo ist die Polizeiwache? (BR:
+            `delegacia`)"
+          - "`Onde fica a farmácia mais próxima?` - Wo ist die nächste Apotheke?"
+        tip:
+          description:
+            "**Tipp:** Die europäische Notrufnummer ist `112` (`cento e doze`)
+            und gilt in ganz Portugal für Polizei, Feuerwehr und Rettungsdienst."
+      - title: Freundlichkeiten & Smalltalk
+        items:
+          - "`É a primeira vez que venho a Portugal` - Es ist das erste Mal,
+            dass ich nach Portugal komme"
+          - "`Portugal é lindo!` - Portugal ist wunderschön!"
+          - "`A comida é fantástica` - Das Essen ist fantastisch"
+          - "`O que recomenda visitar?` - Was empfehlen Sie zu besuchen?"
+          - "`Qual é a sua especialidade?` - Was ist Ihre Spezialität?"
+          - "`Boa viagem!` - Gute Reise!"
+          - "`Boas férias!` - Schönen Urlaub!"
+          - "`Muito obrigado por tudo` - Vielen Dank für alles"
