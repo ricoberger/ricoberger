@@ -51,6 +51,7 @@ type Metadata struct {
 
 type CheatSheet struct {
 	ID          string           `yaml:"id"`
+	Hidden      bool             `yaml:"hidden"`
 	Title       string           `yaml:"title"`
 	Description string           `yaml:"description"`
 	Author      string           `yaml:"author"`

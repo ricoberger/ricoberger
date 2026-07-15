@@ -3,9 +3,11 @@
   <h1>Cheat Sheets</h1>
   <ul>
     {{ range $cheatsheet := .Content }}
+    {{ if eq $cheatsheet.Hidden false }}
     <li>
       <a href="/cheat-sheets/{{ $cheatsheet.ID }}/">{{ $cheatsheet.Title }}</a>
     </li>
+    {{ end }}
     {{ end }}
   </ul>
 </div>
