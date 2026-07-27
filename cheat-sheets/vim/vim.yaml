@@ -406,6 +406,7 @@ pages:
           - "`gf` - Edit the file whose name is under or after the cursor"
           - "`gx` - Opens the current filepath or URL under cursor using the
             system default handler."
+          - "`Ctrl` + `\\` + `Ctrl` + `n` - Exit from terminal mode"
           - "`q:` or `q/` or `Ctrl` + `f` - Command-line window"
       - title: Help
         items:
@@ -552,7 +553,8 @@ pages:
           - "`in` - Incremental selection (inwards)"
           - "`]n` - Select previous node"
           - "`[n` - Select next node"
-          - "`Space` + `d` - Show diagnostics"
+          - "`Space` + `d` - Show diagnostics for file"
+          - "`Space` + `D` - Show diagnostics for workspace"
       - title: Completions
         items:
           - "`Ctrl` + `Space` or `Ctrl` + `x` + `Ctrl` + `o` - Trigger
@@ -564,6 +566,7 @@ pages:
           - "`Ctrl` + `p` or `Up` - Select previous completion"
           - "`Ctrl` + `Enter` - Accept inline completion"
           - "`Ctrl` + `Right` - Accept next word of inline completion"
+          - "`Ctrl` + `Up` / `Ctrl` + `Down` - Next / previous inline completion"
       - title: Multicursor
         items:
           - "`Ctrl` + `n` - Add cursor for next word"
