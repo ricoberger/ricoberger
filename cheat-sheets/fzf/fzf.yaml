@@ -261,6 +261,9 @@ pages:
             reply to thread; `Alt` + `x` resolve / unresolve thread; `Alt` + `c`
             new thread on a line or range (nvim opens pre-filled with a
             `suggestion` block)"
+          - "`Alt` + `s` - Show commits; `Enter` view commit details and diff;
+            `Alt` + `o` open commit in the web browser; `Alt` + `y` copy commit
+            sha to the clipboard"
           - "`Alt` + `g` - Check out pull request and open nvim with `:GitDiff`
             command (current repo only, requires a clean worktree)"
       - title: fzfgh - Issues
