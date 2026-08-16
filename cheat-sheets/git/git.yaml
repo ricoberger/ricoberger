@@ -118,7 +118,7 @@ pages:
           - "`Alt` + `c` - Commit staged changes (`git commit`)"
           - "`Alt` + `a` - Amend staged changes to the last commit (`git commit
             --amend`)"
-          - "`Alt` + `e` - Open selection in `$EDITOR`"
+          - "`Alt` + `o` - Open selection in `$EDITOR`"
           - "`Alt` + `d` - Show diff in the preview"
           - "`Alt` + `b` - Show blame in the preview"
       - title: Conventional Commits
