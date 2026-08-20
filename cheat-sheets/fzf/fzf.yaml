@@ -211,6 +211,7 @@ pages:
             `d` delete link; `Alt` + `n` create new link"
           - "`Alt` + `s` - Show work item's sub-tasks in a nested picker"
           - "`Alt` + `o` - Open work item in the web browser"
+          - "`Alt` + `y` - Copy work item url to the clipboard"
       - title: fzfvault - Vault
         items:
           - |
