@@ -1,0 +1,823 @@
+---
+title: Italienisch
+hidden: true
+description:
+  Cheat Sheet zum Lernen der italienischen Sprache für deutschsprachige
+  Lernende. Es deckt Aussprache, Grammatik, Zahlen und nützliche Sätze für den
+  Alltag ab.
+author: Rico Berger
+keywords:
+  - Italienisch
+  - Italiano
+  - Sprache lernen
+pages:
+  - title: Italienisch
+    columns: 5
+    sections:
+      - title: Allgemein
+        items:
+          - |
+            Italienisch (Italiano) ist eine romanische Sprache und wird von
+            rund 85 Millionen Menschen gesprochen, unter anderem in Italien,
+            in der Schweiz (Tessin und Graubünden), in San Marino und in der
+            Vatikanstadt.
+          - |
+            Dieses Cheat Sheet richtet sich an deutschsprachige Lernende und
+            konzentriert sich auf das **Standarditalienisch**, wie es in ganz
+            Italien verstanden wird.
+          - |
+            Download Cheat Sheet as [PDF](./assets/italienisch-cheat-sheet.pdf) | [PNG](./assets/italienisch-cheat-sheet.png)
+      - title: Aussprache
+        items:
+          - "`c` - vor `e`/`i` wie »tsch« (z. B. `ciao` = hallo, `cena` =
+            Abendessen), sonst wie »k« (z. B. `casa` = Haus, `come` = wie)"
+          - "`ch` - wie »k« (z. B. `che` = was, `chiesa` = Kirche)"
+          - "`g` - vor `e`/`i` wie »dsch« (z. B. `gelato` = Eis, `giorno` =
+            Tag), sonst wie »g« (z. B. `gatto` = Katze)"
+          - "`gh` - wie »g« (z. B. `spaghetti`, `ghiaccio` = Eis)"
+          - "`gn` - wie »nj« in Kognak (z. B. `bagno` = Bad, `signore` = Herr)"
+          - "`gli` - wie »lj« (z. B. `famiglia` = Familie, `figlio` = Sohn)"
+          - "`sc` - vor `e`/`i` wie »sch« (z. B. `pesce` = Fisch, `uscita` =
+            Ausgang), sonst wie »sk« (z. B. `scusa` = Entschuldigung)"
+          - "`sch` - wie »sk« (z. B. `bruschetta`, `schiuma` = Schaum)"
+          - "`z` - wie »ts« oder »ds« (z. B. `pizza`, `grazie` = danke, `zero` =
+            null)"
+          - "`s` - zwischen Vokalen stimmhaft wie in Rose (z. B. `casa`,
+            `chiesa`)"
+          - "`h` - immer stumm (z. B. `ho` = ich habe, `hotel`)"
+          - "`qu` - wie »ku« (z. B. `quando` = wann, `questo` = dieser)"
+          - "`r` - gerollt (z. B. `rosso` = rot, `mare` = Meer)"
+          - Doppelkonsonanten werden lang und betont gesprochen (z. B. `nonna` =
+            Großmutter, `palla` = Ball)
+        tip:
+          description:
+            "**Tipp:** Italienische Wörter werden meist auf der vorletzten Silbe
+            betont. Ein Akzent zeigt die Betonung der letzten Silbe an (z. B.
+            `città` = Stadt, `caffè` = Kaffee, `però` = aber)."
+      - title: Das Alphabet
+        items:
+          - |
+            Das italienische Alphabet hat nur **21 Grundbuchstaben**. Die
+            Buchstaben `j`, `k`, `w`, `x` und `y` kommen nur in Fremdwörtern
+            vor.
+          - "`A - B - C - D - E` - a - bi - tschi - di - e"
+          - "`F - G - H - I` - effe - dschi - akka - i"
+          - "`L - M - N - O` - elle - emme - enne - o"
+          - "`P - Q - R - S - T` - pi - ku - erre - esse - ti"
+          - "`U - V - Z` - u - wi/wu - dseta"
+          - "`la lettera` - der Buchstabe"
+          - "`l'alfabeto` - das Alphabet"
+          - "`Come si scrive?` - Wie schreibt man das?"
+        tip:
+          description:
+            "**Tipp:** Das italienische Alphabet hat nur **5 Vokale**. Diese
+            werden fast immer gleich und ähnlich wie im Deutschen ausgesprochen:"
+          items:
+            - "`a`, `e` - a, e (wie »e« in See)"
+            - "`i`, `o` - i, o (wie »o« in Gott)"
+            - "`u` - u"
+      - title: Begrüßung & Höflichkeit
+        items:
+          - "`Ciao` - Hallo / Tschüss (informell)"
+          - "`Salve` - Hallo (neutral)"
+          - "`Buongiorno` - Guten Morgen / Guten Tag"
+          - "`Buonasera` - Guten Abend"
+          - "`Buonanotte` - Gute Nacht"
+          - "`Arrivederci` - Auf Wiedersehen"
+          - "`A presto` - Bis bald"
+          - "`A dopo` - Bis später"
+          - "`A domani` - Bis morgen"
+          - "`Per favore` / `Per piacere` - Bitte"
+          - "`Grazie` - Danke"
+          - "`Grazie mille` - Vielen Dank"
+          - "`Prego` - Gern geschehen / Bitte sehr"
+          - "`Scusi` - Entschuldigung (formell)"
+          - "`Scusa` - Entschuldigung (informell, zu `tu`)"
+          - "`Permesso` - Entschuldigung (um vorbeizugehen / beim Eintreten)"
+          - "`Sì` - Ja"
+          - "`No` - Nein"
+          - "`Forse` - Vielleicht"
+        tip:
+          description:
+            "**Tipp:** `Prego` ist vielseitig: Es bedeutet »Gern geschehen«,
+            »Bitte sehr« (beim Überreichen), »Bitte nach Ihnen« oder als Frage
+            »Wie bitte?«."
+      - title: Sich vorstellen
+        items:
+          - "`Come ti chiami?` - Wie heißt du?"
+          - "`Come si chiama?` - Wie heißen Sie?"
+          - "`Mi chiamo ...` - Ich heiße ..."
+          - "`Il mio nome è ...` - Mein Name ist ..."
+          - "`Lui è ...` - Das ist (wörtl. Er ist) ..."
+          - "`Qual è il Suo cognome?` - Wie ist Ihr Nachname?"
+          - "`Il mio cognome è ...` - Mein Nachname ist ..."
+          - "`Piacere` - Sehr erfreut / Freut mich"
+          - "`Piacere di conoscerti` - Schön, dich kennenzulernen"
+          - "`Come stai?` - Wie geht es dir?"
+          - "`Come sta?` - Wie geht es Ihnen?"
+          - "`Sto bene, grazie` - Mir geht es gut, danke"
+          - "`E tu?` / `E Lei?` - Und dir? / Und Ihnen?"
+          - "`Di dove sei?` - Woher kommst du?"
+          - "`Vengo dalla Germania` - Ich komme aus Deutschland"
+          - "`Sono tedesco` / `Sono tedesca` - Ich bin Deutscher / Deutsche"
+          - "`Quanti anni hai?` - Wie alt bist du?"
+          - "`Ho ... anni` - Ich bin ... Jahre alt"
+        tip:
+          description:
+            "**Tipp:** Die Höflichkeitsform ist `Lei` mit dem Verb in der 3.
+            Person Singular – unabhängig davon, ob man mit einem Mann oder einer
+            Frau spricht (z. B. `Lei come si chiama?`)."
+      - title: Verständigung
+        items:
+          - "`Parla tedesco?` - Sprechen Sie Deutsch?"
+          - "`Parla inglese?` - Sprechen Sie Englisch?"
+          - "`Parlo un po' d'italiano` - Ich spreche ein wenig Italienisch"
+          - "`Non parlo italiano` - Ich spreche kein Italienisch"
+          - "`Non capisco` - Ich verstehe nicht"
+          - "`Non ho capito` - Ich habe nicht verstanden"
+          - "`Capisce?` - Verstehen Sie?"
+          - "`Può ripetere, per favore?` - Können Sie das wiederholen?"
+          - "`Può parlare più lentamente?` - Können Sie langsamer sprechen?"
+          - "`Più lentamente, per favore` - Langsamer, bitte"
+          - "`Cosa significa ...?` - Was bedeutet ...?"
+          - "`Come si dice ... in italiano?` - Wie sagt man ... auf Italienisch?"
+        tip:
+          description:
+            "**Tipp:** Fragen erkennt man oft nur an der Satzmelodie: Am Ende
+            einer Aussage fällt die Intonation, am Ende einer Frage steigt sie
+            (`Giulia parla inglese.` vs. `Giulia parla inglese?`)."
+      - title: Länder & Sprachen
+        items:
+          - "`tedesco` / `tedesca` - deutsch / Deutsche(r)"
+          - "`inglese` - englisch / Engländer(in)"
+          - "`francese` - französisch / Franzose (Französin)"
+          - "`spagnolo` / `spagnola` - spanisch / Spanier(in)"
+          - "`italiano` / `italiana` - italienisch / Italiener(in)"
+          - "`americano` / `americana` - amerikanisch / Amerikaner(in)"
+          - "`cinese` - chinesisch / Chinese (Chinesin)"
+          - "`giapponese` - japanisch / Japaner(in)"
+          - "`la Germania` - Deutschland"
+          - "`l'Italia` - Italien"
+          - "`l'Austria` - Österreich"
+          - "`la Svizzera` - die Schweiz"
+          - "`gli Stati Uniti` - die Vereinigten Staaten"
+          - "`Parlo solo tedesco` - Ich spreche nur Deutsch"
+          - "`Parlate inglese?` - Sprecht ihr Englisch?"
+          - "`Vivo in Germania` - Ich lebe in Deutschland"
+          - "`Abito a Roma` - Ich wohne in Rom"
+        tip:
+          description:
+            "**Tipp:** Sprachen und Nationalitäten schreibt man klein; Formen
+            auf `-ese` gelten für männlich und weiblich (`inglese`, `cinese`).
+            Herkunft mit `essere` + `di` + Stadt (`Sono di Berlino`) oder
+            `venire` + `da` + Land (`Vengo dalla Germania`). Wohnort mit `a` +
+            Stadt (`Abito a Roma`) und `in` + Land (`Vivo in Italia`)."
+      - title: Fragewörter
+        items:
+          - "`Chi?` - Wer?"
+          - "`Che cosa?` / `Cosa?` / `Che?` - Was?"
+          - "`Quando?` - Wann?"
+          - "`Dove?` - Wo? / Wohin?"
+          - "`Di dove?` - Woher? (Herkunft)"
+          - "`Da dove?` - Woher? (Richtung)"
+          - "`Perché?` - Warum?"
+          - "`perché` - weil"
+          - "`Come?` - Wie?"
+          - "`Quale?` - Welche(r)?"
+          - "`Quanto?` - Wie viel?"
+          - "`Quanti?` / `Quante?` - Wie viele?"
+        tip:
+          description:
+            "**Tipp:** `perché` bedeutet sowohl »warum« als auch »weil« (z. B.
+            `Perché studi l'italiano?` – `Perché amo l'Italia`)."
+      - title: Personalpronomen
+        items:
+          - "`io` - ich"
+          - "`tu` - du (informell)"
+          - "`Lei` - Sie (formell, Singular)"
+          - "`lui` / `lei` - er / sie"
+          - "`noi` - wir"
+          - "`voi` - ihr"
+          - "`loro` - sie (Plural)"
+        tip:
+          description:
+            "**Tipp:** Subjektpronomen werden meist weggelassen, da die
+            Verbendung die Person eindeutig anzeigt (`Parlo italiano` statt `Io
+            parlo italiano`). Sie stehen nur zur Betonung."
+      - title: Possessivpronomen
+        items:
+          - "`il mio` / `la mia` - mein"
+          - "`il tuo` / `la tua` - dein"
+          - "`il suo` / `la sua` - sein / ihr"
+          - "`il Suo` / `la Sua` - Ihr (formell)"
+          - "`il nostro` / `la nostra` - unser"
+          - "`il vostro` / `la vostra` - euer"
+          - "`il loro` / `la loro` - ihr (Plural)"
+        tip:
+          description:
+            "**Tipp:** Possessivpronomen stehen fast immer MIT Artikel (`la mia
+            casa`). Ausnahme: einzelne Familienmitglieder in der Einzahl (`mia
+            madre`, `mio fratello` – aber `la loro madre` und `i miei
+            fratelli`)."
+      - title: Possessivpronomen (Mehrzahl)
+        items:
+          - "`i miei` / `le mie` - meine"
+          - "`i tuoi` / `le tue` - deine"
+          - "`i suoi` / `le sue` - seine / ihre"
+          - "`i nostri` / `le nostre` - unsere"
+          - "`i vostri` / `le vostre` - eure"
+          - "`i loro` / `le loro` - ihre"
+        tip:
+          description:
+            "**Tipp:** Possessivpronomen richten sich nach Geschlecht und Zahl
+            der besessenen Sache (z. B. `i miei amici` = meine Freunde, `le mie
+            amiche` = meine Freundinnen). `loro` selbst ist unveränderlich, nur
+            der Artikel ändert sich."
+      - title: Nomen
+        items:
+          - "`il libro` / `i libri` - das Buch / die Bücher"
+          - "`la casa` / `le case` - das Haus / die Häuser"
+          - "`il cane` / `i cani` - der Hund / die Hunde"
+          - "`la stazione` / `le stazioni` - der Bahnhof / die Bahnhöfe"
+          - "`l'amico` / `gli amici` - der Freund / die Freunde"
+          - "`l'amica` / `le amiche` - die Freundin / die Freundinnen"
+          - "`il cuoco` / `i cuochi` - der Koch / die Köche"
+          - "`un caffè` / `due caffè` - ein Kaffee / zwei Kaffee"
+          - "`una città` / `due città` - eine Stadt / zwei Städte"
+          - "`il bar` / `i bar` - die Bar / die Bars"
+        tip:
+          description: "**Regeln für Geschlecht und Mehrzahl:**"
+          items:
+            - "`-o` → `-i`: meist männlich (`il libro` → `i libri`)"
+            - "`-a` → `-e`: meist weiblich (`la casa` → `le case`)"
+            - "`-e` → `-i`: männlich oder weiblich, Geschlecht mitlernen
+              (`il cane`, `la stazione`)"
+            - "`-ca` / `-co` → `-che` / `-chi`: mit `h`, damit die Aussprache
+              erhalten bleibt (`amiche`, `cuochi`) – aber: `amici`, `medici`"
+            - "Betonter Endvokal oder Fremdwort: unveränderlich (`caffè`,
+              `città`, `bar`); Nomen auf Konsonant sind meist männlich"
+      - title: Bestimmte Artikel
+        items:
+          - "`il` - der (männl. Singular, z. B. `il libro`)"
+          - "`lo` - der (männl. vor `s`+Konsonant, `z`, `gn`, `ps`, `y`, z. B.
+            `lo studente`, `lo zaino`)"
+          - "`la` - die (weibl. Singular, z. B. `la casa`)"
+          - "`l'` - der / die (vor Vokal, z. B. `l'amico`, `l'amica`)"
+          - "`i` - die (männl. Plural, z. B. `i libri`)"
+          - "`gli` - die (männl. Plural vor Vokal, `s`+Konsonant, `z`, ..., z.
+            B. `gli studenti`, `gli amici`)"
+          - "`le` - die (weibl. Plural, z. B. `le case`)"
+        tip:
+          description:
+            "**Tipp:** Die Wahl des Artikels hängt vom Anlaut des folgenden
+            Wortes ab. Lerne jedes Substantiv am besten immer zusammen mit
+            seinem Artikel."
+      - title: Unbestimmte Artikel
+        items:
+          - "`un` - ein (männl., z. B. `un libro`, `un amico`)"
+          - "`uno` - ein (männl. vor `s`+Konsonant, `z`, ..., z. B. `uno
+            studente`, `uno zaino`)"
+          - "`una` - eine (weibl., z. B. `una casa`)"
+          - "`un'` - eine (weibl. vor Vokal, z. B. `un'amica`)"
+        tip:
+          description:
+            "**Tipp:** Vor Vokal steht männlich `un` ohne Apostroph (`un
+            amico`), weiblich `un'` mit Apostroph (`un'amica`)."
+      - title: Präpositionen
+        items:
+          - "`di` - von / aus"
+          - "`a` - zu / nach / in (bei Städten)"
+          - "`da` - von / aus / bei / seit"
+          - "`in` - in / nach (bei Ländern)"
+          - "`con` - mit"
+          - "`su` - auf / über"
+          - "`per` - für / nach (Richtung)"
+          - "`tra` / `fra` - zwischen / in (zeitlich)"
+          - "`senza` - ohne"
+          - "`fino a` - bis"
+          - "`dopo` - nach (zeitlich)"
+          - "`prima di` - vor (zeitlich)"
+      - title: Kontraktionen
+        items:
+          - "`di` + `il` = `del` - von dem"
+          - "`di` + `la` = `della` - von der"
+          - "`a` + `il` = `al` - zu dem"
+          - "`a` + `la` = `alla` - zu der"
+          - "`a` + `l'` = `all'` - zu dem / zu der"
+          - "`da` + `il` = `dal` - von dem"
+          - "`da` + `la` = `dalla` - von der"
+          - "`in` + `il` = `nel` - in dem"
+          - "`in` + `la` = `nella` - in der"
+          - "`su` + `il` = `sul` - auf dem"
+          - "`su` + `la` = `sulla` - auf der"
+          - "`a` + `le` = `alle` - zu den"
+          - "`di` + `gli` = `degli` - von den"
+          - "`Vado al mare` - Ich fahre ans Meer"
+        tip:
+          description:
+            "**Tipp:** Die Präpositionen `di`, `a`, `da`, `in` und `su`
+            verschmelzen immer mit dem bestimmten Artikel. `con` und `per`
+            bleiben getrennt (`con il treno`)."
+      - title: Verb »essere« (sein)
+        items:
+          - "`io sono` - ich bin"
+          - "`tu sei` - du bist"
+          - "`lui / lei / Lei è` - er / sie ist, Sie sind"
+          - "`noi siamo` - wir sind"
+          - "`voi siete` - ihr seid"
+          - "`loro sono` - sie sind"
+        tip:
+          description:
+            "**Tipp:** `essere` ist unregelmäßig – Achtung: `sono` ist sowohl
+            die Form für `io` als auch für `loro`. Man nutzt `essere` für
+            Identität, Herkunft, Eigenschaften, Uhrzeit und Ortsangaben (z. B.
+            `Sono tedesco`, `Sono le tre`, `Sono a Roma`)."
+      - title: Verb »stare« (sich befinden)
+        items:
+          - "`io sto` - mir geht es / ich bleibe"
+          - "`tu stai` - dir geht es"
+          - "`lui / lei / Lei sta` - ihm / ihr geht es, Ihnen geht es"
+          - "`noi stiamo` - uns geht es"
+          - "`voi state` - euch geht es"
+          - "`loro stanno` - ihnen geht es"
+        tip:
+          description:
+            "**Tipp:** `stare` nutzt man für das Befinden (`Come stai?` – `Sto
+            bene`) und die Verlaufsform (`Sto mangiando` = Ich esse gerade). Für
+            Ortsangaben verwendet Italienisch meist `essere`."
+      - title: Verb »avere« (haben)
+        items:
+          - "`io ho` - ich habe"
+          - "`tu hai` - du hast"
+          - "`lui / lei / Lei ha` - er / sie hat, Sie haben"
+          - "`noi abbiamo` - wir haben"
+          - "`voi avete` - ihr habt"
+          - "`loro hanno` - sie haben"
+        tip:
+          description:
+            "**Tipp:** Das `h` ist stumm. Viele Wendungen nutzen `avere` statt
+            »sein«: `ho fame` (ich bin hungrig), `ho sete` (ich bin durstig),
+            `ho ... anni` (ich bin ... Jahre alt)."
+      - title: Verb »andare« (gehen)
+        items:
+          - "`io vado` - ich gehe"
+          - "`tu vai` - du gehst"
+          - "`lui / lei / Lei va` - er / sie geht, Sie gehen"
+          - "`noi andiamo` - wir gehen"
+          - "`voi andate` - ihr geht"
+          - "`loro vanno` - sie gehen"
+        tip:
+          description:
+            "**Tipp:** `andare a` + Stadt, `andare in` + Land (`Vado a Roma`,
+            `Vado in Italia`). Die nahe Zukunft drückt man oft einfach mit dem
+            Präsens aus (`Domani vado al mare` = Morgen fahre ich ans Meer)."
+      - title: Verb »chiamarsi« (heißen)
+        items:
+          - "`io mi chiamo` - ich heiße"
+          - "`tu ti chiami` - du heißt"
+          - "`lui / lei / Lei si chiama` - er / sie heißt, Sie heißen"
+          - "`noi ci chiamiamo` - wir heißen"
+          - "`voi vi chiamate` - ihr heißt"
+          - "`loro si chiamano` - sie heißen"
+          - "`Come ti chiami?` - Wie heißt du?"
+        tip:
+          description:
+            "**Tipp:** Das Reflexivpronomen steht im Italienischen immer VOR dem
+            konjugierten Verb (`mi chiamo`, `si chiama`)."
+      - title: Verb »volere« (wollen)
+        items:
+          - "`io voglio` - ich will"
+          - "`tu vuoi` - du willst"
+          - "`lui / lei / Lei vuole` - er / sie will, Sie wollen"
+          - "`noi vogliamo` - wir wollen"
+          - "`voi volete` - ihr wollt"
+          - "`loro vogliono` - sie wollen"
+        tip:
+          description:
+            "**Tipp:** Höflicher ist das Konditional `vorrei` (ich möchte / ich
+            hätte gern), z. B. `Vorrei un caffè` = Ich hätte gern einen Kaffee."
+      - title: Verb »abitare« (wohnen)
+        items:
+          - "`io abito` - ich wohne"
+          - "`tu abiti` - du wohnst"
+          - "`lui / lei / Lei abita` - er / sie wohnt, Sie wohnen"
+          - "`noi abitiamo` - wir wohnen"
+          - "`voi abitate` - ihr wohnt"
+          - "`loro abitano` - sie wohnen"
+          - "`Dove abiti?` - Wo wohnst du?"
+          - "`Abito a Trieste` - Ich wohne in Triest"
+        tip:
+          description:
+            "**Tipp:** Wer `abitare` beherrscht, kann alle regelmäßigen Verben
+            auf `-are` konjugieren – die Endungen sind immer dieselben (z. B.
+            `parlare`, `lavorare`, `comprare`, `portare`)."
+      - title: Verb »lavorare« (arbeiten)
+        items:
+          - "`io lavoro` - ich arbeite"
+          - "`tu lavori` - du arbeitest"
+          - "`lui / lei / Lei lavora` - er / sie arbeitet, Sie arbeiten"
+          - "`noi lavoriamo` - wir arbeiten"
+          - "`voi lavorate` - ihr arbeitet"
+          - "`loro lavorano` - sie arbeiten"
+          - "`Lavoro come giornalista` - Ich arbeite als Journalist(in)"
+          - "`I miei colleghi lavorano molto` - Meine Kollegen arbeiten viel"
+        tip:
+          description:
+            "**Tipp:** `lavorare` ist ein regelmäßiges Verb auf `-are` und wird
+            genauso wie `abitare` konjugiert."
+      - title: Regelmäßige Verben (Präsens)
+        items:
+          - "**-are** (`parlare` = sprechen): `parlo`, `parli`, `parla`,
+            `parliamo`, `parlate`, `parlano`"
+          - "**-ere** (`prendere` = nehmen): `prendo`, `prendi`, `prende`,
+            `prendiamo`, `prendete`, `prendono`"
+          - "**-ire** (`dormire` = schlafen): `dormo`, `dormi`, `dorme`,
+            `dormiamo`, `dormite`, `dormono`"
+          - "**-ire mit -isc-** (`capire` = verstehen): `capisco`, `capisci`,
+            `capisce`, `capiamo`, `capite`, `capiscono`"
+        tip:
+          description:
+            "**Tipp:** Die Endung des Infinitivs (`-are`/`-ere`/`-ire`) wird
+            durch die Personalendung ersetzt; das Pronomen entfällt meist. Viele
+            `-ire`-Verben (`capire`, `finire`, `preferire`) schieben `-isc-` ein
+            – außer bei `noi` und `voi`."
+      - title: Die Verneinung
+        items:
+          - "`Non parlo russo` - Ich spreche kein Russisch"
+          - "`Lei non è italiana` - Sie ist keine Italienerin"
+          - "`Non abitano a Torino` - Sie wohnen nicht in Turin"
+          - "`Non ho fame` - Ich habe keinen Hunger"
+        tip:
+          description:
+            "**Tipp:** Die Verneinung ist ganz einfach: `non` (nicht / kein)
+            steht direkt VOR dem Verb. Da die Pronomen meist wegfallen, beginnen
+            verneinte Sätze oft mit `non`."
+      - title: Weitere Verben
+        items:
+          - "`parlare` - sprechen"
+          - "`mangiare` - essen"
+          - "`bere` - trinken"
+          - "`prendere` - nehmen"
+          - "`capire` - verstehen"
+          - "`finire` - beenden"
+          - "`preferire` - bevorzugen"
+          - "`abitare` - wohnen"
+          - "`vivere` - leben"
+          - "`lavorare` - arbeiten"
+          - "`studiare` - lernen / studieren"
+          - "`fare` - machen / tun"
+          - "`potere` - können / dürfen"
+          - "`dovere` - müssen"
+          - "`sapere` - wissen / können"
+          - "`venire` - kommen"
+          - "`uscire` - ausgehen / hinausgehen"
+          - "`comprare` - kaufen"
+          - "`portare` - bringen / mitbringen"
+          - "`ordinare` - bestellen"
+          - "`costare` - kosten"
+          - "`diventare` - werden"
+      - title: Zahlen 0–20
+        items:
+          - "`0` - zero"
+          - "`1` - uno"
+          - "`2` - due"
+          - "`3` - tre"
+          - "`4` - quattro"
+          - "`5` - cinque"
+          - "`6` - sei"
+          - "`7` - sette"
+          - "`8` - otto"
+          - "`9` - nove"
+          - "`10` - dieci"
+          - "`11` - undici"
+          - "`12` - dodici"
+          - "`13` - tredici"
+          - "`14` - quattordici"
+          - "`15` - quindici"
+          - "`16` - sedici"
+          - "`17` - diciassette"
+          - "`18` - diciotto"
+          - "`19` - diciannove"
+          - "`20` - venti"
+        tip:
+          description:
+            "**Tipp:** Vor einem Substantiv verhält sich `uno` wie der
+            unbestimmte Artikel (`un libro`, `una casa`, `uno zaino`)."
+      - title: Zahlen 30+
+        items:
+          - "`30` - trenta"
+          - "`40` - quaranta"
+          - "`50` - cinquanta"
+          - "`60` - sessanta"
+          - "`70` - settanta"
+          - "`80` - ottanta"
+          - "`90` - novanta"
+          - "`100` - cento"
+          - "`101` - centouno"
+          - "`200` - duecento"
+          - "`1000` - mille"
+          - "`2000` - duemila"
+          - "`1.000.000` - un milione"
+          - "`21` - ventuno (Zehner + Einer zusammengeschrieben)"
+          - "`23` - ventitré"
+          - "`28` - ventotto"
+        tip:
+          description:
+            "**Tipp:** Zehner und Einer werden zusammengeschrieben. Vor `uno`
+            und `otto` entfällt der Endvokal des Zehners (`ventuno`, `ventotto`,
+            `trentuno`). Die Mehrzahl von `mille` ist `mila` (`duemila`)."
+      - title: Wochentage
+        items:
+          - "`lunedì` - Montag"
+          - "`martedì` - Dienstag"
+          - "`mercoledì` - Mittwoch"
+          - "`giovedì` - Donnerstag"
+          - "`venerdì` - Freitag"
+          - "`sabato` - Samstag"
+          - "`domenica` - Sonntag"
+          - "`lunedì` - am Montag (ohne Präposition)"
+          - "`il lunedì` - montags / jeden Montag"
+          - "`la domenica` - sonntags"
+        tip:
+          description:
+            "**Tipp:** »Am Montag« sagt man ohne Präposition (`Lunedì vado a
+            Roma`). Mit Artikel bedeutet es »jeden Montag« (`Il lunedì non
+            lavoro`). Alle Wochentage sind männlich außer `la domenica`."
+      - title: Monate
+        items:
+          - "`gennaio` - Januar"
+          - "`febbraio` - Februar"
+          - "`marzo` - März"
+          - "`aprile` - April"
+          - "`maggio` - Mai"
+          - "`giugno` - Juni"
+          - "`luglio` - Juli"
+          - "`agosto` - August"
+          - "`settembre` - September"
+          - "`ottobre` - Oktober"
+          - "`novembre` - November"
+          - "`dicembre` - Dezember"
+      - title: Zeit
+        items:
+          - "`oggi` - heute"
+          - "`domani` - morgen"
+          - "`ieri` - gestern"
+          - "`stasera` - heute Abend (wörtl. dieser Abend)"
+          - "`adesso` / `ora` - jetzt"
+          - "`più tardi` - später"
+          - "`di mattina` - morgens / vormittags"
+          - "`di pomeriggio` - nachmittags"
+          - "`di sera` - abends"
+          - "`di notte` - nachts"
+          - "`il mezzogiorno` - der Mittag (12 Uhr)"
+          - "`la mezzanotte` - die Mitternacht (0 Uhr)"
+          - "`l'ora` - die Stunde / die Uhrzeit"
+          - "`il minuto` - die Minute"
+          - "`il giorno` - der Tag"
+          - "`la settimana` - die Woche"
+          - "`il fine settimana` - das Wochenende"
+          - "`nel fine settimana` - am Wochenende"
+          - "`il mese` - der Monat"
+          - "`l'anno` - das Jahr"
+        tip:
+          description:
+            "**Tipp:** `di mattina`, `di pomeriggio`, `di sera` und `di notte`
+            sind feste Wendungen für Tageszeiten (z. B. `Lavoro di pomeriggio`)."
+      - title: Uhrzeit
+        items:
+          - "`Che ora è?` / `Che ore sono?` - Wie spät ist es?"
+          - "`È l'una` - Es ist ein Uhr"
+          - "`Sono le sette` - Es ist sieben Uhr"
+          - "`Sono le sette e dieci` - Es ist zehn nach sieben (Stunde + `e` +
+            Minuten)"
+          - "`Sono le sei e mezza` - Es ist halb sieben (wörtl. sechs und halb)"
+          - "`Sono le tre e un quarto` - Es ist Viertel nach drei"
+          - "`È mezzogiorno` / `È mezzanotte` - Es ist Mittag / Mitternacht"
+          - "`Sono le quattro meno un quarto` - Es ist Viertel vor vier"
+          - "`Sono le due meno dieci` - Es ist zehn vor zwei"
+          - "`Sono le venti` - Es ist zwanzig Uhr (offiziell)"
+        tip:
+          description:
+            "**Tipp:** Bei `l'una`, `mezzogiorno` und `mezzanotte` steht die
+            Einzahlform `è`, sonst die Mehrzahlform `sono le ...`. Minuten nach
+            der Stunde verbindet `e` (und); ab etwa der 40. Minute zieht man sie
+            mit `meno` (weniger) von der nächsten Stunde ab. In offiziellen
+            Situationen nutzt man wie im Deutschen die Zahlen 0–24."
+      - title: Uhrzeit mit »a«
+        items:
+          - "`A che ora?` - Um wie viel Uhr?"
+          - "`a` + `l'una` = `all'una` - um ein Uhr"
+          - "`a` + `le due` = `alle due` - um zwei Uhr"
+          - "`a mezzogiorno` - am Mittag"
+          - "`a mezzanotte` - um Mitternacht"
+          - "`Domani a mezzogiorno e mezza` - Morgen um halb eins"
+        tip:
+          description:
+            "**Tipp:** Den Zeitpunkt erfragt man mit `A che ora?`. Die
+            Präposition `a` verschmilzt mit dem Artikel der Uhrzeit zu `all'`
+            (vor `una`) bzw. `alle` (ab zwei). Vor `mezzogiorno` und
+            `mezzanotte` steht nur `a`."
+      - title: Farben
+        items:
+          - "`rosso` - rot"
+          - "`blu` - blau"
+          - "`azzurro` - hellblau / himmelblau"
+          - "`verde` - grün"
+          - "`giallo` - gelb"
+          - "`nero` - schwarz"
+          - "`bianco` - weiß"
+          - "`rosa` - rosa"
+          - "`arancione` - orange"
+          - "`marrone` - braun"
+          - "`grigio` - grau"
+          - "`viola` - lila"
+        tip:
+          description:
+            "**Tipp:** `blu`, `rosa` und `viola` sind unveränderlich (z. B. `le
+            scarpe blu`). Die Nationalmannschaft heißt wegen der Trikotfarbe
+            `gli Azzurri`."
+      - title: Familie
+        items:
+          - "`la famiglia` - die Familie"
+          - "`i genitori` - die Eltern"
+          - "`il padre` - der Vater"
+          - "`la madre` - die Mutter"
+          - "`il figlio` / `la figlia` - der Sohn / die Tochter"
+          - "`il fratello` / `la sorella` - der Bruder / die Schwester"
+          - "`il nonno` / `la nonna` - der Großvater / die Großmutter"
+          - "`il marito` / `la moglie` - der Ehemann / die Ehefrau"
+          - "`l'amico` / `l'amica` - der Freund / die Freundin"
+          - "`il ragazzo` / `la ragazza` - der Junge / das Mädchen (auch: fester
+            Freund / feste Freundin)"
+          - "`lo zio` / `la zia` - der Onkel / die Tante"
+          - "`il cugino` / `la cugina` - der Cousin / die Cousine"
+          - "`il bambino` / `la bambina` - das Kind (Junge / Mädchen)"
+      - title: Essen & Trinken
+        items:
+          - "`l'acqua` - das Wasser"
+          - "`l'acqua minerale` - das Mineralwasser"
+          - "`il pane` - das Brot"
+          - "`il cornetto` - das Croissant"
+          - "`il caffè` - der Kaffee"
+          - "`il caffellatte` - der Milchkaffee"
+          - "`il tè` - der Tee"
+          - "`il vino` - der Wein"
+          - "`la birra` - das Bier"
+          - "`l'aperitivo` - der Aperitif"
+          - "`lo spritz` - der Spritz"
+          - "`la colazione` - das Frühstück"
+          - "`il pranzo` - das Mittagessen"
+          - "`la cena` - das Abendessen"
+          - "`il menù` - die Speisekarte"
+          - "`Vorrei ...` - Ich hätte gern ..."
+          - "`Il conto, per favore` - Die Rechnung, bitte"
+          - "`Buon appetito` - Guten Appetit"
+          - "`Salute!` / `Cin cin!` - Prost!"
+          - "`frizzante` / `naturale` - mit / ohne Kohlensäure"
+          - "`il succo` - der Saft"
+          - "`il succo d'arancia` - der Orangensaft"
+          - "`la bottiglia` - die Flasche"
+          - "`il bicchiere` - das (Trink-)Glas"
+          - "`Per me, solo un caffè` - Für mich nur einen Kaffee"
+          - "`Qualcos'altro?` - Sonst noch etwas?"
+        tip:
+          description:
+            "**Tipp:** Ein `caffè` ist in Italien immer ein Espresso – für einen
+            »normalen« Kaffee bestellt man einen `americano`. Cappuccino und
+            `caffellatte` trinkt man traditionell nur zum Frühstück."
+      - title: Einkaufen
+        items:
+          - "`Quanto costa?` - Wie viel kostet das?"
+          - "`È troppo caro` - Das ist zu teuer"
+          - "`economico` - billig / günstig"
+          - "`il negozio` - das Geschäft"
+          - "`i soldi` - das Geld"
+          - "`Posso pagare con la carta?` - Kann ich mit Karte zahlen?"
+          - "`Dov'è ...?` - Wo ist ...?"
+          - "`Sto solo guardando, grazie` - Ich schaue nur, danke"
+          - "`Quant'è in tutto?` - Wie viel macht das zusammen?"
+          - "`Ecco il resto` - Hier ist das Wechselgeld"
+          - "`il resto` - das Wechselgeld"
+      - title: Unterwegs
+        items:
+          - "`a sinistra` - links"
+          - "`a destra` - rechts"
+          - "`sempre dritto` - immer geradeaus"
+          - "`vicino` - nah"
+          - "`lontano` - weit"
+          - "`qui` / `qua` - hier"
+          - "`lì` / `là` - dort"
+          - "`la stazione` - der Bahnhof"
+          - "`l'aeroporto` - der Flughafen"
+          - "`il treno` - der Zug"
+          - "`l'autobus` - der Bus"
+          - "`la fermata` - die Haltestelle"
+          - "`il biglietto` - das Ticket"
+          - "`il bagno` - die Toilette"
+          - "`la strada` - die Straße"
+          - "`il mare` - das Meer"
+        tip:
+          description:
+            "**Tipp:** Bus- und Zugtickets muss man in Italien vor der Fahrt
+            entwerten (`convalidare il biglietto`) – sonst drohen Bußgelder."
+      - title: Notfall
+        items:
+          - "`Aiuto!` - Hilfe!"
+          - "`Attenzione!` - Vorsicht!"
+          - "`Chiami la polizia` - Rufen Sie die Polizei"
+          - "`Ho bisogno di un medico` - Ich brauche einen Arzt"
+          - "`Mi sono perso` / `Mi sono persa` - Ich habe mich verlaufen"
+          - "`Non mi sento bene` - Mir geht es nicht gut"
+          - "`la farmacia` - die Apotheke"
+          - "`l'ospedale` - das Krankenhaus"
+      - title: Adjektive
+        items:
+          - "`grande` - groß"
+          - "`piccolo` - klein"
+          - "`buono` / `cattivo` - gut / schlecht"
+          - "`nuovo` / `vecchio` - neu / alt"
+          - "`giovane` - jung"
+          - "`bello` / `brutto` - schön / hässlich"
+          - "`caro` / `economico` - teuer / billig"
+          - "`caldo` / `freddo` - heiß / kalt"
+          - "`facile` / `difficile` - einfach / schwierig"
+          - "`molto` / `poco` - viel / wenig"
+          - "`stanco` - müde"
+          - "`forte` - stark"
+          - "`triste` - traurig"
+          - "`malato` - krank"
+          - "`contento` - zufrieden / froh"
+          - "`intelligente` - intelligent"
+        tip:
+          description:
+            "**Tipp:** Adjektive stehen meist nach dem Substantiv und passen
+            sich in Geschlecht und Zahl an (z. B. `una casa bella`, `i libri
+            nuovi`). Einige häufige Adjektive (`bello`, `buono`, `grande`)
+            stehen oft davor."
+      - title: Angleichung der Adjektive
+        items:
+          - "Endung `-o`/`-a` richtet sich nach dem Geschlecht: `il bambino
+            stanco`, `la bambina stanca`"
+          - "Adjektive auf `-e` sind im Geschlecht unveränderlich: `il bambino
+            forte`, `la bambina forte`"
+          - "Mehrzahl durch Vokalwechsel: `-o` → `-i`, `-a` → `-e`, `-e` → `-i`:
+            `i bambini stanchi`, `le bambine stanche`, `i bambini forti`"
+          - "`Lei è un po' stanca` - Sie ist ein bisschen müde"
+          - "`Siete tristi o malati?` - Seid ihr traurig oder krank?"
+          - "`I bambini sono forti e intelligenti` - Die Kinder sind stark und
+            intelligent"
+        tip:
+          description:
+            "**Tipp:** Die Mehrzahl wird nie mit `-s` gebildet, sondern durch
+            Vokalwechsel – das gilt auch für Substantive (`la pizza` → `le
+            pizze`). Bei `-co`/`-ca` wird oft ein `h` eingeschoben, damit die
+            Aussprache »k« bleibt (`stanco` → `stanchi`)."
+      - title: Nützliche Sätze
+        items:
+          - "`Tutto bene?` - Alles gut?"
+          - "`Come va?` - Wie läuft's?"
+          - "`Va bene` - In Ordnung / Okay"
+          - "`Che bello!` - Wie schön!"
+          - "`Certo` - Klar / Natürlich"
+          - "`Non fa niente` - Macht nichts"
+          - "`D'accordo` - Einverstanden"
+          - "`Mi piace ...` - Ich mag ... (wörtl.: ... gefällt mir)"
+          - "`Non mi piace ...` - Ich mag ... nicht"
+          - "`Voglio ...` / `Non voglio ...` - Ich will ... / Ich will ... nicht"
+          - "`Andiamo ...?` - Wollen wir ...? / Lass uns ... (z. B. `Andiamo a
+            mangiare?` = Wollen wir essen gehen?)"
+          - "`Posso ...?` - Darf ich ...?"
+          - "`Può aiutarmi?` - Können Sie mir helfen?"
+          - "`Dov'è il bagno?` - Wo ist die Toilette?"
+        tip:
+          description:
+            "**Tipp:** Bei `piacere` ist das Gemochte das Subjekt: `Mi piace la
+            pizza` (Einzahl), aber `Mi piacciono gli spaghetti` (Mehrzahl)."
+      - title: Weitere Wörter
+        items:
+          - "`il libro` - das Buch"
+          - "`la macchina` - das Auto"
+          - "`il computer` - der Computer"
+          - "`il nome` - der Name"
+          - "`le vacanze` - die Ferien / der Urlaub"
+          - "`la casa` - das Haus"
+          - "`l'appartamento` - die Wohnung"
+          - "`la città` - die Stadt"
+          - "`anche` - auch"
+          - "`tutto` - alles"
+          - "`la cosa` - die Sache / das Ding"
+          - "`solo` - nur"
+          - "`già` - schon"
+          - "`o` - oder"
+          - "`e` / `ed` - und (`ed` vor Vokal, z. B. `Anna ed Erica`)"
+          - "`ma` - aber"
+          - "`invece` - hingegen / dagegen"
+          - "`più` - mehr / plus"
+          - "`meno` - weniger / minus"
+          - "`uguale` - gleich (z. B. `dieci più dieci uguale venti`)"
+          - "`molto` - sehr / viel"
+          - "`bene` / `male` - gut / schlecht (Adverb)"
+          - "`meglio` - besser"
+          - "`giusto` - richtig"
+          - "`per me` - für mich"
+          - "`l'Italia` - Italien"
