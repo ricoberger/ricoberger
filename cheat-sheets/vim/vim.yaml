@@ -569,11 +569,18 @@ pages:
           - "`Ctrl` + `Up` / `Ctrl` + `Down` - Next / previous inline completion"
       - title: Multicursor
         items:
+          - "`Q` - Toggle a cursor at the current position`"
+          - "`q=` - Toggle follow-mode (motions replay per cursor)"
+          - "`1q=` - Enable follow-mode"
+          - "`2q=` - Disable follow-mode"
+          - "`]C` / `[C` - Jump to the next / previous cursor"
+          - "`gQ` - Restore the previous multicursors"
+          - "`Ctrl` + `l` - Clear all cursors"
           - "`Ctrl` + `n` - Add cursor for next word"
           - "`Ctrl` + `a` - Add cursor for all words"
           - "`Ctrl` + `j` - Add cursor below"
           - "`Ctrl` + `k` - Add cursor above"
-          - "`Ctrl` + `m` - Match cursors in visual selection by regex"
+          - "`Ctrl` + `h` - Add cursor for all matches"
       - title: Notes
         items:
           - "`Space` + `nd` - Open daily note"
