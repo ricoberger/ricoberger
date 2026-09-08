@@ -194,6 +194,7 @@ pages:
           - "`Alt` + `e` - Edit manifest"
           - "`Alt` + `d` - Delete marked resources; the confirmation offers a
             force option (`--grace-period=0 --force`)"
+          - "`Alt` + `w` - Enable / disable watch mode (refresh every 5 seconds)"
       - title: fzfjira - Jira
         items:
           - |
