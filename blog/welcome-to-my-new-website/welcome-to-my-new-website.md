@@ -19,7 +19,7 @@ Tags:
   - go
   - projects
   - tailwindcss
-Image: /blog/posts/welcome-to-my-wew-website/assets/landing-page.png
+Image: /blog/posts/welcome-to-my-new-website/assets/landing-page.png
 ---
 
 I spent the past few days creating a new website for my domain
@@ -285,7 +285,7 @@ Tags:
   - go
   - projects
   - tailwindcss
-Image: /blog/posts/welcome-to-my-wew-website/assets/landing-page.png
+Image: /blog/posts/welcome-to-my-new-website/assets/landing-page.png
 ---
 ```
 
