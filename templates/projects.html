@@ -1,0 +1,13 @@
+{{ define "content" }}
+<div class="max-w-3xl mx-auto px-10 py-[64px]">
+  <h1>Projects</h1>
+
+  <ul>
+    {{ range $project := .Content }}
+    <li>
+      <a href="/projects/{{ $project.ID }}/">{{ $project.Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

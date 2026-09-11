@@ -164,6 +164,15 @@ type SitemapItem struct {
 	Priority   string `xml:"priority"`
 }
 
+type Project struct {
+	ID          string
+	Title       string
+	Description string
+	Tags        []string
+	Image       string
+	Content     template.HTML
+}
+
 func main() {
 	var serve bool
 
@@ -217,6 +226,12 @@ func build() error {
 	err = buildBlog()
 	if err != nil {
 		slog.Error("Failed to build blog", slog.Any("error", err))
+	}
+
+	slog.Info("Build projects...")
+	err = buildProjects()
+	if err != nil {
+		slog.Error("Failed to build projects", slog.Any("error", err))
 	}
 
 	slog.Info("Build sitemap...")
@@ -553,7 +568,7 @@ func buildBlog() error {
 				Author:      post.AuthorName,
 				Keywords:    post.Tags,
 				BaseUrl:     defaultBaseUrl,
-				Url:         fmt.Sprintf("/blog/%s/", post.ID),
+				Url:         fmt.Sprintf("/blog/posts/%s/", post.ID),
 				Image:       post.Image,
 				Prism:       true,
 			},
@@ -734,6 +749,12 @@ func buildSitemap() error {
 			Priority:   "1.0",
 		},
 		{
+			Loc:        fmt.Sprintf("%s/projects/", defaultBaseUrl),
+			LastMod:    lastMod,
+			ChangeFreq: "daily",
+			Priority:   "1.0",
+		},
+		{
 			Loc:        fmt.Sprintf("%s/cheat-sheets/", defaultBaseUrl),
 			LastMod:    lastMod,
 			ChangeFreq: "daily",
@@ -757,15 +778,31 @@ func buildSitemap() error {
 		}
 	}
 
+	projects, err := os.ReadDir("./dist/projects")
+	if err != nil {
+		return err
+	}
+
+	for _, project := range projects {
+		if project.IsDir() {
+			sitemapItems = append(sitemapItems, &SitemapItem{
+				Loc:        fmt.Sprintf("%s/projects/%s/", defaultBaseUrl, project.Name()),
+				LastMod:    lastMod,
+				ChangeFreq: "monthly",
+				Priority:   "0.5",
+			})
+		}
+	}
+
 	cheatSheets, err := os.ReadDir("./dist/cheat-sheets")
 	if err != nil {
 		return err
 	}
 
-	for _, post := range cheatSheets {
-		if post.IsDir() {
+	for _, cheatSheet := range cheatSheets {
+		if cheatSheet.IsDir() {
 			sitemapItems = append(sitemapItems, &SitemapItem{
-				Loc:        fmt.Sprintf("%s/cheat-sheets/%s/", defaultBaseUrl, post.Name()),
+				Loc:        fmt.Sprintf("%s/cheat-sheets/%s/", defaultBaseUrl, cheatSheet.Name()),
 				LastMod:    lastMod,
 				ChangeFreq: "weekly",
 				Priority:   "0.5",
@@ -784,6 +821,114 @@ func buildSitemap() error {
 	err = os.WriteFile("./dist/sitemap.xml", data, 0600)
 	if err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func buildProjects() error {
+	files, err := os.ReadDir("./projects")
+	if err != nil {
+		return err
+	}
+
+	var projects []Project
+
+	for _, file := range files {
+		if file.IsDir() {
+			content, err := os.ReadFile(fmt.Sprintf("./projects/%s/%s.md", file.Name(), file.Name()))
+			if err != nil {
+				return err
+			}
+
+			var buf bytes.Buffer
+			markdown := goldmark.New(
+				goldmark.WithExtensions(
+					meta.Meta,
+					extension.Table,
+					extension.Strikethrough,
+					extension.Footnote,
+					NewImageExtender(),
+				),
+				goldmark.WithRendererOptions(
+					html.WithUnsafe(),
+				),
+			)
+			context := parser.NewContext()
+
+			if err := markdown.Convert(content, &buf, parser.WithContext(context)); err != nil {
+				return err
+			}
+
+			metaData := meta.Get(context)
+
+			var tags []string
+			for _, tag := range metaData["Tags"].([]any) {
+				tags = append(tags, tag.(string))
+			}
+
+			image := defaultImage
+			if val, ok := metaData["Image"]; ok && val != nil {
+				image = val.(string)
+			}
+
+			project := Project{
+				ID:          file.Name(),
+				Title:       metaData["Title"].(string),
+				Description: metaData["Description"].(string),
+				Tags:        tags,
+				Image:       image,
+				// #nosec G203
+				Content: template.HTML(buf.String()),
+			}
+
+			projects = append(projects, project)
+		}
+	}
+
+	var projectsData = Data{
+		Metadata: Metadata{
+			Title:       "Projects - Rico Berger",
+			Description: "",
+			Author:      "Rico Berger",
+			Keywords:    []string{"Rico Berger", "Projects"},
+			BaseUrl:     defaultBaseUrl,
+			Url:         "/projects/",
+			Image:       defaultImage,
+			Prism:       false,
+		},
+		Content: projects,
+	}
+
+	if err := buildTemplate("projects", "./dist/projects", projectsData); err != nil {
+		return err
+	}
+
+	for _, project := range projects {
+		if err := buildTemplate("project", fmt.Sprintf("./dist/projects/%s", project.ID), Data{
+			Metadata: Metadata{
+				Title:       fmt.Sprintf("%s - Projects - Rico Berger", project.Title),
+				Description: project.Description,
+				Keywords:    project.Tags,
+				BaseUrl:     defaultBaseUrl,
+				Url:         fmt.Sprintf("/projects/%s/", project.ID),
+				Image:       project.Image,
+				Prism:       true,
+			},
+			Content: project,
+		}); err != nil {
+			return err
+		}
+
+		hasAssets, err := exists(fmt.Sprintf("./projects/%s/assets", project.ID))
+		if err != nil {
+			return err
+		}
+		if hasAssets {
+			if err := os.CopyFS(fmt.Sprintf("./dist/projects/%s/assets", project.ID), os.DirFS(fmt.Sprintf("./projects/%s/assets", project.ID))); err != nil {
+				return err
+			}
+		}
 	}
 
 	return nil
