@@ -43,10 +43,10 @@ pages:
           - "`Command` + `Ctrl` + `Right` - Go to right split"
           - "`Command` + `Ctrl` + `Up` - Go to top split"
           - "`Command` + `Ctrl` + `Down` - Go to bottom split"
-          - "`Command` + `Ctrl` + `Alt` + `Left` - Resize split left"
-          - "`Command` + `Ctrl` + `Alt` + `Right` - Resize split right"
-          - "`Command` + `Ctrl` + `Alt` + `Up` - Resize split up"
-          - "`Command` + `Ctrl` + `Alt` + `Down` - Resize split down"
+          - "`Command` + `Shift` + `Left` - Resize split left"
+          - "`Command` + `Shift` + `Right` - Resize split right"
+          - "`Command` + `Shift` + `Up` - Resize split up"
+          - "`Command` + `Shift` + `Down` - Resize split down"
       - title: Scroll
         items:
           - "`Command` + `Home` - Scroll to top"
@@ -66,16 +66,6 @@ pages:
           - "`Command` + `k` - Clear screen"
           - "`Command` + `p` - Command palette"
           - "`Command` + `f` - Open screen file in Neovim"
-      - title: Selection
-        items:
-          - "`Command` + `Shift` + `Left` - Adjust selection left"
-          - "`Command` + `Shift` + `Right` - Adjust selection right"
-          - "`Command` + `Shift` + `Up` - Adjust selection up"
-          - "`Command` + `Shift` + `Down` - Adjust selection down"
-          - "`Command` + `Shift` + `Home` - Adjust selection to home"
-          - "`Command` + `Shift` + `End` - Adjust selection to end"
-          - "`Command` + `Shift` + `Page Up` - Adjust selection to page up"
-          - "`Command` + `Shift` + `Page Down` - Adjust selection to page down"
       - title: Quick Terminal
         items:
           - "`Command` + `#` or `Command` + `'` - Toogle quick terminal"
