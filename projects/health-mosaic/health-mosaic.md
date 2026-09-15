@@ -19,67 +19,76 @@ Health Mosaic turns your Apple Health data into beautiful, fully customizable
 dashboards. Pick the metrics that matter to you, choose how they're visualized,
 and get the big picture of your health at a glance — on iPhone and Mac.
 
-<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-  <div>
-    <a href="./assets/iphone-01-activity.png">
-      <img class="h-auto max-w-full" src="./assets/iphone-01-activity.png" alt="Activity">
-    </a>
-  </div>
-  <div>
-    <a href="./assets/iphone-02-sleep.png">
-      <img class="h-auto max-w-full" src="./assets/iphone-02-sleep.png" alt="Sleep">
-    </a>
-  </div>
-  <div>
-    <a href="./assets/iphone-03-activity.png">
-      <img class="h-auto max-w-full" src="./assets/iphone-03-fitness.png" alt="Fitness">
-    </a>
-  </div>
-  <div>
-    <a href="./assets/iphone-04-activity.png">
-      <img class="h-auto max-w-full" src="./assets/iphone-04-heart.png" alt="Heart">
-    </a>
-  </div>
-  <div>
-    <a href="./assets/iphone-05-activity.png">
-      <img class="h-auto max-w-full" src="./assets/iphone-05-energy.png" alt="Energy">
-    </a>
-  </div>
-  <div>
-    <a href="./assets/iphone-06-activity.png">
-      <img class="h-auto max-w-full" src="./assets/iphone-06-comparison.png" alt="Comparison">
-    </a>
-  </div>
+<div class="flex justify-center gap-4 m-4">
+  <a href="https://apps.apple.com/de/app/health-mosaic/id6809123709" target="_blank"><img src="./assets/badge-app-store.png" height="50"></a>
+  <a href="https://apps.apple.com/de/app/health-mosaic/id6809123709" target="_blank"><img src="./assets/badge-mac-app-store.png" height="50"></a>
+</div>
 
-  <div>
-    <a href="./assets/macos-01-activity.png">
-      <img class="h-auto max-w-full" src="./assets/macos-01-activity.png" alt="Activity">
-    </a>
+<div
+  x-data="{
+    active: 0,
+    images: [
+      { src: './assets/iphone-01-activity.png', alt: 'Activity' },
+      { src: './assets/iphone-02-sleep.png', alt: 'Sleep' },
+      { src: './assets/iphone-03-fitness.png', alt: 'Fitness' },
+      { src: './assets/iphone-04-heart.png', alt: 'Heart' },
+      { src: './assets/iphone-05-energy.png', alt: 'Energy' },
+      { src: './assets/iphone-06-comparison.png', alt: 'Comparison' },
+      { src: './assets/macos-01-activity.png', alt: 'Activity' },
+      { src: './assets/macos-02-sleep.png', alt: 'Sleep' },
+      { src: './assets/macos-03-fitness.png', alt: 'Fitness' },
+      { src: './assets/macos-04-heart.png', alt: 'Heart' },
+      { src: './assets/macos-05-energy.png', alt: 'Energy' },
+      { src: './assets/macos-06-comparison.png', alt: 'Comparison' }
+    ],
+    next() { this.active = (this.active + 1) % this.images.length },
+    prev() { this.active = (this.active - 1 + this.images.length) % this.images.length }
+  }"
+  class="relative my-4"
+>
+  <div class="relative flex h-[70vh] items-center justify-center overflow-hidden rounded-lg bg-mantle">
+    <template x-for="(image, index) in images" :key="index">
+      <img
+        x-show="active === index"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0"
+        x-transition:enter-end="opacity-100"
+        x-bind:src="image.src"
+        x-bind:alt="image.alt"
+        class="max-h-full max-w-full h-auto w-auto object-contain"
+      />
+    </template>
+    <button
+      type="button"
+      x-on:click="prev()"
+      aria-label="Previous image"
+      class="absolute left-2 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-crust/70 text-text hover:bg-crust"
+    >
+      <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <button
+      type="button"
+      x-on:click="next()"
+      aria-label="Next image"
+      class="absolute right-2 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-crust/70 text-text hover:bg-crust"
+    >
+      <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
   </div>
-  <div>
-    <a href="./assets/macos-02-sleep.png">
-      <img class="h-auto max-w-full" src="./assets/macos-02-sleep.png" alt="Sleep">
-    </a>
-  </div>
-  <div>
-    <a href="./assets/macos-03-activity.png">
-      <img class="h-auto max-w-full" src="./assets/macos-03-fitness.png" alt="Fitness">
-    </a>
-  </div>
-  <div>
-    <a href="./assets/macos-04-activity.png">
-      <img class="h-auto max-w-full" src="./assets/macos-04-heart.png" alt="Heart">
-    </a>
-  </div>
-  <div>
-    <a href="./assets/macos-05-activity.png">
-      <img class="h-auto max-w-full" src="./assets/macos-05-energy.png" alt="Energy">
-    </a>
-  </div>
-  <div>
-    <a href="./assets/macos-06-activity.png">
-      <img class="h-auto max-w-full" src="./assets/macos-06-comparison.png" alt="Comparison">
-    </a>
+  <div class="mt-4 flex flex-wrap justify-center gap-2">
+    <template x-for="(image, index) in images" :key="index">
+      <button
+        type="button"
+        x-on:click="active = index"
+        x-bind:aria-label="'Go to image ' + (index + 1)"
+        x-bind:class="active === index ? 'bg-primary' : 'bg-surface hover:bg-text'"
+        class="h-2.5 w-2.5 rounded-full transition-colors"
+      ></button>
+    </template>
   </div>
 </div>
 
