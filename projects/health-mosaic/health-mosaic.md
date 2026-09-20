@@ -98,8 +98,8 @@ and get the big picture of your health at a glance — on iPhone and Mac.
   for heart health
 - Add panels for any metric and arrange them in a flexible grid
 - Choose chart type, statistic, color, and size per panel
-- Line, bar, and area charts, min–max range bands, stat cards with sparklines, a
-  sleep-stage timeline, and Fitness-style workout lists
+- Line, bar, and area charts, min–max range bands, stat cards with sparklines,
+  sleep-stage and state timelines, and Fitness-style workout lists
 
 ##### 120+ Health Metrics
 
@@ -111,36 +111,49 @@ including derived insights like Energy Difference (energy burned vs. consumed).
 
 - Switch the time range for all panels at once — from a single day to a full
   year
-- Compare any panel with the previous period to spot changes over time
-- Scrub or hover charts for exact values
+- Compare supported charts with the previous period to spot changes over time
+- Scrub or hover charts for exact values, dates, and sleep-stage durations
 - Tap a workout for detailed per-activity stats: pace, speed, heart rate,
   elevation, and more
 
-##### iPhone + Mac, Always in Sync
+##### Workout Charts
 
-Your dashboards and settings sync seamlessly through iCloud. Your health data is
-never uploaded to iCloud — it mirrors directly and encrypted over your local
-network. Keep the iPhone app open on the same network and your Mac shows your
-latest data — no setup, no accounts, no servers of ours.
+Turn selected workout types into line, area, bar, or stat-card panels. Choose
+from 19 measurements, including duration, distance, energy, heart rate, pace,
+and power.
+
+See heart-rate and cycling-power zones in workout details when zone data is
+available from Apple Health on iOS 27 or later.
+
+##### Widgets at a Glance
+
+Show supported panels on your iPhone Home Screen or Mac desktop, with compact
+summaries on the iPhone Lock Screen. Pick a panel and one of five time ranges,
+then open that panel directly from the widget. Widgets show data prepared by the
+app, not live Health readings.
 
 ##### Private by Design
 
 Your health data belongs to you. Health Mosaic never uploads your health data to
-iCloud or any server — it syncs directly and encrypted between your own devices
-over your local network. Your dashboards and settings sync through your
-personal, private iCloud database. No accounts, no tracking, no third-party
-services. You can export your data anytime as JSON or CSV.
+iCloud or any server — it syncs directly between your own devices over an
+encrypted connection on your local network. Keep the iPhone app open on the same
+network and your Mac shows your latest data. Your dashboards and settings sync
+through your personal, private iCloud database. No additional accounts, no
+tracking, no third-party services. You can export your data anytime as JSON or
+CSV.
 
 ##### More
 
 - Metric or imperial units, switchable anytime
 - Available in English, German, French, Italian, Spanish, and Portuguese
 - Sensible default dashboards to get you started in seconds
+- Open dashboards and panels, or change the time range for all dashboards with
+  Siri and Shortcuts
 
 Health Mosaic requires access to Apple Health on iPhone. Please note: only the
 iPhone app can read data from Apple Health — the Mac app shows health data
-mirrored directly from your iPhone over your local network, so it requires the
-iPhone app to be open on the same network and won't show any data on its own.
+mirrored directly from your iPhone over your local network. The iPhone app must
+be open on the same network to update the Mac's health data.
 
 # Privacy Policy
 
