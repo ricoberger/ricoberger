@@ -155,6 +155,14 @@ iPhone app can read data from Apple Health — the Mac app shows health data
 mirrored directly from your iPhone over your local network. The iPhone app must
 be open on the same network to update the Mac's health data.
 
+# Support
+
+Have a question, found a bug, or want to suggest a feature? Support for Health
+Mosaic is provided via email at
+[support@ricoberger.de](mailto:support@ricoberger.de). Please include your
+device, operating system version, and app version when reporting an issue, so we
+can help you as quickly as possible.
+
 # Privacy Policy
 
 Your privacy is important to us. It is Health Mosaics's policy to respect your
@@ -186,6 +194,6 @@ services.
 Your continued use of our website/app will be regarded as acceptance of our
 practices around privacy and personal information. If you have any questions
 about how we handle user data and personal information, feel free to contact us
-via email (support@ricoberger.de).
+via email ([support@ricoberger.de](mailto:support@ricoberger.de)).
 
 This policy is effective as of 9 September 2026.
