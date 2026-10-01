@@ -7,8 +7,8 @@
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.3.3",
-    "prettier": "^3.9.6",
-    "puppeteer": "^25.9.0",
+    "prettier": "^3.9.9",
+    "puppeteer": "^25.12.0",
     "tailwindcss": "^4.0.5"
   }
 }
