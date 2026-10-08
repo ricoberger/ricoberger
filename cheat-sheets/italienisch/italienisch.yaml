@@ -250,8 +250,8 @@ pages:
           items:
             - "`-o` → `-i`: meist männlich (`il libro` → `i libri`)"
             - "`-a` → `-e`: meist weiblich (`la casa` → `le case`)"
-            - "`-e` → `-i`: männlich oder weiblich, Geschlecht mitlernen
-              (`il cane`, `la stazione`)"
+            - "`-e` → `-i`: männlich oder weiblich, Geschlecht mitlernen (`il
+              cane`, `la stazione`)"
             - "`-ca` / `-co` → `-che` / `-chi`: mit `h`, damit die Aussprache
               erhalten bleibt (`amiche`, `cuochi`) – aber: `amici`, `medici`"
             - "Betonter Endvokal oder Fremdwort: unveränderlich (`caffè`,
@@ -297,6 +297,32 @@ pages:
           - "`fino a` - bis"
           - "`dopo` - nach (zeitlich)"
           - "`prima di` - vor (zeitlich)"
+      - title: Ortspräpositionen & Verkehrsmittel
+        items:
+          - "`a Roma` / `in Italia` / `in Toscana` - in / nach Rom, Italien, der
+            Toskana (Stadt mit `a`, Land / Region meist mit `in`)"
+          - "`a casa` / `a scuola` / `a cena` - zu / nach Hause, in die / in der
+            Schule, beim / zum Abendessen"
+          - "`in vacanza` / `in albergo` / `in campeggio` - im Urlaub, im Hotel,
+            auf dem Campingplatz"
+          - "`in montagna` / `in spiaggia` / `al mare` - in den Bergen / in die
+            Berge, am / an den Strand, am / ans Meer"
+          - "`in macchina` / `in treno` / `in autobus` - mit dem Auto / Zug /
+            Bus"
+          - "`in metro` / `in bicicletta` / `a piedi` - mit der U-Bahn / dem
+            Fahrrad / zu Fuß"
+          - "`vicino a` / `lontano da` - in der Nähe von / weit weg von"
+          - "`davanti a` / `dietro a` / `accanto a` - vor / hinter / neben"
+          - "`di fronte a` / `tra ... e ...` - gegenüber von / zwischen ... und
+            ..."
+          - "`La farmacia è accanto alla banca` - Die Apotheke ist neben der
+            Bank"
+        tip:
+          description:
+            "**Tipp:** Viele Ortsangaben sind feste Wendungen. Dieselbe
+            Präposition kann Ort und Ziel ausdrücken (`Sono in spiaggia` / `Vado
+            in spiaggia`). `Andare` bedeutet je nach Verkehrsmittel gehen,
+            fahren oder fliegen."
       - title: Kontraktionen
         items:
           - "`di` + `il` = `del` - von dem"
@@ -304,6 +330,9 @@ pages:
           - "`a` + `il` = `al` - zu dem"
           - "`a` + `la` = `alla` - zu der"
           - "`a` + `l'` = `all'` - zu dem / zu der"
+          - "`a` + `lo` = `allo` - zu dem"
+          - "`a` + `i` = `ai` - zu den"
+          - "`a` + `gli` = `agli` - zu den"
           - "`da` + `il` = `dal` - von dem"
           - "`da` + `la` = `dalla` - von der"
           - "`in` + `il` = `nel` - in dem"
@@ -318,6 +347,54 @@ pages:
             "**Tipp:** Die Präpositionen `di`, `a`, `da`, `in` und `su`
             verschmelzen immer mit dem bestimmten Artikel. `con` und `per`
             bleiben getrennt (`con il treno`)."
+      - title: Teilungsartikel
+        items:
+          - "`del pane` - etwas Brot (`di` + `il`)"
+          - "`dello zucchero` - etwas Zucker (`di` + `lo`)"
+          - "`della frutta` - etwas Obst (`di` + `la`)"
+          - "`dell'acqua` - etwas Wasser (`di` + `l'`)"
+          - "`dei pomodori` - einige Tomaten (`di` + `i`)"
+          - "`degli spaghetti` - etwas Spaghetti (`di` + `gli`)"
+          - "`delle mele` - einige Äpfel (`di` + `le`)"
+          - "`Vorrei del pane e delle olive` - Ich hätte gern Brot und Oliven"
+        tip:
+          description:
+            "**Tipp:** Teilungsartikel bezeichnen eine unbestimmte Menge oder
+            Anzahl. Im Deutschen steht oft kein Artikel oder »etwas / einige«.
+            Die Formen entsprechen `di` + bestimmtem Artikel, bedeuten hier aber
+            nicht »von dem / von den«."
+      - title: Mengenangaben
+        items:
+          - "`un chilo di pomodori` - ein Kilo Tomaten"
+          - "`due chili di patate` - zwei Kilo Kartoffeln"
+          - "`un litro d'acqua` / `due litri d'acqua` - ein Liter / zwei Liter
+            Wasser"
+          - "`un etto di formaggio` / `due etti di formaggio` - 100 Gramm / 200
+            Gramm Käse"
+          - "`mezzo chilo di mele` - ein halbes Kilo Äpfel"
+          - "`mezza bottiglia d'acqua` - eine halbe Flasche Wasser"
+          - "`un bicchiere di vino` - ein Glas Wein (Trinkglas)"
+          - "`un barattolo di marmellata` - ein Glas Marmelade (Behälter)"
+        tip:
+          description:
+            "**Tipp:** Maßeinheit / Behälter + `di` + Inhalt. Vor Vokal wird
+            `di` oft zu `d'`. Bei Mengen über eins steht die Einheit im Plural
+            (`due chili`, `tre litri`). Vor `mezzo` / `mezza` steht hier kein
+            unbestimmter Artikel; die Form richtet sich nach der Einheit."
+      - title: »C'è« & »Ci sono«
+        items:
+          - "`C'è un ristorante` - Es gibt ein Restaurant"
+          - "`Ci sono due ristoranti` - Es gibt zwei Restaurants"
+          - "`C'è una farmacia qui vicino?` - Gibt es hier in der Nähe eine
+            Apotheke?"
+          - "`Ci sono posti liberi?` - Gibt es freie Plätze?"
+          - "`Non c'è acqua calda` - Es gibt kein warmes Wasser"
+          - "`Non ci sono problemi` - Es gibt keine Probleme"
+        tip:
+          description:
+            "**Tipp:** »Es gibt« heißt vor einem Nomen im Singular `c'è` (`ci` +
+            `è`), im Plural `ci sono`. Frage und Aussage haben dieselbe
+            Wortstellung."
       - title: Verb »essere« (sein)
         items:
           - "`io sono` - ich bin"
@@ -371,6 +448,37 @@ pages:
             "**Tipp:** `andare a` + Stadt, `andare in` + Land (`Vado a Roma`,
             `Vado in Italia`). Die nahe Zukunft drückt man oft einfach mit dem
             Präsens aus (`Domani vado al mare` = Morgen fahre ich ans Meer)."
+      - title: Verb »fare« (machen / tun)
+        items:
+          - "`io faccio` - ich mache"
+          - "`tu fai` - du machst"
+          - "`lui / lei / Lei fa` - er / sie macht, Sie machen"
+          - "`noi facciamo` - wir machen"
+          - "`voi fate` - ihr macht"
+          - "`loro fanno` - sie machen"
+          - "`fare colazione` - frühstücken"
+          - "`fare la spesa` - Lebensmittel einkaufen"
+          - "`fare una passeggiata` - einen Spaziergang machen"
+          - "`fare una foto` - ein Foto machen"
+        tip:
+          description:
+            "**Tipp:** `Fare` ist unregelmäßig und kommt in vielen festen
+            Wendungen vor. `Fare la spesa` meint den Einkauf für den täglichen
+            Bedarf; `fare shopping` bedeutet shoppen gehen."
+      - title: Verb »bere« (trinken)
+        items:
+          - "`io bevo` - ich trinke"
+          - "`tu bevi` - du trinkst"
+          - "`lui / lei / Lei beve` - er / sie trinkt, Sie trinken"
+          - "`noi beviamo` - wir trinken"
+          - "`voi bevete` - ihr trinkt"
+          - "`loro bevono` - sie trinken"
+          - "`Bevo solo acqua` - Ich trinke nur Wasser"
+          - "`Beviamo qualcosa?` - Trinken wir etwas?"
+        tip:
+          description:
+            "**Tipp:** Trotz der Grundform `bere` lautet der Stamm im Präsens
+            `bev-`; die Endungen entsprechen den regelmäßigen `-ere`-Verben."
       - title: Verb »chiamarsi« (heißen)
         items:
           - "`io mi chiamo` - ich heiße"
@@ -382,8 +490,25 @@ pages:
           - "`Come ti chiami?` - Wie heißt du?"
         tip:
           description:
-            "**Tipp:** Das Reflexivpronomen steht im Italienischen immer VOR dem
-            konjugierten Verb (`mi chiamo`, `si chiama`)."
+            "**Tipp:** In einfachen Aussagesätzen steht das Reflexivpronomen VOR
+            dem konjugierten Verb (`mi chiamo`, `si chiama`)."
+      - title: Reflexive Verben
+        items:
+          - "`mi` / `ti` / `si` / `ci` / `vi` / `si` - mich / dich / sich / uns
+            / euch / sich"
+          - "`sentirsi` - sich fühlen: `mi sento`, `ti senti`, `si sente`, `ci
+            sentiamo`, `vi sentite`, `si sentono`"
+          - "`svegliarsi` - aufwachen: `mi sveglio`, `ti svegli`, `si sveglia`,
+            `ci svegliamo`, `vi svegliate`, `si svegliano`"
+          - "`Come si sente?` - Wie fühlen Sie sich?"
+          - "`Non mi sento bene` - Ich fühle mich nicht gut"
+          - "`Ci svegliamo presto` - Wir wachen früh auf"
+        tip:
+          description:
+            "**Tipp:** In der Grundform ersetzt `-si` das letzte `-e` (`sentire`
+            → `sentirsi`). In einfachen Aussagesätzen steht das Pronomen vor dem
+            Verb, bei Verneinung nach `non`. Nicht jedes italienische reflexive
+            Verb ist auch im Deutschen reflexiv."
       - title: Verb »volere« (wollen)
         items:
           - "`io voglio` - ich will"
@@ -441,17 +566,115 @@ pages:
             durch die Personalendung ersetzt; das Pronomen entfällt meist. Viele
             `-ire`-Verben (`capire`, `finire`, `preferire`) schieben `-isc-` ein
             – außer bei `noi` und `voi`."
+      - title: Passato prossimo mit »avere«
+        items:
+          - "**Bildung:** Präsens von `avere` + Partizip Perfekt"
+          - "`-are` → `-ato`: `prenotare` → `prenotato` (reserviert)"
+          - "`-ere` → `-uto`: `ricevere` → `ricevuto` (erhalten)"
+          - "`-ire` → `-ito`: `dormire` → `dormito` (geschlafen)"
+          - "`Ho prenotato una camera` - Ich habe ein Zimmer reserviert"
+          - "`Abbiamo mangiato al ristorante` - Wir haben im Restaurant gegessen"
+          - "`Avete già pagato?` - Haben Sie schon bezahlt? (mehrere Personen)"
+          - "`Non ho capito` - Ich habe nicht verstanden"
+          - "**Häufige unregelmäßige Partizipien:** `fare` → `fatto`, `bere` →
+            `bevuto`, `prendere` → `preso`, `vedere` → `visto`"
+        tip:
+          description:
+            "**Tipp:** Das `passato prossimo` beschreibt abgeschlossene
+            Handlungen in der Vergangenheit. Viele Verben bilden es mit `avere`;
+            besonders bei `-ere`-Verben gibt es unregelmäßige Partizipien. In
+            diesen einfachen Sätzen bleibt das Partizip unabhängig vom Subjekt
+            unverändert."
+      - title: Passato prossimo mit »essere«
+        items:
+          - "**Bildung:** Präsens von `essere` + Partizip Perfekt"
+          - "`arrivare` → `arrivato` - ankommen → angekommen"
+          - "`partire` → `partito` - abreisen → abgereist"
+          - "`andare` → `andato` - gehen / fahren → gegangen / gefahren"
+          - "`tornare` → `tornato` - zurückkommen → zurückgekommen"
+          - "`uscire` → `uscito` - hinausgehen → hinausgegangen"
+          - "`Sono arrivato` / `Sono arrivata` - Ich bin angekommen (männlich /
+            weiblich)"
+          - "`Siamo partiti` / `Siamo partite` - Wir sind abgereist (männlich /
+            gemischt bzw. nur weiblich)"
+          - "`A che ora sei arrivata?` - Um wie viel Uhr bist du angekommen? (zu
+            einer Frau)"
+          - "`Non siamo andati al mare` - Wir sind nicht ans Meer gefahren"
+        tip:
+          description:
+            "**Tipp:** Mit `essere` passt sich das Partizip an das Subjekt an:
+            `-o`, `-a`, `-i`, `-e`. Die genannten Reiseverben und reflexive
+            Verben verwenden `essere`. Nicht jedes Bewegungsverb folgt dieser
+            Regel (`ho camminato` = ich bin zu Fuß gegangen); das Hilfsverb
+            deshalb mitlernen."
+      - title: Verlaufsform mit »stare«
+        items:
+          - "**Bildung:** Präsens von `stare` + `gerundio presente`"
+          - "`-are` → `-ando`: `aspettare` → `aspettando`"
+          - "`-ere` → `-endo`: `scrivere` → `scrivendo`"
+          - "`-ire` → `-endo`: `dormire` → `dormendo`"
+          - "`Sto cercando la stazione` - Ich suche gerade den Bahnhof"
+          - "`Stiamo aspettando l'autobus` - Wir warten gerade auf den Bus"
+          - "`Cosa stai facendo?` - Was machst du gerade?"
+          - "`Non sta dormendo` - Er / Sie schläft gerade nicht"
+          - "**Unregelmäßig:** `fare` → `facendo`, `bere` → `bevendo`, `dire` →
+            `dicendo`"
+        tip:
+          description:
+            "**Tipp:** Die Form betont eine gerade ablaufende Handlung. Nur
+            `stare` wird nach der Person konjugiert; das `gerundio` bleibt
+            unverändert. Die Verneinung steht vor `stare`."
       - title: Die Verneinung
         items:
           - "`Non parlo russo` - Ich spreche kein Russisch"
           - "`Lei non è italiana` - Sie ist keine Italienerin"
           - "`Non abitano a Torino` - Sie wohnen nicht in Turin"
           - "`Non ho fame` - Ich habe keinen Hunger"
+          - "`non ... mai` - nie: `Non bevo mai alcolici`"
+          - "`non ... più` - nicht mehr: `Non ho più fame`"
+          - "`non ... niente` - nichts: `Non mangio niente`"
+          - "`non ... nessuno` - niemanden: `Non conosco nessuno qui`"
+          - "`neanche` - auch nicht: `Non bevo birra e neanche vino`"
+          - "`Non mi sento più stanco` - Ich fühle mich nicht mehr müde"
         tip:
           description:
-            "**Tipp:** Die Verneinung ist ganz einfach: `non` (nicht / kein)
-            steht direkt VOR dem Verb. Da die Pronomen meist wegfallen, beginnen
-            verneinte Sätze oft mit `non`."
+            "**Tipp:** `Non` steht vor dem Verb bzw. vor einem zugehörigen
+            Pronomen (`non mi sento`). Bei mehrteiliger Verneinung folgt der
+            zweite Teil in diesen Beispielen nach dem Verb; die Bedeutung bleibt
+            negativ. Steht `nessuno` oder `niente` bereits vor dem Verb,
+            entfällt `non` (`Nessuno parla` = Niemand spricht)."
+      - title: Häufigkeitsangaben
+        items:
+          - "`sempre` - immer"
+          - "`spesso` - oft"
+          - "`di solito` - normalerweise / gewöhnlich"
+          - "`a volte` - manchmal"
+          - "`raramente` - selten"
+          - "`quasi mai` - fast nie (mit `non` vor dem Verb)"
+          - "`Di solito faccio colazione alle otto` - Normalerweise frühstücke
+            ich um acht"
+          - "`Vado spesso in spiaggia` - Ich gehe oft an den Strand"
+          - "`Bevo sempre acqua` - Ich trinke immer Wasser"
+          - "`Non vado quasi mai in macchina` - Ich fahre fast nie mit dem Auto"
+        tip:
+          description:
+            "**Tipp:** `Sempre` und `spesso` stehen meist nach dem konjugierten
+            Verb; `di solito`, `a volte` und `raramente` können auch am
+            Satzanfang stehen."
+      - title: »Serve« & »Servono« (brauchen)
+        items:
+          - "`Serve un biglietto` - Man braucht eine Fahrkarte"
+          - "`Servono due biglietti` - Man braucht zwei Fahrkarten"
+          - "`Mi serve una coperta` - Ich brauche eine Decke"
+          - "`Mi servono due asciugamani` - Ich brauche zwei Handtücher"
+          - "`Ti serve aiuto?` - Brauchst du Hilfe?"
+          - "`Non mi serve un sacchetto` - Ich brauche keine Tüte"
+        tip:
+          description:
+            "**Tipp:** Bei `servire` ist die benötigte Sache das Subjekt:
+            Singular `serve`, Plural `servono`. `Mi` heißt hier »mir«, `ti`
+            heißt »dir«. Ohne diese Ergänzung beschreibt man, was allgemein
+            benötigt wird."
       - title: Weitere Verben
         items:
           - "`parlare` - sprechen"
@@ -636,6 +859,24 @@ pages:
             "**Tipp:** `blu`, `rosa` und `viola` sind unveränderlich (z. B. `le
             scarpe blu`). Die Nationalmannschaft heißt wegen der Trikotfarbe
             `gli Azzurri`."
+      - title: Wetter ausdrücken
+        items:
+          - "`Che tempo fa?` / `Com'è il tempo?` - Wie ist das Wetter?"
+          - "`Fa caldo` / `Fa freddo` - Es ist warm / kalt"
+          - "`Fa bel tempo` / `Fa brutto tempo` - Es ist schönes / schlechtes
+            Wetter"
+          - "`C'è il sole` - Die Sonne scheint"
+          - "`C'è vento` - Es ist windig"
+          - "`È nuvoloso` - Es ist bewölkt"
+          - "`Piove` / `Nevica` - Es regnet / schneit"
+          - "`Diluvia` - Es regnet in Strömen"
+          - "`Ho caldo` / `Ho freddo` - Mir ist warm / kalt"
+        tip:
+          description:
+            "**Tipp:** Unpersönliche Wetterausdrücke stehen in der 3. Person
+            Singular ohne ein Pronomen für »es«. Für das eigene
+            Temperaturempfinden verwendet man dagegen `avere`: `ho freddo`,
+            nicht `sono freddo`."
       - title: Familie
         items:
           - "`la famiglia` - die Familie"
@@ -772,6 +1013,40 @@ pages:
             Vokalwechsel – das gilt auch für Substantive (`la pizza` → `le
             pizze`). Bei `-co`/`-ca` wird oft ein `h` eingeschoben, damit die
             Aussprache »k« bleibt (`stanco` → `stanchi`)."
+      - title: Steigerung mit »più« & »meno«
+        items:
+          - "`più grande` / `più piccolo` - größer / kleiner"
+          - "`più caro` / `meno caro` - teurer / weniger teuer"
+          - "`una camera più tranquilla` - ein ruhigeres Zimmer"
+          - "`una borsa più piccola` - eine kleinere Tasche"
+          - "`due borse più piccole` - zwei kleinere Taschen"
+          - "`Questa camera è più grande dell'altra` - Dieses Zimmer ist größer
+            als das andere"
+          - "`Vorrei qualcosa di meno caro` - Ich hätte gern etwas Günstigeres"
+        tip:
+          description:
+            "**Tipp:** `Più` / `meno` + Adjektiv bildet die Steigerung. Das
+            Adjektiv passt sich weiterhin an das Nomen an. Beim Vergleich zweier
+            Personen oder Dinge verwendet man häufig `di` (`più grande di ...`);
+            mit Artikel entsteht z. B. `dell'altra`."
+      - title: Verb »piacere« (gefallen)
+        items:
+          - "`Mi piace la pizza` - Ich mag Pizza (wörtl. Mir gefällt Pizza)"
+          - "`Mi piacciono gli spaghetti` - Ich mag Spaghetti"
+          - "`Ti piace il gelato?` - Magst du Eis?"
+          - "`Ti piacciono le olive?` - Magst du Oliven?"
+          - "`Mi piace camminare` - Ich gehe gern zu Fuß"
+          - "`Ti piace nuotare?` - Schwimmst du gern?"
+          - "`Non mi piace guidare in città` - Ich fahre nicht gern in der Stadt
+            Auto"
+          - "`Mi piace molto` / `Mi piacciono molto` - Das mag ich sehr
+            (Singular / Plural)"
+        tip:
+          description:
+            "**Tipp:** Das Gemochte ist das Subjekt: `piace` bei einem Nomen im
+            Singular oder einem Infinitiv, `piacciono` bei einem Nomen im
+            Plural. `Mi` bedeutet »mir«, `ti` bedeutet »dir«. Für Tätigkeiten
+            steht nach `piace` die Grundform des Verbs."
       - title: Nützliche Sätze
         items:
           - "`Tutto bene?` - Alles gut?"
@@ -789,10 +1064,6 @@ pages:
           - "`Posso ...?` - Darf ich ...?"
           - "`Può aiutarmi?` - Können Sie mir helfen?"
           - "`Dov'è il bagno?` - Wo ist die Toilette?"
-        tip:
-          description:
-            "**Tipp:** Bei `piacere` ist das Gemochte das Subjekt: `Mi piace la
-            pizza` (Einzahl), aber `Mi piacciono gli spaghetti` (Mehrzahl)."
       - title: Weitere Wörter
         items:
           - "`il libro` - das Buch"
@@ -821,3 +1092,332 @@ pages:
           - "`giusto` - richtig"
           - "`per me` - für mich"
           - "`l'Italia` - Italien"
+  - title: Italienisch im Urlaub
+    columns: 5
+    sections:
+      - title: Schnell zurechtfinden
+        items:
+          - |
+            Praktische Sätze für eine Reise nach Italien. `...` steht für
+            einen Namen, Ort oder eine Zahl. Bei Fremden ist die
+            Höflichkeitsform **Lei** eine gute Wahl; mit `avete` spricht man
+            mehrere Personen an, etwa das Team eines Hotels oder Restaurants.
+          - "`Buongiorno, scusi!` - Guten Tag, entschuldigen Sie!"
+          - "`Vorrei ..., per favore` - Ich hätte gern ..., bitte"
+          - "`Può aiutarmi, per favore?` - Können Sie mir bitte helfen?"
+          - "`Dov'è il bagno?` - Wo ist die Toilette?"
+          - "`Grazie per l'aiuto!` - Danke für die Hilfe!"
+      - title: Verständigung unterwegs
+        items:
+          - "`Parlo solo un po' d'italiano` - Ich spreche nur ein wenig
+            Italienisch"
+          - "`Parla tedesco o inglese?` - Sprechen Sie Deutsch oder Englisch?"
+          - "`Mi scusi, non ho capito` - Entschuldigung, ich habe nicht
+            verstanden"
+          - "`Può ripetere più lentamente?` - Können Sie das langsamer
+            wiederholen?"
+          - "`Può scriverlo, per favore?` - Können Sie das bitte aufschreiben?"
+          - "`Come si pronuncia questa parola?` - Wie spricht man dieses Wort
+            aus?"
+          - "`Cosa significa questa parola?` - Was bedeutet dieses Wort?"
+          - "`Un momento, per favore, uso il traduttore` - Einen Moment bitte,
+            ich benutze die Übersetzungs-App"
+      - title: Ankunft & Weiterfahrt
+        items:
+          - "`Dove posso ritirare il bagaglio?` - Wo kann ich mein Gepäck
+            abholen?"
+          - "`La mia valigia non è arrivata` - Mein Koffer ist nicht angekommen"
+          - "`Dov'è la fermata della navetta?` - Wo ist die Haltestelle des
+            Shuttlebusses?"
+          - "`Come posso arrivare in centro?` - Wie komme ich ins Zentrum?"
+          - "`Dove posso prendere un taxi?` - Wo bekomme ich ein Taxi?"
+          - "`Quanto costa la corsa fino a questo indirizzo?` - Wie viel kostet
+            die Fahrt zu dieser Adresse?"
+          - "`Mi può portare a questo hotel?` - Können Sie mich zu diesem Hotel
+            bringen?"
+          - "`Può fermarsi qui, per favore?` - Können Sie bitte hier anhalten?"
+      - title: Bus & Bahn
+        items:
+          - "`Vorrei due biglietti per Firenze` - Ich hätte gern zwei Fahrkarten
+            nach Florenz"
+          - "`Solo andata, per favore` - Nur Hinfahrt, bitte"
+          - "`Andata e ritorno, per favore` - Hin- und Rückfahrt, bitte"
+          - "`Da quale binario parte il treno per Roma?` - Von welchem Gleis
+            fährt der Zug nach Rom ab?"
+          - "`Questo autobus va in centro?` - Fährt dieser Bus ins Zentrum?"
+          - "`A quale fermata devo scendere?` - An welcher Haltestelle muss ich
+            aussteigen?"
+          - "`Devo cambiare treno?` - Muss ich umsteigen?"
+          - "`Devo convalidare questo biglietto?` - Muss ich diese Fahrkarte
+            entwerten?"
+          - "`Questo posto è libero?` - Ist dieser Platz frei?"
+          - "`A che ora parte l'ultimo autobus?` - Wann fährt der letzte Bus?"
+        tip:
+          description:
+            "**Tipp:** Ob eine Entwertung nötig ist, hängt von Ticketart und
+            Anbieter ab. Beachte die Hinweise auf dem Ticket bzw. in der App."
+      - title: Nach dem Weg fragen
+        items:
+          - "`Scusi, dov'è la stazione?` - Entschuldigung, wo ist der Bahnhof?"
+          - "`C'è una farmacia qui vicino?` - Gibt es hier in der Nähe eine
+            Apotheke?"
+          - "`Come si arriva al museo?` - Wie kommt man zum Museum?"
+          - "`È lontano da qui?` - Ist es weit von hier?"
+          - "`Quanto tempo ci vuole a piedi?` - Wie lange braucht man zu Fuß?"
+          - "`Può indicarmi la strada sulla mappa?` - Können Sie mir den Weg auf
+            der Karte zeigen?"
+          - "`Devo girare a destra o a sinistra?` - Muss ich rechts oder links
+            abbiegen?"
+          - "`Deve andare dritto fino al semaforo` - Sie müssen bis zur Ampel
+            geradeaus gehen"
+          - "`La fermata è davanti alla banca` - Die Haltestelle ist vor der
+            Bank"
+          - "`Il museo è vicino alla piazza` - Das Museum ist in der Nähe des
+            Platzes"
+      - title: Mit dem Auto
+        items:
+          - "`Vorrei noleggiare una macchina per tre giorni` - Ich möchte für
+            drei Tage ein Auto mieten"
+          - "`L'assicurazione è inclusa?` - Ist die Versicherung inbegriffen?"
+          - "`Dove devo riconsegnare la macchina?` - Wo muss ich das Auto
+            zurückgeben?"
+          - "`Dove posso parcheggiare?` - Wo kann ich parken?"
+          - "`Il parcheggio è a pagamento?` - Ist der Parkplatz
+            gebührenpflichtig?"
+          - "`Posso entrare in questa zona con la macchina?` - Darf ich mit dem
+            Auto in diese Zone fahren?"
+          - "`Dov'è il distributore più vicino?` - Wo ist die nächste
+            Tankstelle?"
+          - "`La macchina non parte` - Das Auto springt nicht an"
+          - "`Può chiamare il soccorso stradale?` - Können Sie den Pannendienst
+            rufen?"
+      - title: Unterkunft buchen & Ankommen
+        items:
+          - "`Avete una camera libera per due persone?` - Haben Sie ein freies
+            Zimmer für zwei Personen?"
+          - "`Vorrei una camera per tre notti` - Ich hätte gern ein Zimmer für
+            drei Nächte"
+          - "`Quanto costa a notte?` - Wie viel kostet es pro Nacht?"
+          - "`La colazione è inclusa?` - Ist das Frühstück inbegriffen?"
+          - "`La tassa di soggiorno è inclusa nel prezzo?` - Ist die Kurtaxe im
+            Preis inbegriffen?"
+          - "`Ho una prenotazione a nome ...` - Ich habe eine Reservierung auf
+            den Namen ..."
+          - "`Ecco il mio documento d'identità` - Hier ist mein Ausweis"
+          - "`A che ora è pronta la camera?` - Um wie viel Uhr ist das Zimmer
+            fertig?"
+          - "`Posso lasciare qui i bagagli?` - Kann ich mein Gepäck hier lassen?"
+      - title: Im Hotel & In der Ferienwohnung
+        items:
+          - "`Qual è la password del Wi-Fi?` - Wie lautet das WLAN-Passwort?"
+          - "`A che ora si fa colazione?` - Um wie viel Uhr gibt es Frühstück?"
+          - "`Come funziona l'aria condizionata?` - Wie funktioniert die
+            Klimaanlage?"
+          - "`Non c'è acqua calda` - Es gibt kein warmes Wasser"
+          - "`L'aria condizionata non funziona` - Die Klimaanlage funktioniert
+            nicht"
+          - "`Mi servono due asciugamani, per favore` - Ich brauche bitte zwei
+            Handtücher"
+          - "`Posso avere un'altra coperta?` - Kann ich noch eine Decke haben?"
+          - "`La camera è troppo rumorosa. Posso cambiarla?` - Das Zimmer ist zu
+            laut. Kann ich es wechseln?"
+          - "`Entro che ora dobbiamo lasciare la camera?` - Bis wann müssen wir
+            das Zimmer verlassen?"
+      - title: Im Restaurant
+        items:
+          - "`Vorrei prenotare un tavolo per due alle otto` - Ich möchte einen
+            Tisch für zwei um acht Uhr reservieren"
+          - "`Avete un tavolo libero per stasera?` - Haben Sie für heute Abend
+            einen Tisch frei?"
+          - "`Possiamo sederci fuori?` - Können wir draußen sitzen?"
+          - "`Possiamo vedere il menù, per favore?` - Können wir bitte die
+            Speisekarte sehen?"
+          - "`Quali piatti regionali ci consiglia?` - Welche regionalen Gerichte
+            empfehlen Sie uns?"
+          - "`Per me una pizza margherita, per favore` - Für mich bitte eine
+            Pizza Margherita"
+          - "`Vorrei un contorno di verdure grigliate` - Ich hätte gern
+            gegrilltes Gemüse als Beilage"
+          - "`Possiamo avere ancora un po' di pane?` - Können wir noch etwas
+            Brot bekommen?"
+          - "`Mi scusi, questo non è il piatto che ho ordinato` -
+            Entschuldigung, das ist nicht das Gericht, das ich bestellt habe"
+          - "`Era tutto buonissimo, grazie!` - Es war alles sehr lecker, danke!"
+      - title: Bar, Frühstück & Eis
+        items:
+          - "`Vorrei un cappuccino e un cornetto` - Ich hätte gern einen
+            Cappuccino und ein Croissant"
+          - "`Un caffè decaffeinato, per favore` - Einen entkoffeinierten
+            Espresso, bitte"
+          - "`Avete latte d'avena?` - Haben Sie Hafermilch?"
+          - "`Un bicchiere d'acqua naturale, per favore` - Ein Glas stilles
+            Wasser, bitte"
+          - "`Una bottiglia d'acqua frizzante, per favore` - Eine Flasche
+            Sprudelwasser, bitte"
+          - "`Vorrei un aperitivo analcolico` - Ich hätte gern einen
+            alkoholfreien Aperitif"
+          - "`Da portare via, per favore` - Zum Mitnehmen, bitte"
+          - "`Vorrei un cono con due gusti: limone e fragola` - Ich hätte gern
+            eine Eiswaffel mit zwei Sorten: Zitrone und Erdbeere"
+          - "`Preferisco una coppetta` - Ich hätte lieber einen Eisbecher"
+          - "`Basta così, grazie` - Das ist alles, danke"
+      - title: Vorlieben & Allergien
+        items:
+          - "`Avete piatti vegetariani o vegani?` - Haben Sie vegetarische oder
+            vegane Gerichte?"
+          - "`Non mangio carne né pesce` - Ich esse weder Fleisch noch Fisch"
+          - "`Questo piatto contiene latte o uova?` - Enthält dieses Gericht
+            Milch oder Eier?"
+          - "`Ho una grave allergia alle arachidi` - Ich habe eine schwere
+            Erdnussallergie"
+          - "`Anche piccole tracce possono essere pericolose per me` - Auch
+            kleine Spuren können für mich gefährlich sein"
+          - "`Potete prepararlo senza contaminazione da arachidi?` - Können Sie
+            es ohne Verunreinigung durch Erdnüsse zubereiten?"
+          - "`Devo evitare il glutine. Avete piatti adatti?` - Ich muss Gluten
+            meiden. Haben Sie geeignete Gerichte?"
+          - "`È piccante? Lo preferisco non piccante` - Ist es scharf? Ich hätte
+            es lieber nicht scharf"
+          - "`Senza formaggio, per favore` - Ohne Käse, bitte"
+        tip:
+          description:
+            "**Wichtig:** Bei Allergien das konkrete Allergen nennen. `Non mi
+            piace ...` bedeutet nur »Ich mag ... nicht« und beschreibt keine
+            Allergie."
+      - title: Bezahlen
+        items:
+          - "`Il conto, per favore` - Die Rechnung, bitte"
+          - "`Possiamo pagare separatamente?` - Können wir getrennt bezahlen?"
+          - "`Posso pagare con la carta?` - Kann ich mit Karte bezahlen?"
+          - "`Pago in contanti` - Ich zahle bar"
+          - "`Il servizio è incluso?` - Ist der Service inbegriffen?"
+          - "`Quanto costa il coperto a persona?` - Wie viel kostet das Gedeck
+            pro Person?"
+          - "`Mi scusi, credo che ci sia un errore nel conto` - Entschuldigung,
+            ich glaube, in der Rechnung ist ein Fehler"
+          - "`Posso avere lo scontrino?` - Kann ich den Kassenbon bekommen?"
+          - "`Dove posso prelevare contanti?` - Wo kann ich Bargeld abheben?"
+      - title: Auf dem Markt & Im Supermarkt
+        items:
+          - "`Dov'è il supermercato più vicino?` - Wo ist der nächste
+            Supermarkt?"
+          - "`A che ora chiudete?` - Um wie viel Uhr schließen Sie?"
+          - "`Quanto costano questi pomodori al chilo?` - Wie viel kosten diese
+            Tomaten pro Kilo?"
+          - "`Vorrei mezzo chilo di pomodori` - Ich hätte gern ein halbes Kilo
+            Tomaten"
+          - "`Due etti di questo formaggio, per favore` - Zweihundert Gramm von
+            diesem Käse, bitte"
+          - "`Vorrei un litro d'olio d'oliva` - Ich hätte gern einen Liter
+            Olivenöl"
+          - "`Posso assaggiare?` - Darf ich probieren?"
+          - "`Devo pesare la frutta?` - Muss ich das Obst wiegen?"
+          - "`Mi serve un sacchetto, per favore` - Ich brauche bitte eine Tüte"
+        tip:
+          description:
+            "**Tipp:** An der Frischetheke ist `un etto` = 100 Gramm üblich;
+            `due etti` = 200 Gramm. `Mezzo chilo` ist ein halbes Kilo."
+      - title: Kleidung einkaufen
+        items:
+          - "`Sto solo guardando, grazie` - Ich schaue nur, danke"
+          - "`Cerco una giacca leggera` - Ich suche eine leichte Jacke"
+          - "`Posso provare questa giacca?` - Kann ich diese Jacke anprobieren?"
+          - "`Dove sono i camerini?` - Wo sind die Umkleidekabinen?"
+          - "`Avete una taglia più grande?` - Haben Sie eine größere Größe?"
+          - "`Avete una taglia più piccola?` - Haben Sie eine kleinere Größe?"
+          - "`Avete questo modello in blu?` - Haben Sie dieses Modell in Blau?"
+          - "`Quanto costano questi pantaloni?` - Wie viel kostet diese Hose?"
+          - "`Posso cambiarlo se non va bene?` - Kann ich es umtauschen, wenn es
+            nicht passt?"
+      - title: Sehenswürdigkeiten & Ausflüge
+        items:
+          - "`Cosa ci consiglia di visitare?` - Was empfehlen Sie uns zu
+            besichtigen?"
+          - "`Il museo è aperto oggi?` - Ist das Museum heute geöffnet?"
+          - "`Quanto costa l'ingresso?` - Wie viel kostet der Eintritt?"
+          - "`Ci sono riduzioni per bambini?` - Gibt es Ermäßigungen für Kinder?"
+          - "`Bisogna prenotare in anticipo?` - Muss man im Voraus buchen?"
+          - "`Avete un'audioguida in tedesco?` - Haben Sie einen Audioguide auf
+            Deutsch?"
+          - "`Quanto dura la visita?` - Wie lange dauert die Besichtigung?"
+          - "`Si possono fare fotografie?` - Darf man fotografieren?"
+          - "`Può farci una foto, per favore?` - Können Sie bitte ein Foto von
+            uns machen?"
+      - title: Strand, Camping & Natur
+        items:
+          - "`Dov'è la spiaggia libera più vicina?` - Wo ist der nächste frei
+            zugängliche Strand?"
+          - "`Quanto costano un ombrellone e due lettini?` - Wie viel kosten ein
+            Sonnenschirm und zwei Liegen?"
+          - "`È sicuro fare il bagno qui?` - Ist es hier sicher zu baden?"
+          - "`Ci sono docce e bagni?` - Gibt es Duschen und Toiletten?"
+          - "`Avete una piazzola libera per una tenda?` - Haben Sie einen freien
+            Stellplatz für ein Zelt?"
+          - "`L'elettricità è inclusa nel prezzo?` - Ist Strom im Preis
+            inbegriffen?"
+          - "`L'acqua è potabile?` - Ist das Wasser trinkbar?"
+          - "`Questo sentiero porta al lago?` - Führt dieser Wanderweg zum See?"
+          - "`Quanto dura il percorso?` - Wie lange dauert die Strecke?"
+      - title: Wetter & Pläne
+        items:
+          - "`Che tempo fa oggi?` - Wie ist das Wetter heute?"
+          - "`Domani pioverà?` - Wird es morgen regnen?"
+          - "`Oggi fa molto caldo` - Heute ist es sehr heiß"
+          - "`C'è troppo vento per andare in barca` - Es ist zu windig, um mit
+            dem Boot zu fahren"
+          - "`Se piove, andiamo al museo` - Wenn es regnet, gehen wir ins Museum"
+          - "`Domani vorremmo andare in montagna` - Morgen würden wir gern in
+            die Berge fahren"
+          - "`Preferiamo restare in spiaggia` - Wir bleiben lieber am Strand"
+          - "`Dove possiamo noleggiare due biciclette?` - Wo können wir zwei
+            Fahrräder mieten?"
+      - title: Ins Gespräch kommen
+        items:
+          - "`Siamo in vacanza qui per una settimana` - Wir machen hier eine
+            Woche Urlaub"
+          - "`È la prima volta che veniamo in Italia` - Wir sind zum ersten Mal
+            in Italien"
+          - "`Veniamo dalla Germania` - Wir kommen aus Deutschland"
+          - "`Mi piace molto questa città` - Diese Stadt gefällt mir sehr"
+          - "`Mi piace passeggiare sul lungomare` - Ich gehe gern an der
+            Strandpromenade spazieren"
+          - "`Ti va di prendere un caffè?` - Hast du Lust, einen Kaffee trinken
+            zu gehen? (informell)"
+          - "`Ci vediamo domani alle dieci?` - Sehen wir uns morgen um zehn?"
+          - "`Ieri abbiamo visitato il centro storico` - Gestern haben wir die
+            Altstadt besichtigt"
+          - "`Buona giornata e a presto!` - Einen schönen Tag und bis bald!"
+      - title: Apotheke & Arzt
+        items:
+          - "`Non mi sento bene` - Ich fühle mich nicht gut"
+          - "`Ho la febbre` - Ich habe Fieber"
+          - "`Ho mal di testa` - Ich habe Kopfschmerzen"
+          - "`Ho mal di stomaco e ho la nausea` - Ich habe Bauchschmerzen und
+            mir ist übel"
+          - "`Ho mal di gola` - Ich habe Halsschmerzen"
+          - "`Mi fa male qui` - Hier tut es mir weh"
+          - "`Da ieri ho questi sintomi` - Seit gestern habe ich diese Symptome"
+          - "`Dov'è la farmacia di turno?` - Wo ist die Notdienstapotheke?"
+          - "`Ho bisogno di un medico` - Ich brauche einen Arzt"
+          - "`Prendo già questo medicinale` - Ich nehme bereits dieses
+            Medikament"
+          - "`Serve la ricetta per questo medicinale?` - Braucht man für dieses
+            Medikament ein Rezept?"
+      - title: Notfälle & Verlorene Sachen
+        items:
+          - "`Aiuto! Chiami il 112!` - Hilfe! Rufen Sie die 112!"
+          - "`Chiami un'ambulanza, per favore!` - Rufen Sie bitte einen
+            Krankenwagen!"
+          - "`C'è stato un incidente` - Es hat einen Unfall gegeben"
+          - "`Mi trovo a questo indirizzo: ...` - Ich bin an dieser Adresse: ..."
+          - "`Non riesco a respirare` - Ich bekomme keine Luft"
+          - "`Ho perso il passaporto` - Ich habe meinen Reisepass verloren"
+          - "`Mi hanno rubato il portafoglio` - Mein Geldbeutel wurde gestohlen"
+          - "`Vorrei denunciare un furto` - Ich möchte einen Diebstahl anzeigen"
+          - "`Dov'è l'ufficio oggetti smarriti?` - Wo ist das Fundbüro?"
+          - "`Può chiamare il mio contatto di emergenza?` - Können Sie meinen
+            Notfallkontakt anrufen?"
+        tip:
+          description:
+            "**Notruf:** `112` ist die europaweite Notrufnummer. Nenne möglichst
+            zuerst den genauen Standort und beschreibe dann, was passiert ist."
